@@ -1,0 +1,5926 @@
+[
+ {
+  "id": "ev_intro",
+  "title": "第 47 天",
+  "text": "无线电在凌晨三点自己响了。\n一段录音，女声，背景里有海浪：\"这里是白塔灯塔。如果你能听见，说明中继站还活着。带上核心，带上你还信得过的人。我们还有电，还有热水。\"\n录音重复了三遍，然后是一段很长的电流声。\n你坐在床沿，听见外面有东西在挠铁门。",
+  "tag": "story",
+  "weight": 100,
+  "once": true,
+  "minDay": 1,
+  "places": [],
+  "choices": [
+   {
+    "text": "把铁门顶死，天亮再说",
+    "req": [],
+    "effect": {
+     "fatigue": 6,
+     "sanity": 2
+    },
+    "items": {
+     "scrap": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你搬来货架顶住门。抓挠声持续到天亮，然后停了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "从窗口看一眼",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "xp": 6
+    },
+    "items": {
+     "cloth": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你掀开窗帘一角。三个影子站在雨里，都低着头。你数了两遍，确认它们没有抬头。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "现在就出门，去灯塔",
+    "req": [],
+    "effect": {
+     "xp": 10,
+     "fatigue": 3
+    },
+    "items": {
+     "water_bottle": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你背上包，推开门。雨很冷，但你还活着，这就够了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_night_knock",
+  "title": "夜里的敲门声",
+  "text": "三下，停顿，两下。然后又三下。\n不像是丧尸——它们不会数拍子。",
+  "tag": "daily",
+  "weight": 14,
+  "once": false,
+  "minDay": 2,
+  "places": [],
+  "choices": [
+   {
+    "text": "开门",
+    "req": [
+     "day>=3"
+    ],
+    "effect": {
+     "sanity": 4,
+     "flag_met_scout": 1
+    },
+    "items": {
+     "map_fragment": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "门外是个浑身湿透的女人，抱着一卷地图。她说她叫阿岚，从南边走过来，走了十一天。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "不出声，握紧武器",
+    "req": [],
+    "effect": {
+     "fatigue": 8,
+     "sanity": -3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "敲门声持续了二十分钟，然后变成抓挠，最后消失。你在门后坐到天亮。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "朝门外开一枪",
+    "req": [
+     "item:ammo_9mm>=1"
+    ],
+    "effect": {
+     "sanity": -5,
+     "xp": 4,
+     "vulture": -1
+    },
+    "items": {
+     "ammo_9mm": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "枪声在楼宇间弹了很久。门外安静了。你希望那真的是丧尸。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_dog",
+  "title": "一条狗",
+  "text": "一条瘦得脱形的狗蹲在门口，脖子上挂着半截皮带。\n它没有叫，只是看着你，尾巴动了一下。",
+  "tag": "daily",
+  "weight": 8,
+  "once": true,
+  "minDay": 2,
+  "places": [],
+  "choices": [
+   {
+    "text": "给它一点吃的",
+    "req": [
+     "item:canned_food>=1"
+    ],
+    "effect": {
+     "sanity": 8,
+     "flag_dog": 1
+    },
+    "items": {
+     "canned_food": -1,
+     "water_bottle": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "它吃得很小心，吃完之后就趴在门口不走了。你决定叫它「铁钉」。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "赶走它",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你跺了跺脚。它退了两步，又停下，最后还是走了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "杀了它",
+    "req": [],
+    "effect": {
+     "hunger": 20,
+     "sanity": -10
+    },
+    "items": {
+     "rat_meat": 2,
+     "dog_tag": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你不敢看它的眼睛。肉很柴，但你今晚不用挨饿。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_radio_voice",
+  "title": "每隔四小时的坐标",
+  "text": "收音机里那个女声准时出现。她念一串坐标，然后停顿很久，像是在等谁回答。\n今天她多说了一句：\"如果你在路上，别走桥。桥下有东西。\"。",
+  "tag": "daily",
+  "weight": 10,
+  "once": false,
+  "minDay": 2,
+  "places": [],
+  "choices": [
+   {
+    "text": "记下坐标",
+    "req": [],
+    "effect": {
+     "xp": 10,
+     "flag_lighthouse_known": 1
+    },
+    "items": {
+     "map_fragment": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把数字抄在手背上。手背已经写满了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "试着回话",
+    "req": [],
+    "effect": {
+     "sanity": 10,
+     "xp": 14,
+     "flag_lighthouse_known": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你按下通话键，说「收到」。对面沉默了十几秒，然后传来一声很轻的「谢谢」。你握着对讲机，手心在出汗。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "关掉它",
+    "req": [],
+    "effect": {
+     "sanity": 3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "安静之后，你反而睡不着了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_rain",
+  "title": "酸雨",
+  "text": "雨点打在铁皮上，声音不对。你伸手接了一点，指尖发麻。",
+  "tag": "daily",
+  "weight": 8,
+  "once": false,
+  "minDay": 1,
+  "places": [],
+  "choices": [
+   {
+    "text": "收集雨水",
+    "req": [],
+    "effect": {
+     "fatigue": 5
+    },
+    "items": {
+     "water_dirty": 3
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你摆了三个桶，接了大半。烧开之后大概能喝。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "躲进屋里",
+    "req": [],
+    "effect": {
+     "warmth": -4,
+     "hp": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把所有缝隙堵上，但空气里还是有股金属味。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "趁机洗个澡",
+    "req": [],
+    "effect": {
+     "sanity": 12,
+     "hp": -5,
+     "fatigue": -6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "冷水冲下来的时候你差点叫出声。干净的感觉很奢侈。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_thief",
+  "title": "物资失踪",
+  "text": "一罐午餐肉不见了。你昨天数过，还剩两罐。",
+  "tag": "daily",
+  "weight": 7,
+  "once": false,
+  "minDay": 1,
+  "places": [],
+  "choices": [
+   {
+    "text": "搜查所有人",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "flag_suspect": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把每个人的包都翻了一遍，什么也没找到。晚上没人跟你说话。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "算了",
+    "req": [],
+    "effect": {
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "也许是你记错了。你开始怀疑自己的记性。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "设个陷阱",
+    "req": [],
+    "effect": {
+     "sanity": -5,
+     "xp": 6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在一罐水上做了记号。第二天，记号出现在老赵的桌上。他没有解释。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_child_cry",
+  "title": "孩子的哭声",
+  "text": "哭声隔着两条街传过来，断断续续。\n这附近不应该有孩子。",
+  "tag": "daily",
+  "weight": 6,
+  "once": true,
+  "minDay": 3,
+  "places": [],
+  "choices": [
+   {
+    "text": "过去看看",
+    "req": [],
+    "effect": {
+     "sanity": -2,
+     "flag_child": 1,
+     "flag_met_kid": 1
+    },
+    "items": {
+     "child_drawing": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在一辆翻倒的校车里找到一个小女孩，六岁，鞋掉了一只。她看见你的时候，先举起了双手。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "捂住耳朵走开",
+    "req": [],
+    "effect": {
+     "sanity": -8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "哭声跟了你三个街区，然后突然停了。你不敢回头。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "鸣枪示警",
+    "req": [
+     "item:ammo_9mm>=1"
+    ],
+    "effect": {
+     "xp": 4,
+     "sanity": -2
+    },
+    "items": {
+     "ammo_9mm": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "哭声停了，换来的是别的东西的嚎叫。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_mailman",
+  "title": "邮差",
+  "text": "一个背着邮袋的老人坐在路边的邮筒上，脚边摆着一排罐头和一叠信。\n\"明码标价，\"他说，\"我这儿不收钱，只收还能用的东西。\"。",
+  "tag": "daily",
+  "weight": 10,
+  "once": false,
+  "minDay": 4,
+  "places": [],
+  "choices": [
+   {
+    "text": "用废铁换罐头",
+    "req": [
+     "item:scrap>=3"
+    ],
+    "effect": {},
+    "items": {
+     "scrap": -3,
+     "canned_food": 3
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他挑了两块最沉的废铁，递给你三罐没有标签的东西。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用电池换药",
+    "req": [
+     "item:battery>=1"
+    ],
+    "effect": {},
+    "items": {
+     "battery": -1,
+     "antibiotics": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他把一小盒抗生素推过来，动作很快，像怕自己反悔。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问他灯塔的事",
+    "req": [],
+    "effect": {
+     "xp": 12,
+     "sanity": 2,
+     "flag_lighthouse_known": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他抬头看了你很久。“那座塔没救了，”他说，“但塔上的人还值得救。”",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "抢他",
+    "req": [],
+    "effect": {
+     "hp": -12,
+     "sanity": -8,
+     "vulture": 1
+    },
+    "items": {
+     "canned_food": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你刚伸手，老人的刀已经到了你喉咙前。他叹了口气，把刀收回去，收拾东西走了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_cult_offer",
+  "title": "灰袍传教",
+  "text": "两个灰袍人站在门口，没带武器。其中一个递给你一袋豆子。\n\"灰烬之后有新生，\"她说，\"跟我们来，你不用再一个人扛。\"。",
+  "tag": "daily",
+  "weight": 8,
+  "once": false,
+  "minDay": 5,
+  "places": [],
+  "choices": [
+   {
+    "text": "收下东西，拒绝邀请",
+    "req": [],
+    "effect": {
+     "sanity": 2
+    },
+    "items": {
+     "beans_can": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她把豆子塞进你手里，笑了一下。“门一直开着。”",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "听他们讲完",
+    "req": [],
+    "effect": {
+     "sanity": 10,
+     "order": 2,
+     "xp": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他们讲了一个小时，讲火，讲重生，讲被选中的人。你发现自己的手抖得没那么厉害了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拔枪赶走他们",
+    "req": [],
+    "effect": {
+     "order": -4,
+     "vulture": 2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他们不慌，只是转身走了。走出很远之后，其中一个回头看了你一眼。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_soldier_broadcast",
+  "title": "军方广播",
+  "text": "频道里一段沙哑的男声：\"检查站仍在接收幸存者。携带武器者请放在地上。重复，携带武器者请放在地上。\"。",
+  "tag": "daily",
+  "weight": 8,
+  "once": false,
+  "minDay": 4,
+  "places": [],
+  "choices": [
+   {
+    "text": "前往检查站",
+    "req": [],
+    "effect": {
+     "military": 3,
+     "sanity": 4,
+     "flag_checkpoint_pass": 1
+    },
+    "items": {
+     "water_bottle": 2,
+     "military_biscuit": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在门口被搜了身，登记了名字。他们给了你一瓶水和一张通行条。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "记下频率",
+    "req": [],
+    "effect": {
+     "xp": 8,
+     "flag_checkpoint_known": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你调好频率，关掉收音机。多一个知道的地方，多一条路。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "保持沉默",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "广播重复到第七遍时停了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_fever",
+  "title": "发烧",
+  "text": "你半夜被冷汗浸醒，额头烫得吓人。",
+  "tag": "daily",
+  "weight": 7,
+  "once": false,
+  "minDay": 4,
+  "places": [],
+  "choices": [
+   {
+    "text": "吃药硬扛",
+    "req": [
+     "item:pills_fever>=1"
+    ],
+    "effect": {
+     "hp": -6,
+     "infection": -4
+    },
+    "items": {
+     "pills_fever": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "药片卡在喉咙里，你灌了半壶水才咽下去。天亮时烧退了一点。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用湿布降温",
+    "req": [],
+    "effect": {
+     "hp": -14,
+     "sanity": -4,
+     "fatigue": -6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你裹着毯子发抖，一直抖到天亮。至少还活着。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "让同伴照顾你",
+    "req": [
+     "companions>=1"
+    ],
+    "effect": {
+     "hp": -4,
+     "sanity": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "有人守了你一夜，每半小时换一次湿布。你醒来时，她在椅子上睡着了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_letters",
+  "title": "前任屋主的信",
+  "text": "铁皮盒里有一叠信，最上面一封写着：\"如果你读到这个，请帮我把冰箱上的照片带走。\"。",
+  "tag": "daily",
+  "weight": 6,
+  "once": true,
+  "minDay": 1,
+  "places": [],
+  "choices": [
+   {
+    "text": "带走照片",
+    "req": [],
+    "effect": {
+     "sanity": 6
+    },
+    "items": {
+     "photo": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "照片上是一家人，背景里有海。你把它塞进内袋。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "读完全部信件",
+    "req": [],
+    "effect": {
+     "xp": 12,
+     "sanity": -2,
+     "flag_whitecrow_warning": 1
+    },
+    "items": {
+     "map_fragment": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "信里讲了一次失败的逃亡，讲了一个叫白塔的地方，最后一张只有一句话：”别相信穿白大褂的人。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "放回去",
+    "req": [],
+    "effect": {
+     "sanity": 2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把盒子盖好，摆回原位。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_music",
+  "title": "唱片",
+  "text": "你在一堆杂物里翻出一台手摇留声机，还有一张唱片。\n放上去之后，是一个女人在唱一首很老的歌。",
+  "tag": "daily",
+  "weight": 5,
+  "once": true,
+  "minDay": 1,
+  "places": [],
+  "choices": [
+   {
+    "text": "听完",
+    "req": [],
+    "effect": {
+     "sanity": 18,
+     "fatigue": -8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你坐在地上，听完了一整面。外面天黑了，你忘了点灯。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "带到营地和所有人一起听",
+    "req": [
+     "companions>=1"
+    ],
+    "effect": {
+     "sanity": 14,
+     "flag_music": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "没人说话。老赵在最后偷偷擦了眼睛。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "砸了它",
+    "req": [],
+    "effect": {
+     "sanity": -6
+    },
+    "items": {
+     "vinyl": 1,
+     "scrap": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你不想知道自己为什么会这么做。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_smoke",
+  "title": "远处的烟",
+  "text": "地平线上有三股烟，间隔很均匀。\n不像是火灾。更像是信号。",
+  "tag": "daily",
+  "weight": 6,
+  "once": false,
+  "minDay": 3,
+  "places": [],
+  "choices": [
+   {
+    "text": "朝烟走",
+    "req": [],
+    "effect": {
+     "fatigue": 10,
+     "sanity": -5
+    },
+    "items": {
+     "wedding_ring": 1,
+     "charcoal": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你走了两个小时，找到一处被烧毁的营地。灰里有骨头，还有一枚烧变形的婚戒。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "记下方位",
+    "req": [],
+    "effect": {
+     "xp": 6,
+     "flag_smoke_seen": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在墙上用炭画了个箭头。也许以后用得上。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "绕开",
+    "req": [],
+    "effect": {
+     "sanity": 2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你选择不惹麻烦。这个选择通常是对的。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_beggar",
+  "title": "乞讨者",
+  "text": "一个瘦到脱相的男人跪在路边，手里捧着一个空罐头。\n他没说话，只是把罐头往前递了递。",
+  "tag": "daily",
+  "weight": 7,
+  "once": false,
+  "minDay": 2,
+  "places": [],
+  "choices": [
+   {
+    "text": "给他一罐食物",
+    "req": [
+     "item:canned_food>=1"
+    ],
+    "effect": {
+     "sanity": 10,
+     "order": 1
+    },
+    "items": {
+     "canned_food": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他接过去的时候手抖得厉害，说了声谢谢，然后哭了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "给他水",
+    "req": [
+     "item:water_bottle>=1"
+    ],
+    "effect": {
+     "sanity": 6
+    },
+    "items": {
+     "water_bottle": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他喝得很慢，像在喝什么很贵的东西。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "绕过去",
+    "req": [],
+    "effect": {
+     "sanity": -3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你听见他在背后说了句什么，但没听清。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "搜他的身",
+    "req": [],
+    "effect": {
+     "sanity": -8,
+     "vulture": 1
+    },
+    "items": {
+     "scrap": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他身上的东西比你想象的还少。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_wounded",
+  "title": "受伤的陌生人",
+  "text": "他靠墙坐着，小腿上一道很深的伤口，已经发黑。\n\"别过来，\"他说，\"我被咬了。\"。",
+  "tag": "daily",
+  "weight": 8,
+  "once": false,
+  "minDay": 3,
+  "places": [],
+  "choices": [
+   {
+    "text": "给他包扎",
+    "req": [
+     "item:bandage>=2"
+    ],
+    "effect": {
+     "sanity": 8,
+     "xp": 10,
+     "flag_wounded_help": 1
+    },
+    "items": {
+     "bandage": -2,
+     "antiseptic": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你蹲下的时候，他一直盯着你的手。包扎完，他告诉你一个地方，说那里有很多药。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问他从哪来",
+    "req": [],
+    "effect": {
+     "sanity": -3,
+     "xp": 4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他说了个名字，然后开始发抖。你退后两步，握紧了刀。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "结束他的痛苦",
+    "req": [],
+    "effect": {
+     "sanity": -12,
+     "xp": 6
+    },
+    "items": {
+     "photo": 1,
+     "bandage": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你下手很快。他没有反抗。你在他口袋里找到一张全家福。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_cold",
+  "title": "寒潮",
+  "text": "温度一夜之间掉了十几度。你呼出的气在窗上结了霜。",
+  "tag": "daily",
+  "weight": 7,
+  "once": false,
+  "minDay": 6,
+  "places": [],
+  "choices": [
+   {
+    "text": "烧掉旧家具取暖",
+    "req": [
+     "item:wood>=3"
+    ],
+    "effect": {
+     "warmth": 20,
+     "hp": -3
+    },
+    "items": {
+     "wood": -3
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "屋子里终于暖了，但浓烟让你咳了一整夜。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "把所有衣服穿上",
+    "req": [],
+    "effect": {
+     "warmth": 6,
+     "fatigue": -8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你裹成一只球，还是冷。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "抱在一起睡",
+    "req": [
+     "companions>=1"
+    ],
+    "effect": {
+     "warmth": 18,
+     "sanity": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "同伴们的体温让你想起很久以前的事。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_horde",
+  "title": "尸潮经过",
+  "text": "它们从街口涌过来，像一条没有尽头的河。你听见几百双脚同时摩擦地面。\n你们躲在二楼，没人敢呼吸。",
+  "tag": "daily",
+  "weight": 5,
+  "once": false,
+  "minDay": 8,
+  "places": [],
+  "choices": [
+   {
+    "text": "等它们过去",
+    "req": [],
+    "effect": {
+     "fatigue": 14,
+     "sanity": -6,
+     "xp": 12
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "三个小时。你数着自己的心跳，数到忘了数。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "从后窗撤走",
+    "req": [],
+    "effect": {
+     "fatigue": 10,
+     "sanity": -2,
+     "xp": 14
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你们从消防梯下去，绕了两条街。回头时，那栋楼已经被淹没了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "开枪引开它们",
+    "req": [
+     "item:ammo_556>=2"
+    ],
+    "effect": {
+     "sanity": -8,
+     "xp": 16,
+     "military": 1
+    },
+    "items": {
+     "ammo_556": -2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "枪声把整条河引向了另一个方向。你们活了下来，但别的地方会死人。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_gunshot_night",
+  "title": "夜里的枪声",
+  "text": "两枪，间隔很久，然后是一声很长的惨叫。\n枪声在你据点北边，大概三条街。",
+  "tag": "daily",
+  "weight": 6,
+  "once": false,
+  "minDay": 5,
+  "places": [],
+  "choices": [
+   {
+    "text": "过去看看",
+    "req": [],
+    "effect": {
+     "sanity": -6,
+     "xp": 12
+    },
+    "items": {
+     "pistol_9mm": 1,
+     "ammo_9mm": 3
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在一家洗衣店里找到两具尸体，一具是人的，一具曾经是人的。柜台上有一把没子弹的手枪。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "守住据点",
+    "req": [],
+    "effect": {
+     "fatigue": 8,
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把所有人叫起来，守到天亮。什么也没发生，但没人睡得着。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "趁乱去搜刮",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {
+     "bandage": 2,
+     "pills_pain": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你摸黑进了隔壁的药店，手一直在抖，但收获不错。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_winter",
+  "title": "第一场雪",
+  "text": "雪落下来的时候，所有人都停下了手里的活。\n它很干净，盖住了血、灰和尸体。半小时后，雪下面开始动。",
+  "tag": "daily",
+  "weight": 6,
+  "once": false,
+  "minDay": 30,
+  "places": [],
+  "choices": [
+   {
+    "text": "加固据点，准备过冬",
+    "req": [
+     "day>=40"
+    ],
+    "effect": {
+     "warmth": 10,
+     "sanity": 4,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你们把窗户钉死，把食物重新分配。冬天会很长。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "出去找燃料",
+    "req": [],
+    "effect": {
+     "fatigue": 14,
+     "warmth": -6
+    },
+    "items": {
+     "wood": 4,
+     "fuel": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在雪里走了半天，回来时鞋湿透了，但背上多了一捆木头。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "坐在雪里，什么都不做",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "warmth": -10,
+     "xp": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你看着雪，想起某个冬天，有人在厨房里喊你吃饭。你决定再活一天。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_starving",
+  "title": "饥饿",
+  "text": "你已经两天没吃东西了。眼前偶尔会闪过一些不存在的光点。",
+  "tag": "daily",
+  "weight": 8,
+  "once": false,
+  "minDay": 4,
+  "places": [],
+  "choices": [
+   {
+    "text": "吃光最后的存粮",
+    "req": [
+     "item:crackers>=1"
+    ],
+    "effect": {
+     "hunger": 40,
+     "sanity": 4
+    },
+    "items": {
+     "crackers": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你撕开最后一包压缩饼干，吃得很慢。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "煮皮带",
+    "req": [],
+    "effect": {
+     "hunger": 16,
+     "sanity": -4,
+     "fatigue": -4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "汤是黑的，味道像橡胶。你还是喝了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "去翻垃圾桶",
+    "req": [],
+    "effect": {
+     "hunger": 18,
+     "sanity": -8
+    },
+    "items": {
+     "cereal": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你翻到了半盒发霉的麦片，挑出了还能吃的部分。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_conv_clerk",
+  "title": "收银台后面",
+  "text": "收银台后面坐着一具尸体，工牌上写着「小林」，手里还攥着一把零钱。\n收银机是开的，里面没有钱，只有一张便条：「对不起，我先走了。」",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "convenience"
+  ],
+  "choices": [
+   {
+    "text": "合上他的眼睛",
+    "req": [],
+    "effect": {
+     "sanity": 4,
+     "xp": 6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你伸手的时候发现他的眼睑已经僵了。你试了两次才合上。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拿走工牌和零钱",
+    "req": [],
+    "effect": {
+     "sanity": -3
+    },
+    "items": {
+     "scrap": 1,
+     "photo": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "零钱在口袋里响了一路。你不知道自己为什么要拿。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "翻收银台下面",
+    "req": [],
+    "effect": {
+     "xp": 8
+    },
+    "items": {
+     "canned_food": 3,
+     "lockpick": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在下面摸到一个铁盒，里面是三罐罐头和一把钥匙。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_apartment_family",
+  "title": "402 室",
+  "text": "门没锁。客厅里摆着三副碗筷，饭菜早就烂成了黑色的壳。\n卧室门关着，门缝里塞着毛巾。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "apartment"
+  ],
+  "choices": [
+   {
+    "text": "打开卧室门",
+    "req": [],
+    "effect": {
+     "sanity": -14,
+     "xp": 8
+    },
+    "items": {
+     "pills_pain": 2,
+     "child_drawing": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "床上有两具抱在一起的尸体，一大一小。床头放着一瓶安眠药，已经空了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "不打开，退出去",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你带上门，在门口站了一会儿。楼道里的声控灯亮了又灭。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "搜客厅",
+    "req": [],
+    "effect": {},
+    "items": {
+     "ammo_9mm": 4,
+     "cigarettes": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在电视柜里找到一盒子弹和半条香烟。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_school_class",
+  "title": "三年二班",
+  "text": "黑板上还留着作业：写一封信给二十年后的自己。\n课桌上摆着三十七封信，都用铅笔画了装饰。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "school"
+  ],
+  "choices": [
+   {
+    "text": "读几封",
+    "req": [],
+    "effect": {
+     "sanity": -6,
+     "xp": 10
+    },
+    "items": {
+     "child_drawing": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "大部分孩子想当宇航员、老师、开面馆的。有一封只写了一句话：”我希望妈妈不要死。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "把信收好",
+    "req": [],
+    "effect": {
+     "sanity": 8
+    },
+    "items": {
+     "paper": 3
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你找了根绳子把信捆起来，放进背包最底层。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在黑板背面留下自己的字",
+    "req": [],
+    "effect": {
+     "sanity": 6,
+     "xp": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你写：「我还在。」粉笔断了两次。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_pharmacy_back",
+  "title": "药房后间",
+  "text": "后间的门虚掩着，里面有人在哼歌。\n调子很轻，像是怕吵醒谁。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 2,
+  "places": [
+   "pharmacy",
+   "clinic"
+  ],
+  "choices": [
+   {
+    "text": "推门进去",
+    "req": [],
+    "effect": {
+     "flag_met_nurse": 1,
+     "sanity": 4,
+     "whitecrow": 1
+    },
+    "items": {
+     "bandage": 2,
+     "antibiotics": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "一个穿白大褂的年轻女人正在分装药片。她抬头看你，眼睛很红。”你是来抢药的？“她问。”你要什么，我给你。别动手。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在门口退走",
+    "req": [],
+    "effect": {
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退出去的时候踩到了一块玻璃。歌声停了。你快步离开。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "等她离开再进去",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {
+     "bandage": 3,
+     "pills_pain": 2,
+     "antibiotics": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "半小时后她背着包走了。你进去搜了一圈，找到不少东西。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_police_gun",
+  "title": "证物室",
+  "text": "铁柜里锁着几把证物枪，柜门被撬开了一半。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "police_box"
+  ],
+  "choices": [
+   {
+    "text": "用撬棍撬开",
+    "req": [
+     "item:toolbox>=1"
+    ],
+    "effect": {
+     "xp": 10
+    },
+    "items": {
+     "pistol_9mm": 1,
+     "ammo_9mm": 6
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "柜门吱呀一声开了。里面只剩一把手枪和两个弹匣。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用手掰",
+    "req": [],
+    "effect": {
+     "hp": -6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你的手在流血，柜门纹丝不动。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "放弃，去别处找",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你听见楼上有动静，决定不在这里耗。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_church_candle",
+  "title": "告解室",
+  "text": "告解室的帘子后面有人。你看见一只手垂下来，指甲全黑了。\n但另一个隔间里，还有呼吸声。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "church"
+  ],
+  "choices": [
+   {
+    "text": "先看呼吸的那个",
+    "req": [],
+    "effect": {
+     "flag_met_priest": 1,
+     "sanity": 4
+    },
+    "items": {
+     "book": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "隔间里缩着一个瘦弱的男人，怀里抱着一本圣经。他抬头看见你，第一句话是：”你也是来躲的？“",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拉开帘子",
+    "req": [],
+    "effect": {
+     "sanity": -5,
+     "xp": 6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "那只手动了。你后退两步，铃铛在门框上响了一声。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "点燃蜡烛",
+    "req": [],
+    "effect": {
+     "sanity": -8,
+     "xp": 10
+    },
+    "items": {
+     "cigar": 1,
+     "whiskey": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "火光让整个教堂亮起来。你看见长椅上摆着一排排鞋子，都是小孩子的。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_supermarket_freezer",
+  "title": "冷库",
+  "text": "冷库门被从里面顶住了。门把手上结着霜，还有几道抓痕。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "supermarket"
+  ],
+  "choices": [
+   {
+    "text": "打开门",
+    "req": [],
+    "effect": {
+     "sanity": -8,
+     "xp": 10
+    },
+    "items": {
+     "canned_food": 3,
+     "spam": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "一股白雾涌出来。里面站着四个人，冻得像雕塑，姿势却都是站着的。你关上门，锁好。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "从通风口爬进去",
+    "req": [],
+    "effect": {
+     "fatigue": 12,
+     "sanity": -6
+    },
+    "items": {
+     "canned_food": 4,
+     "jerky": 1,
+     "work_boots": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在里面找到一箱罐头，还有一具蜷成一团的尸体，身上穿着写着别人名字的工服。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "不碰它",
+    "req": [],
+    "effect": {
+     "sanity": 2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你绕开冷库。这个决定让你活得更久。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_metro_dark",
+  "title": "地铁隧道",
+  "text": "隧道深处有光，一闪一闪，像有人在换灯泡。\n这里离地面三十米，空气是暖的。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "subway_station",
+   "subway_hub"
+  ],
+  "choices": [
+   {
+    "text": "朝光走",
+    "req": [],
+    "effect": {
+     "sanity": 6,
+     "xp": 12
+    },
+    "items": {
+     "water_bottle": 4,
+     "canned_food": 2,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你走了二十分钟，找到一处用应急灯照明的避难室。桌上摆着六罐水，一张纸条：”祝你比我走运。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "留在原地听",
+    "req": [],
+    "effect": {
+     "xp": 10,
+     "flag_metro_signal": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你听见光的方向传来金属敲击声，三短一长，重复。是有人在发信号。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "返回地面",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你不想在地底遇到任何东西。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_gas_pump",
+  "title": "没有油的加油站",
+  "text": "油枪全被拔了，地上有柴油的痕迹。\n办公室的灯还亮着，里面有人在翻抽屉。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "gas_station",
+   "rest_stop"
+  ],
+  "choices": [
+   {
+    "text": "悄悄退走",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退回车里，听见抽屉被拉开又合上的声音。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "敲门",
+    "req": [
+     "item:water_bottle>=5"
+    ],
+    "effect": {
+     "flag_met_mechanic": 1,
+     "xp": 8
+    },
+    "items": {
+     "water_bottle": -5,
+     "fuel": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "里面的人骂了一句，然后门开了一条缝。是个戴着脏围裙的中年人，手里握着扳手。”要油？五罐水换一桶。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "等他走",
+    "req": [],
+    "effect": {
+     "sanity": -2
+    },
+    "items": {
+     "fuel": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他在里面待了很久，最后从后窗走了。你进去找到半桶柴油。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_apartment_stair",
+  "title": "楼梯间的涂鸦",
+  "text": "从一楼到六楼，墙上写满了同一句话：\"不要开 602。\"。\n字迹从工整变得潦草，最后几层几乎是划出来的。",
+  "tag": "encounter",
+  "weight": 8,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "apartment"
+  ],
+  "choices": [
+   {
+    "text": "打开 602",
+    "req": [],
+    "effect": {
+     "sanity": -7,
+     "xp": 8
+    },
+    "items": {
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "门里是空的。墙上有血，地上有拖痕，一直延伸到阳台。你听见头顶有呼吸声。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "听话，不打开",
+    "req": [],
+    "effect": {
+     "sanity": -2,
+     "fatigue": 6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你从 601 的阳台翻了下去。脚落地的时候，你听见 602 的门开了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在楼下等",
+    "req": [],
+    "effect": {
+     "xp": 4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你等了半小时，什么也没发生。你选择相信那行字。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_warehouse_container",
+  "title": "集装箱",
+  "text": "一整排集装箱，只有中间那扇门是开的。\n里面有光，还有人说话，声音很小，像在开会。",
+  "tag": "encounter",
+  "weight": 11,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "warehouse",
+   "freight_yard"
+  ],
+  "choices": [
+   {
+    "text": "靠近听",
+    "req": [],
+    "effect": {
+     "xp": 12,
+     "flag_raider_plan": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他们在讨论怎么攻下附近的避难所。你记下了他们的数量：七个。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "从背后绕过去",
+    "req": [],
+    "effect": {
+     "fatigue": 8
+    },
+    "items": {
+     "mre": 2,
+     "military_biscuit": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你从集装箱缝隙里穿过去，在另一边找到一个没锁的箱子，里面是军用口粮。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "扔个燃烧瓶进去",
+    "req": [
+     "item:molotov>=1"
+    ],
+    "effect": {
+     "sanity": -12,
+     "xp": 20,
+     "vulture": -6
+    },
+    "items": {
+     "molotov": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "火光冲起来的时候你已经在跑了。身后传来惨叫，有人类的声音。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_factory_machine",
+  "title": "还在运转的机器",
+  "text": "一台冲压机还在工作，每四秒砸一下，砸了大概四十天。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "factory"
+  ],
+  "choices": [
+   {
+    "text": "关掉它",
+    "req": [],
+    "effect": {
+     "sanity": 4,
+     "xp": 10
+    },
+    "items": {
+     "scrap": 3,
+     "steel_plate": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你拉下电闸，世界突然安静得让你耳鸣。你在机器下面找到半截袖子。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "利用它做陷阱",
+    "req": [],
+    "effect": {
+     "xp": 14,
+     "fatigue": 8,
+     "flag_factory_trap": 1
+    },
+    "items": {
+     "steel_plate": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你花了两个小时调整行程，让冲压机对着门口。今晚能睡个好觉。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拆零件",
+    "req": [],
+    "effect": {
+     "fatigue": 10
+    },
+    "items": {
+     "copper": 3,
+     "wire": 3,
+     "spring": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你拆下电机和铜线，手上全是油。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_chem_leak",
+  "title": "泄漏",
+  "text": "绿色气体从破裂的管道里慢慢渗出来，贴着地面流动。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "chem_plant"
+  ],
+  "choices": [
+   {
+    "text": "戴上面具进去",
+    "req": [
+     "item:gas_mask>=1"
+    ],
+    "effect": {
+     "infection": 5,
+     "fatigue": 8
+    },
+    "items": {
+     "chemical": 3,
+     "filter_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "面具里全是自己的呼吸声。你摸到一排试剂瓶，塞进包里就走。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用湿布捂住口鼻冲进去",
+    "req": [],
+    "effect": {
+     "hp": -12,
+     "infection": 6
+    },
+    "items": {
+     "chemical": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你憋了四十秒，出来的时候咳得跪在地上。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "绕开",
+    "req": [],
+    "effect": {
+     "fatigue": 4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你从围墙外面绕了一大圈。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_water_plant_quiet",
+  "title": "沉淀池",
+  "text": "水面很平静，平静得不对。\n池边有一排鞋，摆得很整齐，鞋头朝外。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "water_plant"
+  ],
+  "choices": [
+   {
+    "text": "看看水里",
+    "req": [],
+    "effect": {
+     "sanity": -9,
+     "xp": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "水底下有很多影子，都保持着站立的姿势。你后退时踩到了什么，水面荡开一圈波纹。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "把鞋收起来",
+    "req": [],
+    "effect": {
+     "sanity": -3
+    },
+    "items": {
+     "work_boots": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你不知道为什么这么做。回去的路上你一直想着那些脚。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "取水",
+    "req": [
+     "item:canteen>=1"
+    ],
+    "effect": {
+     "infection": 2
+    },
+    "items": {
+     "water_dirty": 4
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你灌满了所有容器，烧开之后大概能喝。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_junkyard_crown",
+  "title": "铁王冠",
+  "text": "废料堆的顶端坐着一个巨大的人形，头上戴着一顶用轮毂做成的王冠。\n它没有动。它身边的废铁在动。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 8,
+  "places": [
+   "junkyard"
+  ],
+  "choices": [
+   {
+    "text": "绕开它",
+    "req": [],
+    "effect": {
+     "fatigue": 10,
+     "sanity": -4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你贴着墙走，脚下每一声响都像雷。它始终没有转头。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "爬上废料堆，从另一侧搜刮",
+    "req": [],
+    "effect": {
+     "xp": 16,
+     "sanity": -6
+    },
+    "items": {
+     "light_core": 1,
+     "toolbox": 1,
+     "carbon": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在它背后找到一箱工具，还有一枚核心。它一直看着城市的方向。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "向它开枪",
+    "req": [
+     "item:ammo_762>=3"
+    ],
+    "effect": {
+     "xp": 10,
+     "sanity": -8
+    },
+    "items": {
+     "ammo_762": -3
+    },
+    "fight": "boss_rustking",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "子弹打在它头上，发出金属的声音。它慢慢站了起来。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_tunnel_block",
+  "title": "堵住的隧道",
+  "text": "三辆车撞在一起，把隧道堵死了一半。\n中间的缝隙只能侧身过去，里面很黑。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "tunnel"
+  ],
+  "choices": [
+   {
+    "text": "侧身挤过去",
+    "req": [],
+    "effect": {
+     "fatigue": 12,
+     "sanity": -6,
+     "xp": 12
+    },
+    "items": {
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在黑暗里走了很久，感觉有东西碰到了你的腿，但你没有低头看。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "从车顶翻过去",
+    "req": [],
+    "effect": {
+     "hp": -10,
+     "fatigue": 6
+    },
+    "items": {
+     "scrap": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "车顶锈得厉害，你踩穿了一块，小腿被划了一道。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "炸开它",
+    "req": [
+     "item:pipe_bomb>=1"
+    ],
+    "effect": {
+     "hp": -6,
+     "fatigue": -4,
+     "xp": 14
+    },
+    "items": {
+     "pipe_bomb": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "爆炸声在隧道里滚了很久。路通了，但你的耳朵嗡了一整天。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_farm_well",
+  "title": "井",
+  "text": "井水很清，绳子还在。你打上来一桶，水面上浮着一枚戒指。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "farm"
+  ],
+  "choices": [
+   {
+    "text": "喝一口",
+    "req": [],
+    "effect": {
+     "thirst": 34,
+     "sanity": 6
+    },
+    "items": {
+     "wedding_ring": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "水很甜。你已经很久没喝过这么甜的东西了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "先把水烧开",
+    "req": [],
+    "effect": {
+     "thirst": 26,
+     "fatigue": 6
+    },
+    "items": {
+     "water_boiled": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你花了半小时生火。喝的时候，天已经黑了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "下到井里看看",
+    "req": [],
+    "effect": {
+     "fatigue": 14,
+     "sanity": -4,
+     "xp": 12
+    },
+    "items": {
+     "map_fragment": 1,
+     "lockpick": 1,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "井壁上有一个洞，洞里塞着铁盒。你打开它，里面是一把钥匙和半张地图。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_barn_loft",
+  "title": "干草堆",
+  "text": "干草堆得比人高。你听见里面有呼吸声，很轻。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "barn"
+  ],
+  "choices": [
+   {
+    "text": "用叉子戳一下",
+    "req": [],
+    "effect": {
+     "flag_met_conor": 1,
+     "sanity": 4,
+     "xp": 8
+    },
+    "items": {
+     "candy": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "草堆里跳出一个男孩，十三四岁，手里握着一把折叠刀。他看见你，刀掉在了地上。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "说「我走了」",
+    "req": [],
+    "effect": {
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退出去的时候，草堆动了一下。你假装没看见。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在草堆边上放一罐食物",
+    "req": [],
+    "effect": {
+     "sanity": 8,
+     "xp": 6
+    },
+    "items": {
+     "canned_food": -1,
+     "ammo_9mm": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "第二天你回来，罐头空了，旁边摆着一颗子弹。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_lake_boat",
+  "title": "船",
+  "text": "栈桥尽头拴着一条小船，船里有半桶水和一支鱼竿。\n对岸的雾里，有什么东西在移动。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "lake_dock"
+  ],
+  "choices": [
+   {
+    "text": "划过去",
+    "req": [],
+    "effect": {
+     "fatigue": 10,
+     "sanity": -4,
+     "xp": 12
+    },
+    "items": {
+     "fishing_rod": 1,
+     "water_bottle": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "雾散开的时候，你看见岸边停着十几条船，全都空着。你划了回去。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拿了鱼竿就走",
+    "req": [],
+    "effect": {},
+    "items": {
+     "fishing_rod": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你不想知道对岸有什么。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在船上钓一会儿",
+    "req": [],
+    "effect": {
+     "sanity": -2,
+     "xp": 6
+    },
+    "items": {
+     "rat_meat": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你钓上来一条你叫不出名字的鱼。它有三只眼睛。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_campsite_tent",
+  "title": "帐篷里的日记",
+  "text": "帐篷里睡袋还是铺开的，旁边放着一本日记。\n最后一页写着：\"今天听见了狗叫。如果明天还听得见，就说明附近还有活人。\"。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "campsite"
+  ],
+  "choices": [
+   {
+    "text": "带上日记",
+    "req": [],
+    "effect": {
+     "sanity": 4,
+     "xp": 6
+    },
+    "items": {
+     "book": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把它塞进背包。也许有一天能读到结尾。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在附近搜一圈",
+    "req": [],
+    "effect": {},
+    "items": {
+     "canned_food": 2,
+     "work_boots": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你找到一把折叠铲和几个罐头，还有一双晒干的袜子。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "睡在这里",
+    "req": [],
+    "effect": {
+     "fatigue": -20,
+     "sanity": 4
+    },
+    "items": {
+     "sleeping_bag": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你躺进别人的睡袋，闻着陌生的味道，很快就睡着了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_orchard_ferment",
+  "title": "发酵的果园",
+  "text": "落果发酵的味道飘得很远。你听见有很多东西在果树林里动。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "orchard"
+  ],
+  "choices": [
+   {
+    "text": "慢慢摘",
+    "req": [],
+    "effect": {},
+    "items": {
+     "wild_berry": 4,
+     "honey": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你摘了满满一袋，没惊动任何东西。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "摇树",
+    "req": [],
+    "effect": {
+     "xp": 8
+    },
+    "items": {
+     "wild_berry": 6
+    },
+    "fight": "hound_pack",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "果子像雨一样落下来。也把七八个影子引了过来。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "不摘了",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退了出去。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_quarry_blast",
+  "title": "采石场",
+  "text": "爆破员的安全日志还挂在墙上，最后一页写着：\"明天最后一次爆破。\"。\n下面画了一个箭头，指向工具箱。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "quarry"
+  ],
+  "choices": [
+   {
+    "text": "打开工具箱",
+    "req": [],
+    "effect": {
+     "xp": 12
+    },
+    "items": {
+     "gunpowder": 3,
+     "pipe_bomb": 2,
+     "book": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "里面是炸药、雷管和一本手写笔记。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "按笔记找爆破点",
+    "req": [],
+    "effect": {
+     "fatigue": 12,
+     "xp": 16
+    },
+    "items": {
+     "fuel": 2,
+     "steel_plate": 2,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在标记的位置挖出一个铁箱，里面是工程队留下的补给。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "离开",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你听见山壁那边有石头滚落的声音。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_apiary_swarm",
+  "title": "蜂群",
+  "text": "蜂箱还活着。蜜蜂在空气里织出一层黑纱。\n其中一只落在你手背上，停了一会儿，没有蜇你。",
+  "tag": "encounter",
+  "weight": 9,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "apiary"
+  ],
+  "choices": [
+   {
+    "text": "慢慢取蜜",
+    "req": [],
+    "effect": {
+     "sanity": 10
+    },
+    "items": {
+     "honey": 2,
+     "wax": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你割下一块蜂巢，甜味在嘴里化开。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用烟熏",
+    "req": [],
+    "effect": {
+     "fatigue": 6
+    },
+    "items": {
+     "honey": 3,
+     "wax": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你点了湿草，烟雾让蜂群安静下来。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "烧掉蜂箱",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {
+     "honey": 1,
+     "charcoal": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "火光里有密集的爆裂声。你不想在这里遇到别的。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_checkpoint_gate",
+  "title": "检查站",
+  "text": "沙袋后面有人喊话：\"停下。把武器放在地上，往前走十步。\"。\n枪口一直对着你。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 3,
+  "places": [
+   "checkpoint"
+  ],
+  "choices": [
+   {
+    "text": "照做",
+    "req": [],
+    "effect": {
+     "military": 4,
+     "sanity": 4,
+     "xp": 10,
+     "flag_checkpoint_pass": 1
+    },
+    "items": {
+     "water_bottle": 2,
+     "military_biscuit": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他们搜了身，登记了名字，给了你一瓶水和一张过期通行条。”你们现在归我们管了，“中士说。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "谈判",
+    "req": [],
+    "effect": {
+     "military": 2,
+     "xp": 12,
+     "sanity": 2
+    },
+    "items": {
+     "mre": 1,
+     "ammo_556": 5
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "中士听完你的话，沉默了很久。”灯塔？我们三个月前就放弃那条线了。“他给了你一些补给，让你走。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "掉头就走",
+    "req": [],
+    "effect": {
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你听见身后有人骂了一句，但没有开枪。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_armory_door",
+  "title": "第三道门",
+  "text": "门上有一个读卡器，红灯在闪。\n门缝里飘出枪油和铁锈的味道。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 4,
+  "places": [
+   "armory"
+  ],
+  "choices": [
+   {
+    "text": "刷卡",
+    "req": [
+     "item:military_keycard>=1"
+    ],
+    "effect": {
+     "xp": 14
+    },
+    "items": {
+     "rifle_ar": 1,
+     "ammo_556": 12,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "绿灯亮起。门后面是一排空枪架，只有最里面那层还放着东西。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用焊枪切",
+    "req": [
+     "item:welder>=1"
+    ],
+    "effect": {
+     "fatigue": 14
+    },
+    "items": {
+     "rifle_ak": 1,
+     "ammo_762": 8
+    },
+    "fight": "armored_swat",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "火花在昏暗里很亮。门开了，但也把附近的东西引来了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "离开",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你没有钥匙，也不想用手去撬。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_field_hospital_ward",
+  "title": "7 号病床",
+  "text": "7 号床上躺着一个人，胸口还在起伏。\n他的手腕上系着红色标签，上面写着「实验组 B」。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "field_hospital"
+  ],
+  "choices": [
+   {
+    "text": "救他",
+    "req": [
+     "item:bandage>=1"
+    ],
+    "effect": {
+     "flag_met_deserter": 1,
+     "sanity": 5,
+     "xp": 14
+    },
+    "items": {
+     "bandage": -1,
+     "antibiotics": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他醒来后看着你，第一句话是：”别让白鸦找到我。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拔掉他的输液管",
+    "req": [],
+    "effect": {
+     "sanity": -14,
+     "xp": 8
+    },
+    "items": {
+     "military_keycard": 1,
+     "lab_sample": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他很快就不动了。你在他枕头下面找到一张门禁卡。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "安静地离开",
+    "req": [],
+    "effect": {
+     "sanity": -3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退出病房，把门带上。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_radar_console",
+  "title": "雷达控制台",
+  "text": "屏幕上有一个缓慢移动的亮点，每转一圈就靠近一点。\n桌上有半杯冷掉的咖啡。",
+  "tag": "encounter",
+  "weight": 11,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "radar_station"
+  ],
+  "choices": [
+   {
+    "text": "调整天线",
+    "req": [],
+    "effect": {
+     "xp": 12,
+     "sanity": -2,
+     "flag_radar_clear": 1
+    },
+    "items": {
+     "radio_part": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "亮点消失了。你希望那是因为它走了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "记录坐标",
+    "req": [],
+    "effect": {
+     "xp": 16,
+     "flag_lighthouse_known": 1
+    },
+    "items": {
+     "map_fragment": 1,
+     "radio_codebook": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把坐标抄下来，发现那个点在灯塔方向。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "对着屏幕开枪",
+    "req": [],
+    "effect": {
+     "sanity": -5
+    },
+    "items": {
+     "ammo_9mm": -2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "玻璃碎了一地。亮点还在，只是不那么清楚了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_lab_decon",
+  "title": "消毒间",
+  "text": "你按下按钮，喷头喷出白色的雾，味道像医院。\n玻璃窗外，有一个穿白大褂的人正看着你，一动不动。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "lab_whitecrow"
+  ],
+  "choices": [
+   {
+    "text": "走出去和他说话",
+    "req": [],
+    "effect": {
+     "whitecrow": 3,
+     "xp": 14,
+     "flag_whitecrow_contact": 1
+    },
+    "items": {
+     "lab_sample": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他开口的第一句话是：”你有抗体吗？“ 你摇头。他点点头，转身走了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "等雾气散尽再走",
+    "req": [],
+    "effect": {
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你等了十分钟。窗外已经没人了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "从另一扇门离开",
+    "req": [],
+    "effect": {
+     "xp": 10
+    },
+    "items": {
+     "blood_sample": 1,
+     "chemical": 2,
+     "antibiotics": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你绕过走廊，在储藏室找到几个冷冻箱。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_bunker_generator",
+  "title": "掩体发电机",
+  "text": "柴油机还在响，声音很稳。\n控制台上贴着一张纸：\"燃料耗尽前，请撤离。已停机 46 天。\"。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "bunker"
+  ],
+  "choices": [
+   {
+    "text": "加油，重启主电源",
+    "req": [
+     "item:fuel>=2"
+    ],
+    "effect": {
+     "xp": 20,
+     "sanity": 6,
+     "flag_bunker_online": 1
+    },
+    "items": {
+     "fuel": -2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "灯一盏接一盏亮起来，整个掩体都在嗡鸣。通风也恢复了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拆发电机零件",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "xp": 14
+    },
+    "items": {
+     "generator_part": 2,
+     "copper": 3,
+     "wire": 3
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你拆下需要的东西。柴油机的声音渐渐慢下来，最后停了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "搜宿舍区",
+    "req": [],
+    "effect": {
+     "xp": 10
+    },
+    "items": {
+     "photo": 1,
+     "light_core": 1,
+     "military_keycard": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在铁柜里找到一封没寄出的家书，和一把钥匙。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_train_choice",
+  "title": "列车长",
+  "text": "列车的最前面，驾驶室门开着。\n一个穿铁路制服的男人坐在里面，脖子上挂着一串钥匙，膝盖上放着一把猎枪。\n\"这列车归我，\"他说，\"你想去哪，拿东西来换。\"。",
+  "tag": "encounter",
+  "weight": 16,
+  "once": true,
+  "minDay": 6,
+  "places": [
+   "supply_train"
+  ],
+  "choices": [
+   {
+    "text": "用手表换一次搭车",
+    "req": [
+     "item:watch>=1"
+    ],
+    "effect": {
+     "fatigue": -10,
+     "xp": 16,
+     "flag_train_ride": 1
+    },
+    "items": {
+     "watch": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他看了看表，笑了。”成交。“车开了三个小时，把你送到了城市边缘。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用燃料换车厢物资",
+    "req": [
+     "item:fuel>=2"
+    ],
+    "effect": {
+     "xp": 12
+    },
+    "items": {
+     "fuel": -2,
+     "mre": 3,
+     "ammo_762": 8
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他让你搬了两箱东西下车，还多给了你一个弹匣。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拒绝，离开",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他在你身后说：”你会回来的。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "动手抢列车",
+    "req": [],
+    "effect": {
+     "xp": 10
+    },
+    "items": {},
+    "fight": "boss_trainman",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他叹了口气，把猎枪抬起来。”我在这里等了半年，就为了不被人抢。“。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_comm_tower_climb",
+  "title": "塔顶",
+  "text": "你爬到一半，风大得几乎站不稳。\n塔顶的灯还在闪，频率很慢，像心跳。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "comm_tower"
+  ],
+  "choices": [
+   {
+    "text": "继续爬",
+    "req": [],
+    "effect": {
+     "fatigue": 20,
+     "sanity": -4,
+     "xp": 20
+    },
+    "items": {
+     "radio_part": 2,
+     "light_core": 1,
+     "binoculars": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "塔顶有一具穿着安全绳的尸体，怀里抱着一个工具箱。你取下箱子，向他点了点头。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在平台休息",
+    "req": [],
+    "effect": {
+     "fatigue": -12,
+     "sanity": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你坐在铁梯上，看着整座城市。它很安静，安静得像一张照片。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "下塔",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你不想在这么高的地方遇到夜行者。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_ammo_tripwire",
+  "title": "绊雷",
+  "text": "你的脚停在半空。\n一根鱼线横在门框上，连着墙上的手雷。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "ammo_depot",
+   "bunker",
+   "checkpoint"
+  ],
+  "choices": [
+   {
+    "text": "剪断它",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "xp": 12
+    },
+    "items": {
+     "grenade": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你掏出钳子，手很稳。线断了。你在地上坐了很久。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "从下面爬过去",
+    "req": [],
+    "effect": {
+     "fatigue": 10,
+     "xp": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你趴在地上，一点一点挪过去，衣服全湿透了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "退出去",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退了三步，转身就跑。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_cityhall_vault",
+  "title": "市政厅金库",
+  "text": "地下室的铁门上贴着封条，日期是爆发前三天。\n门缝里有钱的味道，还有别的味道。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "city_hall"
+  ],
+  "choices": [
+   {
+    "text": "开门",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "xp": 14
+    },
+    "items": {
+     "jewelry": 2,
+     "gold_ring": 2,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "里面堆着成捆的现金和三个箱子。箱子是打开的，里面是空的。地上有拖痕。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "找通风管进去",
+    "req": [],
+    "effect": {
+     "fatigue": 14
+    },
+    "items": {
+     "radio_codebook": 1,
+     "hard_drive": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在管道里爬了十几米，出来的时候浑身是灰。你找到了一份文件。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "不进去",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你听见里面有人在数钱。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_stadium_horde",
+  "title": "看台",
+  "text": "看台上坐满了人，几万个人，全都朝着球场中央。\n球场中央搭着一个台子，台子上有一张空椅子。",
+  "tag": "encounter",
+  "weight": 16,
+  "once": true,
+  "minDay": 8,
+  "places": [
+   "stadium"
+  ],
+  "choices": [
+   {
+    "text": "悄悄穿过看台",
+    "req": [],
+    "effect": {
+     "sanity": -10,
+     "xp": 20,
+     "fatigue": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你贴着最外圈走，脚下的可乐瓶每一步都在响。没有一张脸转过来。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "走向球场中央",
+    "req": [],
+    "effect": {
+     "sanity": -20,
+     "xp": 30
+    },
+    "items": {},
+    "fight": "boss_mother",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你走上台的时候，所有椅子同时响了一声。椅子上的东西都站了起来。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "走上台，坐上那张椅子",
+    "req": [],
+    "effect": {
+     "sanity": -30,
+     "xp": 30
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "木头很凉。几万个人同时站起来，转向你。你听见自己的名字被念了一遍，用很多种声音。",
+    "logFail": "",
+    "ending": "end_mother"
+   },
+   {
+    "text": "离开体育场",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你不想知道那张椅子是给谁准备的。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_cathedral_ritual",
+  "title": "祭坛",
+  "text": "祭坛上摆着十几枚核心，围成一个圈。\n灰袍牧师站在中间，手里举着针管。\"你来了，\"他说，\"你是最后一个。\"。",
+  "tag": "encounter",
+  "weight": 18,
+  "once": true,
+  "minDay": 6,
+  "places": [
+   "cathedral"
+  ],
+  "choices": [
+   {
+    "text": "听他讲完",
+    "req": [],
+    "effect": {
+     "order": 4,
+     "sanity": -8,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他讲了二十分钟。你听懂了：他要给所有人注射，让灰烬之后的新生开始。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "打掉他手里的针管",
+    "req": [],
+    "effect": {
+     "xp": 20,
+     "sanity": -6
+    },
+    "items": {},
+    "fight": "boss_preacher",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "针管碎了。他笑了。”没关系，“他说，”还有一千支。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拿走核心就走",
+    "req": [],
+    "effect": {
+     "xp": 25,
+     "sanity": -8
+    },
+    "items": {
+     "light_core": 3
+    },
+    "fight": "cultist_zealot",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你抓了三枚核心，转身跑下台阶。身后传来歌声。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "跪下，接受注射",
+    "req": [],
+    "effect": {
+     "sanity": -30,
+     "xp": 40
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "针头刺入颈侧。你听见自己的心跳慢下来，然后听见了别的东西。",
+    "logFail": "",
+    "ending": "end_cult"
+   },
+   {
+    "text": "放下刀，转身离开",
+    "req": [],
+    "effect": {
+     "sanity": 6,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你走出教堂。身后没有脚步声，只有歌声。你走了很远才发现自己在哭。",
+    "logFail": "",
+    "ending": "end_mercy"
+   }
+  ]
+ },
+ {
+  "id": "ev_lighthouse_arrival",
+  "title": "白塔",
+  "text": "门是开着的。楼梯上亮着应急灯，一圈一圈往上。\n塔顶有发电机的声音，还有一个女人在哼歌。\n\"上来吧，\"她说，\"我等你很久了。\"。",
+  "tag": "encounter",
+  "weight": 100,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "lighthouse"
+  ],
+  "choices": [
+   {
+    "text": "交出 6 枚核心",
+    "req": [
+     "item:light_core>=6"
+    ],
+    "effect": {
+     "xp": 100,
+     "sanity": 30,
+     "military": 3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她把核心一枚一枚嵌进控制台。灯塔的光变了颜色，从白变成很淡的蓝。”可以了，“她说，”现在我们可以开始做疫苗了。“。",
+    "logFail": "",
+    "ending": "win_light"
+   },
+   {
+    "text": "交出核心，但要求先见所有人",
+    "req": [
+     "item:light_core>=6"
+    ],
+    "effect": {
+     "xp": 80,
+     "sanity": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你见到了塔里的七个人，包括那个每天念坐标的女人。她比你想的年轻，也更累。",
+    "logFail": "",
+    "ending": "win_stay"
+   },
+   {
+    "text": "烧掉灯塔，让所有人无法再利用它",
+    "req": [
+     "item:fuel>=2"
+    ],
+    "effect": {
+     "sanity": -20,
+     "xp": 60
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把燃料泼在发电机上。火光从塔顶烧到塔底，照亮了整片海。",
+    "logFail": "",
+    "ending": "win_burn"
+   },
+   {
+    "text": "不交核心，离开",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你转身下楼。她在背后说：”你会回来的。“。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_harbor_boat",
+  "title": "港口的船",
+  "text": "一艘渔船还浮在水面上，油箱里有一半油。\n海面上有雾，雾里有灯。",
+  "tag": "encounter",
+  "weight": 20,
+  "once": true,
+  "minDay": 5,
+  "places": [
+   "harbor"
+  ],
+  "choices": [
+   {
+    "text": "发动它，离开这座城市",
+    "req": [
+     "item:fuel>=1"
+    ],
+    "effect": {
+     "xp": 60,
+     "sanity": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "引擎响了三下才点着。你驶进雾里，身后的城市慢慢变小。",
+    "logFail": "",
+    "ending": "win_boat"
+   },
+   {
+    "text": "检查船舱",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "xp": 12
+    },
+    "items": {
+     "canned_food": 3,
+     "fuel": 1,
+     "wedding_ring": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "船舱里有一具尸体，身边放着三箱罐头和一封没写完的信。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "留在岸上",
+    "req": [],
+    "effect": {
+     "sanity": 2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你看着那条船，想了很久，最后把油桶放回了仓库。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_incinerator_furnace",
+  "title": "焚化炉",
+  "text": "炉膛里还有火。传送带在转，上面躺着东西。\n控制室的记录本上写着：\"日处理量：47。\"。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "incinerator"
+  ],
+  "choices": [
+   {
+    "text": "关掉传送带",
+    "req": [],
+    "effect": {
+     "sanity": -10,
+     "xp": 20
+    },
+    "items": {
+     "light_core": 1,
+     "child_drawing": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "机器停了。你在传送带上找到一枚核心，还有一件小小的外套。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "爬上炉顶看看",
+    "req": [],
+    "effect": {
+     "hp": -10,
+     "sanity": -12,
+     "xp": 24
+    },
+    "items": {},
+    "fight": "boss_ash",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "炉口的热浪让你睁不开眼。你看见里面有一个没有被烧完的人，还在动。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "离开",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退了出去。身后的传送带还在响。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_subway_nest",
+  "title": "巢",
+  "text": "隧道尽头是一堵肉做的墙，还在轻轻起伏。\n墙上嵌着很多人的东西：眼镜、鞋、钥匙、一枚核心。",
+  "tag": "encounter",
+  "weight": 16,
+  "once": true,
+  "minDay": 6,
+  "places": [
+   "subway_hub"
+  ],
+  "choices": [
+   {
+    "text": "取下核心",
+    "req": [],
+    "effect": {
+     "xp": 30,
+     "sanity": -15
+    },
+    "items": {
+     "light_core": 1
+    },
+    "fight": "boss_hive",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你伸手的时候，墙睁开了眼。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "放火烧",
+    "req": [
+     "item:molotov>=2"
+    ],
+    "effect": {
+     "sanity": -10,
+     "xp": 26
+    },
+    "items": {
+     "molotov": -2
+    },
+    "fight": "boss_hive",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "火焰沿着墙爬上去，发出很长的声音。你退到站台，看着隧道被照亮。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "悄悄退走",
+    "req": [],
+    "effect": {
+     "sanity": -6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你退出去的时候，墙上的嘴动了一下。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_overpass_jam",
+  "title": "高架上的车流",
+  "text": "车堵得看不到头。有几辆车的后备箱是开的。\n风很大，桥在轻轻晃。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": false,
+  "minDay": 1,
+  "places": [
+   "overpass"
+  ],
+  "choices": [
+   {
+    "text": "翻后备箱",
+    "req": [],
+    "effect": {
+     "fatigue": 8
+    },
+    "items": {
+     "suitcase": 1,
+     "water_bottle": 2,
+     "child_drawing": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你找到一只行李箱、一箱水和一个儿童安全座椅。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "在车流里睡一觉",
+    "req": [],
+    "effect": {
+     "fatigue": -20,
+     "sanity": -3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "车座比床还舒服。你醒来时，天已经黑了，桥下有东西在看你。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "看看桥下",
+    "req": [],
+    "effect": {
+     "sanity": -10,
+     "xp": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "桥下密密麻麻，全是站着的影子。它们都仰着头。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_tv_tower_elevator",
+  "title": "电梯",
+  "text": "电梯停在 17 层和 18 层之间，轿厢里有人。\n那个人正在敲电梯门，一下，一下，很有耐心。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "tv_tower"
+  ],
+  "choices": [
+   {
+    "text": "撬开电梯门",
+    "req": [],
+    "effect": {
+     "xp": 16,
+     "sanity": 6,
+     "flag_tower_voice": 1
+    },
+    "items": {
+     "walkie": 1,
+     "radio_part": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "轿厢里只有一个对讲机，还在响。你按下通话键，对面说：”有人吗？“",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "朝里面喊",
+    "req": [],
+    "effect": {
+     "sanity": -8,
+     "xp": 6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "敲门声停了。然后，整栋楼的应急灯同时灭了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "爬楼梯上去",
+    "req": [],
+    "effect": {
+     "fatigue": 20
+    },
+    "items": {
+     "binoculars": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你爬到塔顶，花了很久。城市在脚下，很安静。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_station_announce",
+  "title": "广播仍在继续",
+  "text": "站内广播还在循环：\"开往北站的 K417 次列车即将进站，请旅客站在黄色安全线内。\"。\n站台上站着很多人，都站在黄线内。",
+  "tag": "encounter",
+  "weight": 14,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "central_station"
+  ],
+  "choices": [
+   {
+    "text": "沿着黄线走",
+    "req": [],
+    "effect": {
+     "sanity": -12,
+     "fatigue": 8,
+     "xp": 16
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你贴着墙走完了整个站台。没有人转头，但你能感觉到所有的眼睛。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "登上列车",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "xp": 14
+    },
+    "items": {
+     "suitcase": 1,
+     "photo": 1,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "车厢里空无一人，座位上摆着一只行李箱和一个信封。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "拉下紧急制动",
+    "req": [],
+    "effect": {
+     "sanity": -20,
+     "xp": 24
+    },
+    "items": {},
+    "fight": "walker_fresh",
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "警铃响彻整个车站。所有站着的人同时转过了头。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_nurse",
+  "title": "白大褂",
+  "text": "她坐在医院的台阶上，膝盖上摊着一本笔记，正在写字。\n听见脚步，她没有抬头，只是说：\"如果你是来抢药的，左边柜子里还有一点。\"。",
+  "tag": "encounter",
+  "weight": 13,
+  "once": true,
+  "minDay": 3,
+  "places": [
+   "pharmacy",
+   "clinic",
+   "field_hospital"
+  ],
+  "choices": [
+   {
+    "text": "我不是来抢东西的",
+    "req": [],
+    "effect": {
+     "flag_met_nurse": 1,
+     "sanity": 6,
+     "whitecrow": 1,
+     "xp": 14
+    },
+    "items": {
+     "bandage": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她终于抬头。她说她叫林晚，以前是急诊科护士。她愿意跟你走，但有个条件：别丢下伤员。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问她关于白鸦",
+    "req": [],
+    "effect": {
+     "xp": 12,
+     "whitecrow": 1,
+     "flag_whitecrow_warning": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她说白鸦在找免疫者，给的报酬很高，但没人回来过。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "抢走她的药",
+    "req": [],
+    "effect": {
+     "sanity": -10,
+     "whitecrow": -4
+    },
+    "items": {
+     "bandage": 3,
+     "antibiotics": 2,
+     "pills_pain": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她没有反抗，只是在你走远之后说了一句：”你会需要我的。“。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_mechanic",
+  "title": "柴油味",
+  "text": "一个戴护目镜的女人从车底下滑出来，手里还攥着扳手。\n\"你踩到我的扳手了，\"她说，\"不过没关系，反正我也修不好它。\"。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 3,
+  "places": [
+   "auto_shop",
+   "factory",
+   "junkyard"
+  ],
+  "choices": [
+   {
+    "text": "帮她修",
+    "req": [],
+    "effect": {
+     "flag_met_mechanic": 1,
+     "sanity": 8,
+     "xp": 16
+    },
+    "items": {
+     "wrench": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你们搞了三个小时，引擎居然点着了。她大笑，声音在厂房里撞来撞去。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问她能不能改装武器",
+    "req": [],
+    "effect": {
+     "xp": 10,
+     "flag_met_mechanic": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她看了看你的家伙，说：”给我一个工作台，我能把它变得比现在更像样。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问她要不要一起走",
+    "req": [],
+    "effect": {
+     "sanity": 4,
+     "flag_met_mechanic": 1,
+     "xp": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她考虑了一下，说：”我在这里等个人。如果他不回来，我就去找你。“。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_sergeant",
+  "title": "中士",
+  "text": "他坐在沙袋上擦枪，脚边放着一壶水和一个相框。\n相框里是两个穿军装的人，其中一个是他。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 4,
+  "places": [
+   "checkpoint",
+   "armory",
+   "field_hospital"
+  ],
+  "choices": [
+   {
+    "text": "向他敬礼",
+    "req": [],
+    "effect": {
+     "flag_met_sergeant": 1,
+     "military": 4,
+     "sanity": 6,
+     "xp": 14
+    },
+    "items": {
+     "mre": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他愣了一下，然后站起来回礼。”好久没人这么干了，“他说，”坐下吧。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问他检查站还有多少人",
+    "req": [],
+    "effect": {
+     "xp": 10,
+     "flag_checkpoint_weak": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他把弹匣装回去，说：”算上我，六个。你看到的那些沙袋，大部分是空的。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "劝他跟你去灯塔",
+    "req": [],
+    "effect": {
+     "sanity": -2,
+     "xp": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他摇头：”我的命令是守住这里。命令还没有解除。“。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_trader",
+  "title": "交易",
+  "text": "一个穿西装的老头在站台边摆了个摊，桌布是国旗，商品只有三样：水、子弹、抗生素。\n\"价格每天变，\"他说，\"今天很便宜。\"。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": false,
+  "minDay": 3,
+  "places": [
+   "central_station",
+   "rest_stop",
+   "checkpoint"
+  ],
+  "choices": [
+   {
+    "text": "用废铁换水",
+    "req": [
+     "item:scrap>=4"
+    ],
+    "effect": {},
+    "items": {
+     "scrap": -4,
+     "water_bottle": 4
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他称了称废铁，递给你四瓶水。”明天涨价，“他说。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用金戒指换抗生素",
+    "req": [
+     "item:gold_ring>=1"
+    ],
+    "effect": {},
+    "items": {
+     "gold_ring": -1,
+     "antibiotics": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他把戒指对着光看了看，收进内袋，推过来两盒药。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用情报换子弹",
+    "req": [
+     "flag:checkpoint_pass>=1"
+    ],
+    "effect": {
+     "military": -2,
+     "vulture": 1
+    },
+    "items": {
+     "ammo_9mm": 8
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你告诉他检查站的巡逻时间。他很满意，给了你两个弹匣。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_hunter",
+  "title": "猎人",
+  "text": "他蹲在树杈上，弓半开，箭头对着你。\n\"别动，\"他说，\"我在确认你有没有被咬。\"。",
+  "tag": "encounter",
+  "weight": 12,
+  "once": true,
+  "minDay": 3,
+  "places": [
+   "orchard",
+   "barn",
+   "lake_dock",
+   "apiary"
+  ],
+  "choices": [
+   {
+    "text": "卷起袖子给他看",
+    "req": [],
+    "effect": {
+     "flag_met_hunter": 1,
+     "xp": 14,
+     "sanity": 4
+    },
+    "items": {
+     "cooked_meat": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他看了很久，然后从树上跳下来，把弓收好。”上来吧，我烤了肉。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "让他别废话",
+    "req": [],
+    "effect": {
+     "hp": -5,
+     "xp": 6,
+     "sanity": -3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他笑了一下，松开弓弦，箭擦着你的耳朵钉在树上。”下次我不会偏。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问他有没有见过灯塔的人",
+    "req": [],
+    "effect": {
+     "xp": 16,
+     "flag_lighthouse_known": 1
+    },
+    "items": {
+     "map_fragment": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他说见过。上个月有一队人往那边走，七个人，最后只剩一个女孩子到塔下。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_kid",
+  "title": "那孩子",
+  "text": "她躲在货架后面，抱着一只脏兮兮的兔子玩偶。\n看见你，她没有跑，只是把玩偶抱得更紧。",
+  "tag": "encounter",
+  "weight": 11,
+  "once": true,
+  "minDay": 4,
+  "places": [
+   "convenience",
+   "school",
+   "apartment",
+   "stadium"
+  ],
+  "choices": [
+   {
+    "text": "蹲下来和她说话",
+    "req": [],
+    "effect": {
+     "flag_met_kid": 1,
+     "sanity": 10,
+     "xp": 10
+    },
+    "items": {
+     "candy": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "她问她妈妈在哪。你说不知道，但可以带她去找。她点了点头，牵住了你的手。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "给她一罐食物就走",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {
+     "canned_food": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你走出一段路回头看，她还站在原地，抱着那只兔子。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "带她回据点",
+    "req": [
+     "companions>=1"
+    ],
+    "effect": {
+     "flag_met_kid": 1,
+     "sanity": 12,
+     "xp": 16
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "路上她一直没说话。到门口时，她问：”这里会有怪物吗？“ 你说不会。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_priest",
+  "title": "灰袍",
+  "text": "他坐在教堂门口，给每个路过的人递一杯水，不管对方是不是活人。\n\"喝吧，\"他说，\"灰烬之后，我们都一样。\"。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 1,
+  "places": [
+   "church",
+   "cathedral"
+  ],
+  "choices": [
+   {
+    "text": "接过水",
+    "req": [],
+    "effect": {
+     "sanity": 8,
+     "order": 2,
+     "xp": 8
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "水是温的，有一点苦。喝完你才想起来，他可能给你下了药。但什么也没有发生。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "问他关于核心",
+    "req": [],
+    "effect": {
+     "xp": 12,
+     "flag_cathedral_core": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他指了指教堂里面，”都在祭坛上。你要的话，自己去拿。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "把水泼在他脸上",
+    "req": [],
+    "effect": {
+     "order": -4,
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他没有生气，只是用袖子擦了擦脸，又倒了一杯。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_meet_dog",
+  "title": "铁钉",
+  "text": "那条狗又出现了，嘴里叼着一只死兔子，放在门口，然后退后两步看着你。",
+  "tag": "encounter",
+  "weight": 8,
+  "once": true,
+  "minDay": 5,
+  "places": [
+   "safehouse",
+   "apartment",
+   "farm",
+   "barn"
+  ],
+  "choices": [
+   {
+    "text": "收下兔子",
+    "req": [],
+    "effect": {
+     "sanity": 8,
+     "hunger": 12,
+     "flag_dog": 1
+    },
+    "items": {
+     "rat_meat": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "它摇了摇尾巴，趴了下来。兔肉很柴，但你没有一个人吃。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "摸摸它的头",
+    "req": [],
+    "effect": {
+     "sanity": 10,
+     "flag_dog": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "它很脏，很瘦，但体温是真实的。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "让它走",
+    "req": [],
+    "effect": {
+     "sanity": -2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "它等了一会儿，叼起兔子走了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_lighthouse_note",
+  "title": "灯塔明信片",
+  "text": "一张明信片，正面是白塔灯塔，背面用铅笔写着：\n\"如果你看到这个，说明我还没死。别走桥。别相信穿白大褂的。带够水。——Z\"。\n邮戳是爆发前两周。",
+  "tag": "story",
+  "weight": 7,
+  "once": true,
+  "minDay": 3,
+  "places": [
+   "apartment",
+   "school",
+   "convenience",
+   "police_box",
+   "rest_stop"
+  ],
+  "choices": [
+   {
+    "text": "收起来",
+    "req": [],
+    "effect": {
+     "sanity": 6,
+     "flag_lighthouse_known": 1,
+     "xp": 10
+    },
+    "items": {
+     "map_fragment": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把它放在内袋，和照片、婚戒、孩子的画放在一起。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "按邮戳地址找过去",
+    "req": [],
+    "effect": {
+     "fatigue": 14,
+     "sanity": -4,
+     "xp": 16
+    },
+    "items": {
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你走了很久，找到一间被烧毁的邮局。灰里有半枚核心。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "丢下",
+    "req": [],
+    "effect": {
+     "sanity": -3
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "纸片飘进积水里，很快沉了下去。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_core_cache",
+  "title": "核心",
+  "text": "一枚灯塔核心卡在排水沟的铁栅上，外壳上有烧焦的痕迹。\n编号是 04。",
+  "tag": "story",
+  "weight": 8,
+  "once": true,
+  "minDay": 3,
+  "places": [
+   "water_plant",
+   "supermarket",
+   "central_station",
+   "city_hall",
+   "armory"
+  ],
+  "choices": [
+   {
+    "text": "取出来",
+    "req": [],
+    "effect": {
+     "xp": 20,
+     "fatigue": 6
+    },
+    "items": {
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "铁栅很沉，你用了撬棍。手上全是铁锈。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "先看看周围",
+    "req": [],
+    "effect": {
+     "xp": 24,
+     "fatigue": 10
+    },
+    "items": {
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你绕着街区走了一圈，确认没有东西跟着。回来时，核心还在。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "放弃",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "太危险了。你继续往前走。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_mercy",
+  "title": "投降",
+  "text": "一个掠夺者跪在你面前，枪扔在一边，双手举过头顶。\n\"我女儿在等药，\"他说，\"我不是故意要杀人的。\"。",
+  "tag": "encounter",
+  "weight": 9,
+  "once": true,
+  "minDay": 5,
+  "places": [
+   "warehouse",
+   "overpass",
+   "checkpoint",
+   "supermarket"
+  ],
+  "choices": [
+   {
+    "text": "放他走",
+    "req": [],
+    "effect": {
+     "sanity": 8,
+     "xp": 14,
+     "mercy": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他爬起来，退着走了很远，才转身跑。你希望他说的是真的。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "杀了他",
+    "req": [],
+    "effect": {
+     "sanity": -14,
+     "xp": 12
+    },
+    "items": {
+     "photo": 1,
+     "ammo_9mm": 6
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在他口袋里找到一张小女孩的照片。你把照片放在他胸口。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "让他带路去他家",
+    "req": [
+     "item:antibiotics>=2"
+    ],
+    "effect": {
+     "sanity": 12,
+     "xp": 20
+    },
+    "items": {
+     "antibiotics": -2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他住在两公里外的一间车库里。他的女儿确实在发烧。你把药给了他们。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "收他当手下",
+    "req": [],
+    "effect": {
+     "sanity": 4,
+     "xp": 16
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他愣了一下，然后低下头。”我叫老周，“他说。”以后你说什么，我做什么。“。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_bunker_seal",
+  "title": "密封门",
+  "text": "防爆门的控制面板还有电。按下红色按钮，门就会永远关上。\n门后面还有人在敲门，敲得很规律。",
+  "tag": "encounter",
+  "weight": 8,
+  "once": true,
+  "minDay": 7,
+  "places": [
+   "bunker"
+  ],
+  "choices": [
+   {
+    "text": "关门",
+    "req": [],
+    "effect": {
+     "sanity": -12,
+     "xp": 30
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "门合上时，敲门声停了。你在门后站了很久，直到应急灯熄灭。",
+    "logFail": "",
+    "ending": "win_bunker"
+   },
+   {
+    "text": "打开门",
+    "req": [],
+    "effect": {
+     "sanity": 14,
+     "xp": 24,
+     "flag_bunker_kids": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "门后面是三个孩子和一个老人。他们已经在里面待了一个月。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "不碰它",
+    "req": [],
+    "effect": {
+     "sanity": -4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你离开了控制室。敲门声还在继续。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_signals_end",
+  "title": "把信号发出去",
+  "text": "通讯塔的控制台还能用。你可以把灯塔的坐标发出去，覆盖所有频道。\n也可能把别的东西引来。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 6,
+  "places": [
+   "comm_tower",
+   "tv_tower"
+  ],
+  "choices": [
+   {
+    "text": "发送坐标",
+    "req": [
+     "item:radio_part>=1"
+    ],
+    "effect": {
+     "xp": 60,
+     "sanity": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你按下按钮，红灯变绿。整个频段都在重复那段话。你不知道会有多少人听见。",
+    "logFail": "",
+    "ending": "win_signal"
+   },
+   {
+    "text": "发送假坐标",
+    "req": [],
+    "effect": {
+     "sanity": -10,
+     "xp": 24
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把坐标改到了城市另一头。做完之后，你在塔顶坐了很久。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "关掉设备",
+    "req": [],
+    "effect": {
+     "sanity": 2
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你拔掉电源。世界安静了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_silence_choice",
+  "title": "安静",
+  "text": "你的耳朵里开始出现一种持续的嗡鸣，像有人在你脑子里拉一根很细的线。\n你很久没有听见过别人叫你的名字了。",
+  "tag": "daily",
+  "weight": 6,
+  "once": true,
+  "minDay": 12,
+  "places": [],
+  "choices": [
+   {
+    "text": "走出去，坐在街上",
+    "req": [
+     "sanity<=30"
+    ],
+    "effect": {
+     "sanity": -20,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你坐在马路中间，看着天。天是灰的，很漂亮。",
+    "logFail": "",
+    "ending": "end_silence"
+   },
+   {
+    "text": "回到营地，找个人说话",
+    "req": [
+     "companions>=1"
+    ],
+    "effect": {
+     "sanity": 20,
+     "xp": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你说了两个小时，语无伦次。对方一直在听。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "用疼痛把自己拉回来",
+    "req": [],
+    "effect": {
+     "hp": -6,
+     "sanity": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你咬破了自己的手。血腥味让你清醒了一点。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_exile",
+  "title": "驱逐",
+  "text": "营地的人围坐成一圈，没有人看你。\n\"我们商量过了，\"老赵说，\"你太危险了。你走吧。\"。",
+  "tag": "daily",
+  "weight": 4,
+  "once": true,
+  "minDay": 12,
+  "places": [],
+  "choices": [
+   {
+    "text": "收拾东西离开",
+    "req": [
+     "companions>=1"
+    ],
+    "effect": {
+     "sanity": -16,
+     "xp": 16
+    },
+    "items": {
+     "canned_food": 3,
+     "water_bottle": 2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他们给了你三天的口粮，然后关上了门。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "争论",
+    "req": [
+     "companions>=1"
+    ],
+    "effect": {
+     "sanity": -6,
+     "xp": 10,
+     "flag_exile_reprieved": 1
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你说了一个小时。最后老赵叹了口气，说：”那就再试一次。“。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "动手",
+    "req": [],
+    "effect": {
+     "sanity": -24,
+     "hp": -12,
+     "xp": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你打倒了两个人。其他人没有还手。你走出门的时候，听见有人在哭。",
+    "logFail": "",
+    "ending": "end_exile"
+   }
+  ]
+ },
+ {
+  "id": "ev_devil_deal",
+  "title": "白鸦的邀请",
+  "text": "一个穿防护服的人站在门口，手里提着一个铝箱。\n\"我们需要你的血，\"他说，\"作为交换，我们可以保证你活到疫苗做出来的那天。\"。",
+  "tag": "encounter",
+  "weight": 9,
+  "once": true,
+  "minDay": 5,
+  "places": [
+   "lab_whitecrow",
+   "field_hospital",
+   "radar_station"
+  ],
+  "choices": [
+   {
+    "text": "跟他走",
+    "req": [],
+    "effect": {
+     "hp": -10,
+     "sanity": -6,
+     "whitecrow": 6,
+     "xp": 40
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "实验室很干净。他们抽了你六管血，然后给了你一张床。你睡了一个没有梦的觉。",
+    "logFail": "",
+    "ending": "win_whitecrow"
+   },
+   {
+    "text": "拒绝",
+    "req": [],
+    "effect": {
+     "whitecrow": -2
+    },
+    "items": {
+     "antibiotics": 2,
+     "serum": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他点了点头，把铝箱放在门口就走了。箱子里是药和一张名片。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "抢他的箱子",
+    "req": [],
+    "effect": {
+     "whitecrow": -20,
+     "sanity": -6
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "他跑得比你想象的快。你只抢到了箱子，里面是空的。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_ash_choice",
+  "title": "灰",
+  "text": "焚化炉的火光照在墙上，影子动得很慢。\n你突然觉得，把一切都烧掉，也许是最干净的做法。",
+  "tag": "encounter",
+  "weight": 6,
+  "once": true,
+  "minDay": 8,
+  "places": [
+   "incinerator"
+  ],
+  "choices": [
+   {
+    "text": "往炉里添燃料",
+    "req": [],
+    "effect": {
+     "sanity": -10,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "火变得更亮了。你看着它，直到眼睛发痛。",
+    "logFail": "",
+    "ending": "end_ash"
+   },
+   {
+    "text": "离开",
+    "req": [],
+    "effect": {
+     "sanity": 4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你转身走出厂房。外面的天开始亮了。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_loop",
+  "title": "隧道尽头",
+  "text": "你第三次走过这个站台。第三次看见同一个广告牌，同一只鞋，同一摊血。\n你确定自己一直在往前走。",
+  "tag": "encounter",
+  "weight": 6,
+  "once": true,
+  "minDay": 9,
+  "places": [
+   "subway_hub",
+   "tunnel",
+   "subway_station"
+  ],
+  "choices": [
+   {
+    "text": "继续走",
+    "req": [],
+    "effect": {
+     "sanity": -24,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "第四次。第五次。你开始数墙上的灯。数到第七盏时，你听见了自己的声音在背后叫你。",
+    "logFail": "",
+    "ending": "end_loop"
+   },
+   {
+    "text": "停下来，坐下",
+    "req": [],
+    "effect": {
+     "sanity": -6,
+     "xp": 16
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你坐了很久。然后你站起来，往回走。这一次，广告牌不见了。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "朝声音开枪",
+    "req": [],
+    "effect": {
+     "hp": -8,
+     "sanity": -8,
+     "xp": 12
+    },
+    "items": {
+     "ammo_9mm": -2
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "回声停了。你顺着铁轨跑出去，摔了两次。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_tower_accept",
+  "title": "塔顶的回答",
+  "text": "你终于站在了灯塔顶上。控制台是全亮的，屏幕上跳着一句话：\n\"还有人在听吗？\"。\n你的手停在按钮上。",
+  "tag": "encounter",
+  "weight": 5,
+  "once": true,
+  "minDay": 10,
+  "places": [
+   "lighthouse"
+  ],
+  "choices": [
+   {
+    "text": "回复：我在",
+    "req": [],
+    "effect": {
+     "xp": 50,
+     "sanity": 26
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "屏幕闪了一下，跳出一行字：”坐标已记录。我们会来找你。谢谢你。“。",
+    "logFail": "",
+    "ending": "win_stay"
+   },
+   {
+    "text": "回复：别来了，这里什么都没有",
+    "req": [],
+    "effect": {
+     "xp": 40,
+     "sanity": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "过了很久，屏幕上出现：”明白。祝你好运。“。",
+    "logFail": "",
+    "ending": "end_witness"
+   },
+   {
+    "text": "关掉控制台",
+    "req": [],
+    "effect": {
+     "sanity": -4,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "灯一盏一盏熄灭。你站在黑暗里，听着海浪。",
+    "logFail": "",
+    "ending": "end_winter"
+   }
+  ]
+ },
+ {
+  "id": "ev_sacrifice",
+  "title": "最后一次注射",
+  "text": "血清只剩一支。你被咬了，伤口在发烫。\n把血清给自己，还是留给那个孩子？",
+  "tag": "encounter",
+  "weight": 5,
+  "once": true,
+  "minDay": 8,
+  "places": [
+   "lab_whitecrow",
+   "bunker",
+   "field_hospital",
+   "safehouse"
+  ],
+  "choices": [
+   {
+    "text": "留给孩子",
+    "req": [
+     "flag:met_kid>=1"
+    ],
+    "effect": {
+     "sanity": 20,
+     "xp": 30
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把针管塞进她手里。她不知道那是什么，但你说要保管好，她就点头了。",
+    "logFail": "",
+    "ending": "end_sacrifice"
+   },
+   {
+    "text": "给自己",
+    "req": [
+     "item:serum>=1"
+    ],
+    "effect": {
+     "infection": -60,
+     "sanity": -6,
+     "xp": 20
+    },
+    "items": {
+     "serum": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "针头推进去的时候，你听见自己的心跳慢了下来。你还活着。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "扔掉它",
+    "req": [
+     "item:serum>=1"
+    ],
+    "effect": {
+     "sanity": -10,
+     "xp": 10
+    },
+    "items": {
+     "serum": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "玻璃在水泥地上碎开。你看着药水渗进灰里。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_dog_end",
+  "title": "铁钉",
+  "text": "它躺在门口，肚子上有一道很深的口子。\n它看见你，尾巴还是动了一下。",
+  "tag": "encounter",
+  "weight": 4,
+  "once": true,
+  "minDay": 14,
+  "places": [
+   "safehouse"
+  ],
+  "choices": [
+   {
+    "text": "抱着它，等到它不动",
+    "req": [
+     "flag:dog>=1"
+    ],
+    "effect": {
+     "sanity": -10,
+     "xp": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "天黑了，然后亮了。你把它埋在门口的树下，用木板做了个牌子。",
+    "logFail": "",
+    "ending": "end_dog"
+   },
+   {
+    "text": "给它包扎",
+    "req": [
+     "flag:dog>=1"
+    ],
+    "effect": {
+     "sanity": 8,
+     "xp": 12
+    },
+    "items": {
+     "bandage": -1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你知道这没用。但你还是蹲下来，给它缠了绷带。它舔了舔你的手。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_king_ending",
+  "title": "坐上去",
+  "text": "废料堆顶端的椅子空着。王冠就放在扶手上。\n城市在脚下，风很大。",
+  "tag": "encounter",
+  "weight": 4,
+  "once": true,
+  "minDay": 10,
+  "places": [
+   "junkyard"
+  ],
+  "choices": [
+   {
+    "text": "戴上王冠",
+    "req": [],
+    "effect": {
+     "xp": 40,
+     "sanity": -10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "金属很凉。你坐了下来。从这一刻起，这片废墟归你管。",
+    "logFail": "",
+    "ending": "end_king"
+   },
+   {
+    "text": "把王冠扔下去",
+    "req": [],
+    "effect": {
+     "sanity": 8,
+     "xp": 16
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "它滚下废料堆，声音一路响到很远的地方。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_witness_ending",
+  "title": "记录",
+  "text": "你在一间完好的公寓里找到一支笔和一个本子。\n窗外是城市，安静得像一幅画。你想把这一切写下来。",
+  "tag": "encounter",
+  "weight": 4,
+  "once": true,
+  "minDay": 15,
+  "places": [
+   "apartment",
+   "school"
+  ],
+  "choices": [
+   {
+    "text": "开始写",
+    "req": [],
+    "effect": {
+     "sanity": 16,
+     "xp": 30
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你写了很久，写到手抽筋。你不知道谁会读到它，但你必须写。",
+    "logFail": "",
+    "ending": "end_witness"
+   },
+   {
+    "text": "放下笔",
+    "req": [],
+    "effect": {
+     "sanity": 4
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你合上本子。有些事不写下来，也不会忘。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_serum_triumph",
+  "title": "疫苗",
+  "text": "你按配方把三样东西倒进烧杯：抗体血样、实验样本、化学试剂。\n液体先是浑浊，然后慢慢变清。",
+  "tag": "encounter",
+  "weight": 8,
+  "once": true,
+  "minDay": 8,
+  "places": [
+   "lab_whitecrow",
+   "field_hospital"
+  ],
+  "choices": [
+   {
+    "text": "给自己注射",
+    "req": [
+     "item:serum_formula>=1",
+     "item:blood_sample>=1"
+    ],
+    "effect": {
+     "hp": 40,
+     "infection": -80,
+     "sanity": 20,
+     "xp": 60
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "针头推进去的时候，你什么都没感觉到。第二天早上，伤口开始结痂。",
+    "logFail": "",
+    "ending": "win_serum"
+   },
+   {
+    "text": "带上它去灯塔",
+    "req": [
+     "item:serum_formula>=1",
+     "item:blood_sample>=1"
+    ],
+    "effect": {
+     "xp": 40,
+     "sanity": 10
+    },
+    "items": {
+     "serum": 2,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把烧杯封好，放进冷藏箱。灯塔的人会知道该怎么做。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "放弃",
+    "req": [],
+    "effect": {
+     "sanity": -10,
+     "xp": 10
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你把液体倒进了下水道。它流下去的时候，你听见自己松了一口气。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ },
+ {
+  "id": "ev_train_escape",
+  "title": "发车",
+  "text": "列车长死了。驾驶室里的钥匙还插着，油表显示还有三分之一。\n铁轨一直延伸到雾里。",
+  "tag": "encounter",
+  "weight": 10,
+  "once": true,
+  "minDay": 8,
+  "places": [
+   "supply_train"
+  ],
+  "choices": [
+   {
+    "text": "发动列车",
+    "req": [
+     "item:military_keycard>=1"
+    ],
+    "effect": {
+     "xp": 60,
+     "sanity": 20
+    },
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "列车缓缓移动，越来越快。你坐在驾驶室里，看着城市从窗边退后。你不知道铁轨通向哪里，但至少不是这里。",
+    "logFail": "",
+    "ending": "win_train"
+   },
+   {
+    "text": "搜空车厢",
+    "req": [],
+    "effect": {
+     "xp": 30
+    },
+    "items": {
+     "mre": 3,
+     "ammo_556": 12,
+     "ammo_762": 12,
+     "light_core": 1
+    },
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你在车厢里找到很多补给，然后把列车钥匙扔进了排水沟。",
+    "logFail": "",
+    "ending": null
+   },
+   {
+    "text": "离开",
+    "req": [],
+    "effect": {},
+    "items": {},
+    "fight": null,
+    "next": null,
+    "chance": 100,
+    "effectFail": {},
+    "log": "你下了车，走进雾里。",
+    "logFail": "",
+    "ending": null
+   }
+  ]
+ }
+]

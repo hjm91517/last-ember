@@ -1,0 +1,247 @@
+[
+ {
+  "id": "grab",
+  "name": "撕扯",
+  "desc": "它抓住你的衣领，指甲陷进肉里。",
+  "dmg": 9,
+  "kind": "infect"
+ },
+ {
+  "id": "bite",
+  "name": "撕咬",
+  "desc": "牙齿咬合的声音比疼痛先到。",
+  "dmg": 13,
+  "kind": "infect"
+ },
+ {
+  "id": "lunge",
+  "name": "扑击",
+  "desc": "它整个人压上来，把你撞在墙上。",
+  "dmg": 11,
+  "kind": "bleed"
+ },
+ {
+  "id": "howl",
+  "name": "嚎叫",
+  "desc": "那声音不像人，也不像动物。",
+  "dmg": 0,
+  "kind": "fear"
+ },
+ {
+  "id": "acid",
+  "name": "酸液喷吐",
+  "desc": "黏液落在皮肤上，冒起白烟。",
+  "dmg": 15,
+  "kind": "infect"
+ },
+ {
+  "id": "bile",
+  "name": "呕出胆汁",
+  "desc": "胃里翻出来的东西带着腐臭。",
+  "dmg": 7,
+  "kind": "fear"
+ },
+ {
+  "id": "slam",
+  "name": "重砸",
+  "desc": "它用整条手臂砸下，骨头在响。",
+  "dmg": 21,
+  "kind": "stun"
+ },
+ {
+  "id": "charge",
+  "name": "冲撞",
+  "desc": "它低下头，像一辆失控的车。",
+  "dmg": 19,
+  "kind": "stun"
+ },
+ {
+  "id": "shriek",
+  "name": "尖啸",
+  "desc": "耳膜像被针扎，视野开始发白。",
+  "dmg": 0,
+  "kind": "fear"
+ },
+ {
+  "id": "swarm",
+  "name": "群袭",
+  "desc": "它们从四面八方涌上来。",
+  "dmg": 8,
+  "kind": "bleed"
+ },
+ {
+  "id": "infect",
+  "name": "感染爪",
+  "desc": "指甲划开皮肤，伤口立刻开始发烫。",
+  "dmg": 10,
+  "kind": "infect"
+ },
+ {
+  "id": "drain",
+  "name": "抽干",
+  "desc": "伤口周围的皮肤迅速发白。",
+  "dmg": 10,
+  "kind": "drain"
+ },
+ {
+  "id": "rage",
+  "name": "狂怒",
+  "desc": "它突然加速，眼睛变得浑浊。",
+  "dmg": 16,
+  "kind": "rage"
+ },
+ {
+  "id": "heal",
+  "name": "舔舐",
+  "desc": "它低头啃食同类的尸体，伤口缓慢闭合。",
+  "dmg": 0,
+  "kind": "rage"
+ },
+ {
+  "id": "grapple",
+  "name": "擒抱",
+  "desc": "它用双臂锁住你，呼吸喷在脖子上。",
+  "dmg": 12,
+  "kind": "stun"
+ },
+ {
+  "id": "fire_spit",
+  "name": "喷火",
+  "desc": "它喉咙里亮起火光，然后是一道热浪。",
+  "dmg": 18,
+  "kind": "bleed"
+ },
+ {
+  "id": "gunshot",
+  "name": "射击",
+  "desc": "枪声在废墟里回荡了很久。",
+  "dmg": 17,
+  "kind": "bleed"
+ },
+ {
+  "id": "burst",
+  "name": "扫射",
+  "desc": "子弹打在你脚边的水泥上，碎屑乱飞。",
+  "dmg": 24,
+  "kind": "bleed"
+ },
+ {
+  "id": "snipe",
+  "name": "狙击",
+  "desc": "你只听见破空声，肩膀就热了起来。",
+  "dmg": 31,
+  "kind": "bleed"
+ },
+ {
+  "id": "throw_grenade",
+  "name": "投雷",
+  "desc": "一个黑点在视线里变大，然后白光。",
+  "dmg": 27,
+  "kind": "stun"
+ },
+ {
+  "id": "stab",
+  "name": "捅刺",
+  "desc": "刀刃从侧面切进来，快得没有痛感。",
+  "dmg": 15,
+  "kind": "bleed"
+ },
+ {
+  "id": "shield_bash",
+  "name": "盾击",
+  "desc": "防暴盾的边缘砸在你脸上。",
+  "dmg": 13,
+  "kind": "stun"
+ },
+ {
+  "id": "smoke",
+  "name": "烟雾",
+  "desc": "浓烟里看不清方向，只听见脚步。",
+  "dmg": 3,
+  "kind": "fear"
+ },
+ {
+  "id": "pray",
+  "name": "祷告",
+  "desc": "他们齐声念诵，声音钻进你的脑子。",
+  "dmg": 0,
+  "kind": "fear"
+ },
+ {
+  "id": "inject",
+  "name": "注射",
+  "desc": "针头扎进你的手臂，冰冷的液体被推入。",
+  "dmg": 6,
+  "kind": "infect"
+ },
+ {
+  "id": "paralyze",
+  "name": "麻痹",
+  "desc": "肌肉突然不听使唤，你跪了下去。",
+  "dmg": 9,
+  "kind": "stun"
+ },
+ {
+  "id": "echo",
+  "name": "回声",
+  "desc": "那个声音在重复你昨天说过的话。",
+  "dmg": 0,
+  "kind": "fear"
+ },
+ {
+  "id": "mother_call",
+  "name": "呼唤",
+  "desc": "她叫你的名字，用你母亲的声音。",
+  "dmg": 12,
+  "kind": "drain"
+ },
+ {
+  "id": "rust_cloud",
+  "name": "铁锈尘",
+  "desc": "红色的粉尘粘在喉咙里，咳不出来。",
+  "dmg": 12,
+  "kind": "infect"
+ },
+ {
+  "id": "tide_wave",
+  "name": "潮涌",
+  "desc": "它掀起的水浪裹着尸体和碎片。",
+  "dmg": 23,
+  "kind": "stun"
+ },
+ {
+  "id": "bell_toll",
+  "name": "钟声",
+  "desc": "钟声响了十三下，每一下都让心跳错拍。",
+  "dmg": 0,
+  "kind": "fear"
+ },
+ {
+  "id": "twin_slash",
+  "name": "双刃",
+  "desc": "两把刀同时从不同方向切过来。",
+  "dmg": 19,
+  "kind": "bleed"
+ },
+ {
+  "id": "experiment",
+  "name": "实验体注射",
+  "desc": "它用带针的管子刺入你的颈侧。",
+  "dmg": 12,
+  "kind": "infect"
+ },
+ {
+  "id": "call_pack",
+  "name": "召唤同类",
+  "desc": "它仰头长嚎，远处传来回应。",
+  "dmg": 0,
+  "kind": "rage"
+ },
+ {
+  "id": "protective_shell",
+  "name": "缩壳",
+  "desc": "它把身体缩进硬壳，只露出牙齿。",
+  "dmg": 0,
+  "kind": "heal"
+ }
+]

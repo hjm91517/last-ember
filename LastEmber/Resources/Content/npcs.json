@@ -1,0 +1,274 @@
+[
+ {
+  "id": "nurse",
+  "name": "林晚",
+  "role": "急诊科护士 · 白鸦前成员",
+  "desc": "手很稳，话很少。她记得每一个死在她手上的病人的名字。",
+  "traits": [
+   "医疗专精",
+   "抗感染",
+   "夜班"
+  ],
+  "perkID": "nurse_hands",
+  "trust": 25,
+  "joinReq": "带她见过一次真正的伤员",
+  "questID": "q_nurse_1",
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "mechanic",
+  "name": "陈铁",
+  "role": "汽修工 · 改装师",
+  "desc": "手上永远有机油，笑起来很大声。她说修不好的东西只是还没找到对的扳手。",
+  "traits": [
+   "制作加速",
+   "武器改装",
+   "烟瘾"
+  ],
+  "perkID": "grease_monkey",
+  "trust": 20,
+  "joinReq": "帮她修好一台发动机",
+  "questID": "q_mech_1",
+  "icon": "wrench.fill"
+ },
+ {
+  "id": "scout",
+  "name": "阿岚",
+  "role": "斥候 · 前快递员",
+  "desc": "走过这条城市所有的巷子。她记得哪条路有狗，哪扇门后有人。",
+  "traits": [
+   "潜行",
+   "地图记忆",
+   "跑得快"
+  ],
+  "perkID": "light_step",
+  "trust": 30,
+  "joinReq": "在她需要的时候开一次门",
+  "questID": "q_scout_1",
+  "icon": "figure.walk"
+ },
+ {
+  "id": "sergeant",
+  "name": "何中士",
+  "role": "残军 · 检查站指挥官",
+  "desc": "制服永远扣到最上面一颗。他说命令还没解除，所以他还在守。",
+  "traits": [
+   "枪械",
+   "战术",
+   "固执"
+  ],
+  "perkID": "marksman",
+  "trust": 15,
+  "joinReq": "证明你值得信任",
+  "questID": "q_sergeant_1",
+  "icon": "shield.fill"
+ },
+ {
+  "id": "kid",
+  "name": "小满",
+  "role": "十四岁 · 前小学生",
+  "desc": "她只肯吃一半，说另一半留给「以后」。她画画很好，画的都是白天。",
+  "traits": [
+   "灵巧",
+   "幸运",
+   "需要保护"
+  ],
+  "perkID": "lucky",
+  "trust": 40,
+  "joinReq": "给她一个不会被丢下的承诺",
+  "questID": "q_kid_1",
+  "icon": "figure.child"
+ },
+ {
+  "id": "trader",
+  "name": "老周",
+  "role": "行商 · 前会计",
+  "desc": "他什么都卖，也什么都收。他说价格是这个世界最后的秩序。",
+  "traits": [
+   "交易",
+   "情报",
+   "算得清"
+  ],
+  "perkID": "pack_mule",
+  "trust": 10,
+  "joinReq": "让他相信你不是来抢东西的",
+  "questID": "q_trader_1",
+  "icon": "shippingbox.fill"
+ },
+ {
+  "id": "hunter",
+  "name": "秦",
+  "role": "猎人 · 前护林员",
+  "desc": "他能从一片折断的草看出三小时前经过的东西。他不喜欢城市。",
+  "traits": [
+   "远程",
+   "追踪",
+   "沉默"
+  ],
+  "perkID": "sharp_eye",
+  "trust": 20,
+  "joinReq": "和他一起打一次猎",
+  "questID": "q_hunter_1",
+  "icon": "figure.archery"
+ },
+ {
+  "id": "priest",
+  "name": "牧者",
+  "role": "灰袍教团 · 叛逃牧师",
+  "desc": "他仍在祷告，但不再相信。他说他留下来是为了给死人念名字。",
+  "traits": [
+   "安抚",
+   "仪式",
+   "知道太多"
+  ],
+  "perkID": "priest_faith",
+  "trust": 25,
+  "joinReq": "听他把话说完",
+  "questID": "q_priest_1",
+  "icon": "flame.fill"
+ },
+ {
+  "id": "doctor",
+  "name": "顾医生",
+  "role": "白鸦 · 病毒学家",
+  "desc": "她的白大褂很干净，眼睛很累。她说她只是想知道答案。",
+  "traits": [
+   "科研",
+   "血清",
+   "危险"
+  ],
+  "perkID": "field_surgery",
+  "trust": 5,
+  "joinReq": "带给她一份抗体血样",
+  "questID": "q_doctor_1",
+  "icon": "testtube.2"
+ },
+ {
+  "id": "cook",
+  "name": "胖婶",
+  "role": "食堂厨师 · 营地后勤",
+  "desc": "她能把任何东西煮成能吃的样子，并且坚持每个人都要吃完。",
+  "traits": [
+   "烹饪",
+   "士气",
+   "囤积"
+  ],
+  "perkID": "iron_stomach",
+  "trust": 30,
+  "joinReq": "带来一口能用的锅",
+  "questID": "q_cook_1",
+  "icon": "fork.knife"
+ },
+ {
+  "id": "singer",
+  "name": "阿音",
+  "role": "酒吧歌手 · 电台主播",
+  "desc": "她的声音就是灯塔录音里的那个声音。她说她只是想让外面的人知道还有人。",
+  "traits": [
+   "鼓舞",
+   "广播",
+   "失眠"
+  ],
+  "perkID": "singer",
+  "trust": 35,
+  "joinReq": "修好一台收音机",
+  "questID": "q_singer_1",
+  "icon": "music.note"
+ },
+ {
+  "id": "prisoner",
+  "name": "4207",
+  "role": "囚犯 · 前爆破手",
+  "desc": "他不说自己的名字，只说编号。他手上有一道很长的疤，是自己划的。",
+  "traits": [
+   "爆破",
+   "开锁",
+   "不可信"
+  ],
+  "perkID": "demolisher",
+  "trust": 0,
+  "joinReq": "给他一把能用的撬棍",
+  "questID": "q_prisoner_1",
+  "icon": "lock.fill"
+ },
+ {
+  "id": "gravedigger",
+  "name": "老掘",
+  "role": "掘墓人 · 前殡仪馆工人",
+  "desc": "他给每一个找到的尸体挖坑，不管认不认识。他说这是他唯一还会做的事。",
+  "traits": [
+   "冷静",
+   "体力",
+   "知道埋了什么"
+  ],
+  "perkID": "survivor",
+  "trust": 20,
+  "joinReq": "帮他埋完这一批",
+  "questID": "q_grave_1",
+  "icon": "figure.stand"
+ },
+ {
+  "id": "deserter",
+  "name": "李默",
+  "role": "逃兵 · 前工兵",
+  "desc": "他睡觉时总是背靠着墙。他说他不是怕死，是怕被抓回去。",
+  "traits": [
+   "工事",
+   "爆破",
+   "警惕"
+  ],
+  "perkID": "tough",
+  "trust": 10,
+  "joinReq": "保证不会把他交给军方",
+  "questID": "q_deserter_1",
+  "icon": "figure.stand"
+ },
+ {
+  "id": "engineer",
+  "name": "老吴",
+  "role": "工程师 · 前电网维修",
+  "desc": "他随身带着一卷电线和一块万用表。他说电比人可靠。",
+  "traits": [
+   "电力",
+   "机械",
+   "怕黑"
+  ],
+  "perkID": "engineer",
+  "trust": 15,
+  "joinReq": "提供一台还能转的发电机",
+  "questID": "q_engineer_1",
+  "icon": "bolt.fill"
+ },
+ {
+  "id": "teacher",
+  "name": "苏老师",
+  "role": "小学老师 · 临时看守",
+  "desc": "她还留着点名册。每天早读，她会念一遍名字，然后替没来的人答到。",
+  "traits": [
+   "教育",
+   "安抚",
+   "固执"
+  ],
+  "perkID": "calm",
+  "trust": 30,
+  "joinReq": "帮她把孩子们的名字念完",
+  "questID": "q_teacher_1",
+  "icon": "book.fill"
+ },
+ {
+  "id": "warden",
+  "name": "铁门",
+  "role": "前狱警 · 守门人",
+  "desc": "他守着一扇不属于任何人的门。他说门后面是什么，不重要，重要的是门还关着。",
+  "traits": [
+   "守夜",
+   "格挡",
+   "沉默"
+  ],
+  "perkID": "shield_wall",
+  "trust": 15,
+  "joinReq": "和他一起守一整夜",
+  "questID": "q_warden_1",
+  "icon": "shield.lefthalf.filled"
+ }
+]

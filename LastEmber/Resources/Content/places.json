@@ -1,0 +1,3361 @@
+[
+ {
+  "id": "safehouse",
+  "name": "灯塔营地",
+  "region": "旧城区",
+  "desc": "一栋带铁门的旧仓库，你们把唯一还能用的房间改成了家。",
+  "danger": 0,
+  "stages": 1,
+  "x": 0.34,
+  "y": 0.62,
+  "tags": [
+   "start",
+   "indoor",
+   "safe"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 55,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "wood",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "water_dirty",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [],
+  "events": []
+ },
+ {
+  "id": "convenience",
+  "name": "街角便利店",
+  "region": "旧城区",
+  "desc": "货架被推倒，收银台后面有一具坐着的尸体。",
+  "danger": 1,
+  "stages": 3,
+  "x": 0.38,
+  "y": 0.56,
+  "tags": [
+   "urban",
+   "market",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "canned_food",
+    "chance": 55,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "water_bottle",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "candy",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "energy_bar",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 12,
+    "min": 2,
+    "max": 5
+   }
+  ],
+  "enemies": [
+   "walker_shambler",
+   "walker_thin",
+   "human_looter"
+  ],
+  "events": []
+ },
+ {
+  "id": "apartment",
+  "name": "居民楼",
+  "region": "旧城区",
+  "desc": "六层楼，一百二十扇门。你只敢敲其中三扇。",
+  "danger": 2,
+  "stages": 4,
+  "x": 0.3,
+  "y": 0.52,
+  "tags": [
+   "urban",
+   "indoor",
+   "dark"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 60,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "canned_food",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "photo",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pills_pain",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gold_ring",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "backpack_small",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_stagger",
+   "walker_fresh",
+   "crawler_legless",
+   "human_looter"
+  ],
+  "events": []
+ },
+ {
+  "id": "pharmacy",
+  "name": "药店",
+  "region": "旧城区",
+  "desc": "卷帘门被撬开了一半。空气里有酒精和腐败混在一起的味道。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.44,
+  "y": 0.5,
+  "tags": [
+   "urban",
+   "medical",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "bandage",
+    "chance": 60,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "antibiotics",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pills_pain",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antiseptic",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "saline",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "herbs_poultice",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "medkit",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_patient",
+   "walker_doctor",
+   "crawler_legless"
+  ],
+  "events": []
+ },
+ {
+  "id": "school",
+  "name": "第三小学",
+  "region": "旧城区",
+  "desc": "操场上还挂着褪色的横幅。教室里摆着没写完的作业。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.26,
+  "y": 0.44,
+  "tags": [
+   "urban",
+   "indoor",
+   "dark"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "paper",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "child_drawing",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "candy",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_fragment",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "laptop",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_thin",
+   "runner_lean",
+   "crawler_legless"
+  ],
+  "events": []
+ },
+ {
+  "id": "gas_station",
+  "name": "加油站",
+  "region": "旧城区",
+  "desc": "油泵全都空了，地上有一道拖了很远的暗色痕迹。",
+  "danger": 3,
+  "stages": 3,
+  "x": 0.52,
+  "y": 0.58,
+  "tags": [
+   "urban",
+   "fuel"
+  ],
+  "loot": [
+   {
+    "item": "fuel",
+    "chance": 45,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "rubber",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "oil",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 18,
+    "min": 2,
+    "max": 6
+   },
+   {
+    "item": "car_battery",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_shambler",
+   "hound_stray",
+   "human_looter",
+   "walker_worker"
+  ],
+  "events": []
+ },
+ {
+  "id": "subway_station",
+  "name": "地铁站",
+  "region": "旧城区",
+  "desc": "入口被沙袋堵住了一半。下面很黑，风是暖的。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.48,
+  "y": 0.4,
+  "tags": [
+   "urban",
+   "dark",
+   "underground"
+  ],
+  "loot": [
+   {
+    "item": "battery",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "paper",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 25,
+    "min": 2,
+    "max": 6
+   },
+   {
+    "item": "steel_plate",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "flashlight",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "circuit",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "crawler_legless",
+   "walker_fresh",
+   "runner_night",
+   "night_stalker"
+  ],
+  "events": []
+ },
+ {
+  "id": "police_box",
+  "name": "派出所",
+  "region": "旧城区",
+  "desc": "玻璃门碎了一地，枪柜被撬开，只剩下几个空弹匣。",
+  "danger": 3,
+  "stages": 3,
+  "x": 0.56,
+  "y": 0.44,
+  "tags": [
+   "urban",
+   "military",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "ammo_9mm",
+    "chance": 45,
+    "min": 3,
+    "max": 9
+   },
+   {
+    "item": "police_baton",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vest_stab",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "handcuffs",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_45",
+    "chance": 20,
+    "min": 2,
+    "max": 6
+   }
+  ],
+  "enemies": [
+   "walker_police",
+   "human_scout",
+   "human_looter"
+  ],
+  "events": []
+ },
+ {
+  "id": "clinic",
+  "name": "社区诊所",
+  "region": "旧城区",
+  "desc": "候诊椅排得很整齐，输液架上挂着一袋早就空了的盐水。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.36,
+  "y": 0.36,
+  "tags": [
+   "urban",
+   "medical"
+  ],
+  "loot": [
+   {
+    "item": "bandage",
+    "chance": 55,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "splint",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pills_fever",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "stitch_kit",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "saline",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "medical_tape",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "insulin",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_patient",
+   "walker_doctor",
+   "crawler_ceiling"
+  ],
+  "events": []
+ },
+ {
+  "id": "internet_cafe",
+  "name": "网吧",
+  "region": "旧城区",
+  "desc": "屏幕全都黑着，只有一台还亮着蓝光，显示一个登录框。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.22,
+  "y": 0.34,
+  "tags": [
+   "urban",
+   "indoor",
+   "dark"
+  ],
+  "loot": [
+   {
+    "item": "circuit",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "laptop",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "console",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "energy_bar",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vinyl",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_fresh",
+   "runner_lean",
+   "human_looter"
+  ],
+  "events": []
+ },
+ {
+  "id": "church",
+  "name": "圣米迦勒教堂",
+  "region": "旧城区",
+  "desc": "长椅被搬到一起围成圈，中间点着熄灭的蜡烛。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.18,
+  "y": 0.52,
+  "tags": [
+   "urban",
+   "indoor",
+   "order"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 50,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "whiskey",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "whiskey",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cigar",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "violin",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gold_ring",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "paper",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "cultist_zealot",
+   "walker_stagger",
+   "screamer_wail"
+  ],
+  "events": []
+ },
+ {
+  "id": "supermarket",
+  "name": "仓储超市",
+  "region": "旧城区",
+  "desc": "整排货架被扫空，只有最上层的罐头没人够得到。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.6,
+  "y": 0.52,
+  "tags": [
+   "urban",
+   "market",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "canned_food",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "beans_can",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "water_bottle",
+    "chance": 50,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "spam",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "crackers",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cooking_pot",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cereal",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_worker",
+   "human_looter",
+   "hound_stray",
+   "brute_heavy"
+  ],
+  "events": []
+ },
+ {
+  "id": "rooftop",
+  "name": "水塔天台",
+  "region": "旧城区",
+  "desc": "爬上来的人都会先坐下，因为这里的天空还没有被墙挡住。",
+  "danger": 2,
+  "stages": 2,
+  "x": 0.42,
+  "y": 0.3,
+  "tags": [
+   "urban",
+   "high",
+   "vantage"
+  ],
+  "loot": [
+   {
+    "item": "rope",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rope",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "binoculars",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "water_dirty",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "runner_night",
+   "night_watcher",
+   "animal_crow"
+  ],
+  "events": []
+ },
+ {
+  "id": "warehouse",
+  "name": "货运仓库",
+  "region": "工业区",
+  "desc": "一整排集装箱，有些门上还贴着封条。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.66,
+  "y": 0.66,
+  "tags": [
+   "industrial",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "scrap",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "duct_tape",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "steel_plate",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pump_part",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "generator_part",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "toolbox",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_worker",
+   "brute_heavy",
+   "human_looter",
+   "armored_hazmat"
+  ],
+  "events": []
+ },
+ {
+  "id": "factory",
+  "name": "机械厂",
+  "region": "工业区",
+  "desc": "车床停在半成品旁边，安全线还拉着。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.72,
+  "y": 0.58,
+  "tags": [
+   "industrial",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "steel_plate",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "spring",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "spring",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wire",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "circuit",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "welder",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "copper",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "oil",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_worker",
+   "brute_armored",
+   "armored_hazmat",
+   "crawler_ceiling"
+  ],
+  "events": []
+ },
+ {
+  "id": "chem_plant",
+  "name": "化工厂",
+  "region": "工业区",
+  "desc": "空气里有甜味。管道上结着黄色的霜。",
+  "danger": 4,
+  "stages": 4,
+  "x": 0.78,
+  "y": 0.7,
+  "tags": [
+   "industrial",
+   "toxic",
+   "hazmat"
+  ],
+  "loot": [
+   {
+    "item": "chemical",
+    "chance": 50,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "sulfur",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "saltpeter",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "filter_core",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "propane",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antidote",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gas_mask_full",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "spitter_acid",
+   "armored_hazmat",
+   "bloater_bomb",
+   "screamer_wail"
+  ],
+  "events": []
+ },
+ {
+  "id": "freight_yard",
+  "name": "编组站",
+  "region": "工业区",
+  "desc": "生锈的车厢停在铁轨上，编号牌被拆走了。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.84,
+  "y": 0.6,
+  "tags": [
+   "industrial",
+   "rail"
+  ],
+  "loot": [
+   {
+    "item": "scrap",
+    "chance": 55,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "wood",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_762",
+    "chance": 25,
+    "min": 2,
+    "max": 6
+   },
+   {
+    "item": "mre",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cement",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "work_boots",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "human_scout",
+   "walker_fresh",
+   "hound_pack",
+   "human_brute"
+  ],
+  "events": []
+ },
+ {
+  "id": "water_plant",
+  "name": "水处理厂",
+  "region": "工业区",
+  "desc": "沉淀池里漂着不该漂的东西，水还在缓慢流动。",
+  "danger": 4,
+  "stages": 4,
+  "x": 0.7,
+  "y": 0.8,
+  "tags": [
+   "industrial",
+   "water",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "water_dirty",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "purify_tablet",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pump_part",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "valve",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "copper",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "filter_core",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "water_filter",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "crawler_legless",
+   "walker_patient",
+   "brute_bloated",
+   "night_stalker"
+  ],
+  "events": []
+ },
+ {
+  "id": "junkyard",
+  "name": "废料场",
+  "region": "工业区",
+  "desc": "汽车堆成山，中间被人清出一条路。路的尽头有一顶铁王冠。",
+  "danger": 5,
+  "stages": 4,
+  "x": 0.88,
+  "y": 0.76,
+  "tags": [
+   "industrial",
+   "boss"
+  ],
+  "loot": [
+   {
+    "item": "steel_plate",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "carbon",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "generator_part",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "car_battery",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 70,
+    "min": 3,
+    "max": 6
+   },
+   {
+    "item": "light_core",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "brute_armored",
+   "hound_alpha",
+   "boss_rustking"
+  ],
+  "events": []
+ },
+ {
+  "id": "auto_shop",
+  "name": "汽修厂",
+  "region": "工业区",
+  "desc": "举升机上还架着一辆车，工具箱敞开，少了一把扳手。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.64,
+  "y": 0.48,
+  "tags": [
+   "industrial",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "oil",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rubber",
+    "chance": 55,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wrench",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "jack",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "car_battery",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "duct_tape",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_worker",
+   "human_looter",
+   "hound_stray"
+  ],
+  "events": []
+ },
+ {
+  "id": "slaughterhouse",
+  "name": "屠宰场",
+  "region": "工业区",
+  "desc": "冷库停了，味道在门口就能闻到。",
+  "danger": 4,
+  "stages": 3,
+  "x": 0.6,
+  "y": 0.84,
+  "tags": [
+   "industrial",
+   "indoor",
+   "dark"
+  ],
+  "loot": [
+   {
+    "item": "cooked_meat",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fat",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bone",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cleaver",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "leather",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "salt",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "kitchen_knife",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "brute_bloated",
+   "walker_thin",
+   "hound_pack",
+   "swarm_rat"
+  ],
+  "events": []
+ },
+ {
+  "id": "substation",
+  "name": "变电站",
+  "region": "工业区",
+  "desc": "高压线的嗡鸣声还在，说明城市里还有某处在供电。",
+  "danger": 3,
+  "stages": 3,
+  "x": 0.58,
+  "y": 0.72,
+  "tags": [
+   "industrial",
+   "electric"
+  ],
+  "loot": [
+   {
+    "item": "wire",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "circuit",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "copper",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "generator_part",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "welder",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery_pack",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_worker",
+   "armored_swat",
+   "night_stalker"
+  ],
+  "events": []
+ },
+ {
+  "id": "tunnel",
+  "name": "穿山隧道",
+  "region": "工业区",
+  "desc": "隧道口被烧过的车堵住，里面传来水滴声。",
+  "danger": 4,
+  "stages": 3,
+  "x": 0.92,
+  "y": 0.88,
+  "tags": [
+   "industrial",
+   "dark",
+   "underground"
+  ],
+  "loot": [
+   {
+    "item": "fuel",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "flashlight",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_45",
+    "chance": 25,
+    "min": 2,
+    "max": 6
+   },
+   {
+    "item": "rubber",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "night_stalker",
+   "crawler_ceiling",
+   "runner_night",
+   "boss_tide"
+  ],
+  "events": []
+ },
+ {
+  "id": "farm",
+  "name": "河湾农场",
+  "region": "近郊农野",
+  "desc": "田里的作物自己长熟了，没人来收。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.28,
+  "y": 0.22,
+  "tags": [
+   "rural",
+   "food"
+  ],
+  "loot": [
+   {
+    "item": "vegetable",
+    "chance": 60,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "seed_pack",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fertilizer",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rice",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "corn_can",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "potato",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_stagger",
+   "animal_boar",
+   "cultist_zealot"
+  ],
+  "events": []
+ },
+ {
+  "id": "orchard",
+  "name": "苹果园",
+  "region": "近郊农野",
+  "desc": "苹果落了一地，发酵的甜味引来很多东西。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.22,
+  "y": 0.28,
+  "tags": [
+   "rural",
+   "food"
+  ],
+  "loot": [
+   {
+    "item": "wild_berry",
+    "chance": 60,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "honey",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wood",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vegetable",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "beer",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rope",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "animal_deer",
+   "hound_stray",
+   "screamer_wail"
+  ],
+  "events": []
+ },
+ {
+  "id": "barn",
+  "name": "谷仓",
+  "region": "近郊农野",
+  "desc": "干草堆得很高，有些草在动。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.34,
+  "y": 0.16,
+  "tags": [
+   "rural",
+   "indoor",
+   "dark"
+  ],
+  "loot": [
+   {
+    "item": "rope",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cloth",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pitchfork",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wood",
+    "chance": 55,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "seed_pack",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_thin",
+   "crawler_legless",
+   "hound_pack"
+  ],
+  "events": []
+ },
+ {
+  "id": "chicken_farm",
+  "name": "养鸡场",
+  "region": "近郊农野",
+  "desc": "铁丝网破了一个洞，里面安静得过分。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.18,
+  "y": 0.14,
+  "tags": [
+   "rural",
+   "food"
+  ],
+  "loot": [
+   {
+    "item": "feather",
+    "chance": 60,
+    "min": 1,
+    "max": 3
+   },
+   {
+    "item": "cooked_meat",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wire",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hammer",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "salt",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "animal_deer",
+   "swarm_rat",
+   "walker_fresh",
+   "screamer_wail"
+  ],
+  "events": []
+ },
+ {
+  "id": "windmill",
+  "name": "风车磨坊",
+  "region": "近郊农野",
+  "desc": "风车还在转，磨盘上落着厚厚一层面粉。",
+  "danger": 1,
+  "stages": 2,
+  "x": 0.4,
+  "y": 0.1,
+  "tags": [
+   "rural",
+   "high",
+   "vantage"
+  ],
+  "loot": [
+   {
+    "item": "cereal",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "flour",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rope",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cloth",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "binoculars",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "human_scout",
+   "walker_stagger",
+   "animal_crow"
+  ],
+  "events": []
+ },
+ {
+  "id": "campsite",
+  "name": "露营地",
+  "region": "近郊农野",
+  "desc": "几个帐篷围着一圈石头，火堆早就冷了。",
+  "danger": 2,
+  "stages": 3,
+  "x": 0.12,
+  "y": 0.32,
+  "tags": [
+   "rural",
+   "outdoor"
+  ],
+  "loot": [
+   {
+    "item": "tent",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "sleeping_bag",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "camp_stove",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "thermal_blanket",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fishing_rod",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "lighter",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_book",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_shambler",
+   "hound_stray",
+   "human_looter",
+   "animal_bear"
+  ],
+  "events": []
+ },
+ {
+  "id": "lake_dock",
+  "name": "湖湾码头",
+  "region": "近郊农野",
+  "desc": "木栈道断了一半，水面上浮着几条翻白的鱼。",
+  "danger": 3,
+  "stages": 3,
+  "x": 0.08,
+  "y": 0.44,
+  "tags": [
+   "rural",
+   "water"
+  ],
+  "loot": [
+   {
+    "item": "fishing_rod",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fishing_line",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "water_dirty",
+    "chance": 50,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "rubber",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rope",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "hound_pack",
+   "walker_fresh",
+   "boss_tide"
+  ],
+  "events": []
+ },
+ {
+  "id": "rest_stop",
+  "name": "公路休息站",
+  "region": "近郊农野",
+  "desc": "加油站和快餐店连在一起，遮阳棚上停满了乌鸦。",
+  "danger": 3,
+  "stages": 3,
+  "x": 0.46,
+  "y": 0.2,
+  "tags": [
+   "rural",
+   "fuel",
+   "market"
+  ],
+  "loot": [
+   {
+    "item": "canned_food",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "coffee",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "snack",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_fragment",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 20,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "watch",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "human_scout",
+   "walker_worker",
+   "hound_stray",
+   "human_pyro"
+  ],
+  "events": []
+ },
+ {
+  "id": "quarry",
+  "name": "碎石场",
+  "region": "近郊农野",
+  "desc": "巨大的坑，坑底有几辆翻倒的卡车。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.54,
+  "y": 0.12,
+  "tags": [
+   "rural",
+   "industrial",
+   "open"
+  ],
+  "loot": [
+   {
+    "item": "cement",
+    "chance": 45,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "steel_plate",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 55,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "jack",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "trap",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gunpowder",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "brute_heavy",
+   "walker_worker",
+   "animal_bear",
+   "human_brute"
+  ],
+  "events": []
+ },
+ {
+  "id": "apiary",
+  "name": "养蜂场",
+  "region": "近郊农野",
+  "desc": "蜂箱倒了一半，蜜蜂还在，人已经不在了。",
+  "danger": 1,
+  "stages": 3,
+  "x": 0.38,
+  "y": 0.06,
+  "tags": [
+   "rural",
+   "food"
+  ],
+  "loot": [
+   {
+    "item": "honey",
+    "chance": 55,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "wax",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cloth",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "herb",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "candy",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "seed_pack",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_stagger",
+   "animal_deer",
+   "cultist_zealot"
+  ],
+  "events": []
+ },
+ {
+  "id": "checkpoint",
+  "name": "公路检查站",
+  "region": "军事管制区",
+  "desc": "混凝土路障和铁丝网，一块牌子上写着：前方隔离，禁止通行。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.3,
+  "y": 0.72,
+  "tags": [
+   "military",
+   "unlock:safehouse"
+  ],
+  "loot": [
+   {
+    "item": "ammo_556",
+    "chance": 35,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "mre",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_biscuit",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vest_kevlar",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "soldier_guard",
+   "walker_police",
+   "human_scout",
+   "armored_swat"
+  ],
+  "events": []
+ },
+ {
+  "id": "armory",
+  "name": "军械库",
+  "region": "军事管制区",
+  "desc": "三道铁门，两道已经开了。第三道上有干涸的手印。",
+  "danger": 4,
+  "stages": 3,
+  "x": 0.22,
+  "y": 0.82,
+  "tags": [
+   "military",
+   "indoor",
+   "unlock:safehouse"
+  ],
+  "loot": [
+   {
+    "item": "ammo_556",
+    "chance": 50,
+    "min": 4,
+    "max": 10
+   },
+   {
+    "item": "ammo_762",
+    "chance": 45,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "rifle_ar",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "grenade",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vest_tactical",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "helmet_military",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "soldier_guard",
+   "armored_swat",
+   "walker_police",
+   "human_gunner"
+  ],
+  "events": []
+ },
+ {
+  "id": "field_hospital",
+  "name": "野战医院",
+  "region": "军事管制区",
+  "desc": "成排的病床，白布盖着的东西都没有动过。",
+  "danger": 3,
+  "stages": 4,
+  "x": 0.14,
+  "y": 0.74,
+  "tags": [
+   "military",
+   "medical",
+   "unlock:safehouse"
+  ],
+  "loot": [
+   {
+    "item": "bandage",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "antibiotics",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "morphine",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "saline",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "medkit",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "stitch_kit",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "blood_sample",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "lab_sample",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_patient",
+   "walker_doctor",
+   "armored_hazmat",
+   "night_stalker"
+  ],
+  "events": []
+ },
+ {
+  "id": "radar_station",
+  "name": "雷达站",
+  "region": "军事管制区",
+  "desc": "雷达天线还在缓慢旋转，控制室里亮着应急灯。",
+  "danger": 4,
+  "stages": 3,
+  "x": 0.1,
+  "y": 0.58,
+  "tags": [
+   "military",
+   "electric",
+   "unlock:safehouse"
+  ],
+  "loot": [
+   {
+    "item": "circuit",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_45",
+    "chance": 25,
+    "min": 2,
+    "max": 6
+   },
+   {
+    "item": "map_fragment",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_codebook",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "soldier_guard",
+   "soldier_deserter",
+   "night_watcher",
+   "armored_swat"
+  ],
+  "events": []
+ },
+ {
+  "id": "lab_whitecrow",
+  "name": "白鸦实验室",
+  "region": "军事管制区",
+  "desc": "玻璃门上印着白鸦标记。里面很干净，干净得像没人死过。",
+  "danger": 5,
+  "stages": 4,
+  "x": 0.06,
+  "y": 0.46,
+  "tags": [
+   "lab",
+   "indoor",
+   "unlock:radar_station"
+  ],
+  "loot": [
+   {
+    "item": "lab_sample",
+    "chance": 50,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "blood_sample",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "serum",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "circuit",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "lab_coat",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "armored_hazmat",
+   "doctor_mad",
+   "boss_whitecrow",
+   "night_stalker"
+  ],
+  "events": []
+ },
+ {
+  "id": "bunker",
+  "name": "地下掩体",
+  "region": "军事管制区",
+  "desc": "防爆门半开着，里面有柴油发电机的声音。",
+  "danger": 5,
+  "stages": 4,
+  "x": 0.18,
+  "y": 0.9,
+  "tags": [
+   "military",
+   "dark",
+   "underground",
+   "unlock:radar_station"
+  ],
+  "loot": [
+   {
+    "item": "mre",
+    "chance": 45,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "ammo_556",
+    "chance": 50,
+    "min": 4,
+    "max": 8
+   },
+   {
+    "item": "fuel",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "generator_part",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel_rod",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "armored_swat",
+   "soldier_deserter",
+   "boss_twins",
+   "night_watcher"
+  ],
+  "events": []
+ },
+ {
+  "id": "airstrip",
+  "name": "废弃跑道",
+  "region": "军事管制区",
+  "desc": "一架运输机停在跑道尽头，起落架陷进了土里。",
+  "danger": 4,
+  "stages": 3,
+  "x": 0.04,
+  "y": 0.82,
+  "tags": [
+   "military",
+   "open",
+   "unlock:checkpoint"
+  ],
+  "loot": [
+   {
+    "item": "fuel",
+    "chance": 50,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "generator_part",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "mre",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_762",
+    "chance": 35,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "carbon",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "human_sniper",
+   "armored_swat",
+   "hound_alpha",
+   "walker_worker"
+  ],
+  "events": []
+ },
+ {
+  "id": "supply_train",
+  "name": "补给列车",
+  "region": "军事管制区",
+  "desc": "车头还亮着一盏灯，车厢封条完好。",
+  "danger": 4,
+  "stages": 3,
+  "x": 0.26,
+  "y": 0.94,
+  "tags": [
+   "military",
+   "rail",
+   "unlock:checkpoint"
+  ],
+  "loot": [
+   {
+    "item": "mre",
+    "chance": 50,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "ammo_556",
+    "chance": 45,
+    "min": 4,
+    "max": 9
+   },
+   {
+    "item": "medkit",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "medkit",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel_rod",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rifle_ak",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "soldier_guard",
+   "human_gunner",
+   "boss_trainman"
+  ],
+  "events": []
+ },
+ {
+  "id": "comm_tower",
+  "name": "通讯塔",
+  "region": "军事管制区",
+  "desc": "三百米高的铁塔，塔顶的红灯还在一闪一闪。",
+  "danger": 4,
+  "stages": 3,
+  "x": 0.34,
+  "y": 0.86,
+  "tags": [
+   "military",
+   "high",
+   "electric"
+  ],
+  "loot": [
+   {
+    "item": "radio_part",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "circuit",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wire",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_fragment",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "human_sniper",
+   "night_watcher",
+   "screamer_wail",
+   "armored_swat"
+  ],
+  "events": []
+ },
+ {
+  "id": "ammo_depot",
+  "name": "弹药库",
+  "region": "军事管制区",
+  "desc": "半埋在山体里的仓库，门被炸开过，又被焊上了。",
+  "danger": 5,
+  "stages": 3,
+  "x": 0.4,
+  "y": 0.9,
+  "tags": [
+   "military",
+   "explosive",
+   "unlock:bunker"
+  ],
+  "loot": [
+   {
+    "item": "ammo_556",
+    "chance": 60,
+    "min": 5,
+    "max": 12
+   },
+   {
+    "item": "ammo_762",
+    "chance": 55,
+    "min": 4,
+    "max": 10
+   },
+   {
+    "item": "grenade",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gunpowder",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rifle_ar",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pipe_bomb",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "armored_swat",
+   "soldier_guard",
+   "human_brute",
+   "boss_twins"
+  ],
+  "events": []
+ },
+ {
+  "id": "overpass",
+  "name": "高架桥",
+  "region": "城市核心",
+  "desc": "桥面裂开一道口子，往下能看见废弃的车流。",
+  "danger": 3,
+  "stages": 3,
+  "x": 0.44,
+  "y": 0.32,
+  "tags": [
+   "urban",
+   "high"
+  ],
+  "loot": [
+   {
+    "item": "fuel",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 20,
+    "min": 2,
+    "max": 5
+   },
+   {
+    "item": "rope",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "car_battery",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "runner_feral",
+   "human_pyro",
+   "hound_pack",
+   "walker_worker"
+  ],
+  "events": []
+ },
+ {
+  "id": "city_hall",
+  "name": "市政厅",
+  "region": "城市核心",
+  "desc": "大理石台阶上堆着沙袋，旗杆上挂着一条褪色的布。",
+  "danger": 4,
+  "stages": 4,
+  "x": 0.5,
+  "y": 0.26,
+  "tags": [
+   "urban",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "military_keycard",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_codebook",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "laptop",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "jewelry",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "painting",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "soldier_guard",
+   "cultist_priest",
+   "boss_preacher",
+   "armored_swat"
+  ],
+  "events": []
+ },
+ {
+  "id": "tv_tower",
+  "name": "电视塔",
+  "region": "城市核心",
+  "desc": "塔身玻璃碎了大半，电梯停在半空。",
+  "danger": 4,
+  "stages": 4,
+  "x": 0.56,
+  "y": 0.18,
+  "tags": [
+   "urban",
+   "high",
+   "electric"
+  ],
+  "loot": [
+   {
+    "item": "radio_part",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "circuit",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "camera",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "binoculars",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "human_sniper",
+   "night_watcher",
+   "screamer_wail"
+  ],
+  "events": []
+ },
+ {
+  "id": "central_station",
+  "name": "中央车站",
+  "region": "城市核心",
+  "desc": "穹顶下停着一列永远没开出的车，检票口还亮着绿灯。",
+  "danger": 4,
+  "stages": 4,
+  "x": 0.62,
+  "y": 0.34,
+  "tags": [
+   "urban",
+   "rail",
+   "indoor"
+  ],
+  "loot": [
+   {
+    "item": "mre",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "suitcase",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 30,
+    "min": 3,
+    "max": 7
+   },
+   {
+    "item": "light_core",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_book",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "watch",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "jewelry",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_fresh",
+   "runner_feral",
+   "brute_heavy",
+   "boss_hive"
+  ],
+  "events": []
+ },
+ {
+  "id": "stadium",
+  "name": "体育场",
+  "region": "城市核心",
+  "desc": "看台上坐满了人，只是没有一个还在呼吸。",
+  "danger": 5,
+  "stages": 5,
+  "x": 0.7,
+  "y": 0.24,
+  "tags": [
+   "urban",
+   "open",
+   "horde"
+  ],
+  "loot": [
+   {
+    "item": "medkit",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "mre",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_556",
+    "chance": 35,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "light_core",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "sports_drink",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "energy_bar",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "walker_shambler",
+   "runner_feral",
+   "brute_armored",
+   "screamer_wail",
+   "boss_mother"
+  ],
+  "events": []
+ },
+ {
+  "id": "cathedral",
+  "name": "灰烬大教堂",
+  "region": "城市核心",
+  "desc": "教堂顶被烧穿了，光从破洞里落下来，照在祭坛上。",
+  "danger": 5,
+  "stages": 4,
+  "x": 0.36,
+  "y": 0.22,
+  "tags": [
+   "urban",
+   "indoor",
+   "order",
+   "boss"
+  ],
+  "loot": [
+   {
+    "item": "serum_formula",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 22,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "child_drawing",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wedding_ring",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "whiskey",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gold_ring",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "cultist_zealot",
+   "cultist_priest",
+   "boss_preacher",
+   "boss_twins"
+  ],
+  "events": []
+ },
+ {
+  "id": "harbor",
+  "name": "北港码头",
+  "region": "城市核心",
+  "desc": "集装箱堆成迷宫，海面上浮着一层油。",
+  "danger": 4,
+  "stages": 4,
+  "x": 0.78,
+  "y": 0.44,
+  "tags": [
+   "urban",
+   "water",
+   "open"
+  ],
+  "loot": [
+   {
+    "item": "fuel",
+    "chance": 50,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "rope",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fishing_rod",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel_rod",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_762",
+    "chance": 25,
+    "min": 2,
+    "max": 6
+   }
+  ],
+  "enemies": [
+   "walker_worker",
+   "hound_pack",
+   "brute_bloated",
+   "boss_tide"
+  ],
+  "events": []
+ },
+ {
+  "id": "lighthouse",
+  "name": "白塔灯塔",
+  "region": "城市核心",
+  "desc": "塔身白得刺眼。光束每分钟扫过一次，像是在替谁数着日子。",
+  "danger": 5,
+  "stages": 2,
+  "x": 0.88,
+  "y": 0.3,
+  "tags": [
+   "final",
+   "water",
+   "high"
+  ],
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antibiotics",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "mre",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "armored_swat",
+   "night_stalker",
+   "boss_ash",
+   "boss_bell"
+  ],
+  "events": []
+ },
+ {
+  "id": "subway_hub",
+  "name": "地铁枢纽",
+  "region": "城市核心",
+  "desc": "三条线在这里交汇。往下的台阶上全是干涸的暗色。",
+  "danger": 5,
+  "stages": 5,
+  "x": 0.46,
+  "y": 0.1,
+  "tags": [
+   "urban",
+   "dark",
+   "underground",
+   "horde"
+  ],
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "flashlight",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_45",
+    "chance": 30,
+    "min": 2,
+    "max": 7
+   },
+   {
+    "item": "lab_sample",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "crawler_ceiling",
+   "night_stalker",
+   "bloater_bomb",
+   "boss_hive"
+  ],
+  "events": []
+ },
+ {
+  "id": "incinerator",
+  "name": "焚化厂",
+  "region": "城市核心",
+  "desc": "焚化炉还有余温。你不想知道是谁在烧。",
+  "danger": 5,
+  "stages": 4,
+  "x": 0.66,
+  "y": 0.06,
+  "tags": [
+   "urban",
+   "industrial",
+   "boss"
+  ],
+  "loot": [
+   {
+    "item": "fuel",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "carbon",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "steel_plate",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "enemies": [
+   "bloater_bomb",
+   "brute_armored",
+   "boss_ash",
+   "armored_hazmat"
+  ],
+  "events": []
+ }
+]

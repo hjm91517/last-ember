@@ -1,0 +1,693 @@
+[
+ {
+  "id": "m01",
+  "title": "杂音",
+  "giver": "light",
+  "desc": "灯塔的信号需要中继。找一块还能用的无线电零件。",
+  "kind": "collect",
+  "target": "radio_part",
+  "count": 1,
+  "rewardXP": 40,
+  "rewardItems": {
+   "bandage": 2
+  },
+  "next": "m02"
+ },
+ {
+  "id": "m02",
+  "title": "公路检查站",
+  "giver": "light",
+  "desc": "去检查站，看看军方还剩下什么。",
+  "kind": "visit",
+  "target": "checkpoint",
+  "count": 1,
+  "rewardXP": 60,
+  "rewardItems": {
+   "ammo_556": 8
+  },
+  "next": "m03"
+ },
+ {
+  "id": "m03",
+  "title": "通行证",
+  "giver": "light",
+  "desc": "没有密钥卡，你连军械库的门都摸不到。",
+  "kind": "collect",
+  "target": "military_keycard",
+  "count": 1,
+  "rewardXP": 70,
+  "rewardItems": {
+   "mre": 1
+  },
+  "next": "m04"
+ },
+ {
+  "id": "m04",
+  "title": "白鸦的门",
+  "giver": "light",
+  "desc": "雷达站是通往白鸦实验室的必经之路。",
+  "kind": "visit",
+  "target": "radar_station",
+  "count": 1,
+  "rewardXP": 80,
+  "rewardItems": {
+   "battery": 4
+  },
+  "next": "m05"
+ },
+ {
+  "id": "m05",
+  "title": "实验记录",
+  "giver": "light",
+  "desc": "取一份实验样本，看看白鸦到底在研究什么。",
+  "kind": "collect",
+  "target": "lab_sample",
+  "count": 1,
+  "rewardXP": 90,
+  "rewardItems": {
+   "antibiotics": 2
+  },
+  "next": "m06"
+ },
+ {
+  "id": "m06",
+  "title": "抗体",
+  "giver": "light",
+  "desc": "一名免疫者的血样。白鸦说这比黄金值钱。",
+  "kind": "collect",
+  "target": "blood_sample",
+  "count": 1,
+  "rewardXP": 110,
+  "rewardItems": {
+   "serum": 1
+  },
+  "next": "m07"
+ },
+ {
+  "id": "m07",
+  "title": "配方",
+  "giver": "light",
+  "desc": "血清配方，三页手写笔记。",
+  "kind": "collect",
+  "target": "serum_formula",
+  "count": 1,
+  "rewardXP": 130,
+  "rewardItems": {
+   "chemical": 3
+  },
+  "next": "m08"
+ },
+ {
+  "id": "m08",
+  "title": "六枚核心",
+  "giver": "light",
+  "desc": "灯塔需要六枚核心才能全功率运行。它们散在这座城里。",
+  "kind": "collect",
+  "target": "light_core",
+  "count": 6,
+  "rewardXP": 200,
+  "rewardItems": {
+   "medkit": 1
+  },
+  "next": "m09"
+ },
+ {
+  "id": "m09",
+  "title": "燃料",
+  "giver": "light",
+  "desc": "发电机需要燃料。越多越好。",
+  "kind": "collect",
+  "target": "fuel",
+  "count": 4,
+  "rewardXP": 150,
+  "rewardItems": {
+   "jerky": 2
+  },
+  "next": "m10"
+ },
+ {
+  "id": "m10",
+  "title": "白塔",
+  "giver": "light",
+  "desc": "去灯塔。带上核心，带上你还信得过的人。",
+  "kind": "visit",
+  "target": "lighthouse",
+  "count": 1,
+  "rewardXP": 300,
+  "rewardItems": {
+   "serum": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_nurse_1",
+  "title": "第一批绷带",
+  "giver": "nurse",
+  "desc": "收集干净的布料，伤员需要。",
+  "kind": "collect",
+  "target": "cloth",
+  "count": 6,
+  "rewardXP": 60,
+  "rewardItems": {
+   "bandage": 3
+  },
+  "next": null
+ },
+ {
+  "id": "q_nurse_2",
+  "title": "抗生素配额",
+  "giver": "nurse",
+  "desc": "药快用完了。",
+  "kind": "collect",
+  "target": "antibiotics",
+  "count": 2,
+  "rewardXP": 90,
+  "rewardItems": {
+   "medkit": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_mech_1",
+  "title": "发动机",
+  "giver": "mechanic",
+  "desc": "带一桶燃料来，我就能让它转起来。",
+  "kind": "collect",
+  "target": "fuel",
+  "count": 2,
+  "rewardXP": 80,
+  "rewardItems": {
+   "fuel": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_mech_2",
+  "title": "零件仓库",
+  "giver": "mechanic",
+  "desc": "去仓库拆点东西回来。",
+  "kind": "collect",
+  "target": "generator_part",
+  "count": 1,
+  "rewardXP": 100,
+  "rewardItems": {
+   "toolbox": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_scout_1",
+  "title": "三条路线",
+  "giver": "scout",
+  "desc": "去三个不同的地方看看，回来告诉我哪条路能走。",
+  "kind": "visit",
+  "target": "overpass",
+  "count": 1,
+  "rewardXP": 60,
+  "rewardItems": {
+   "map_fragment": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_scout_2",
+  "title": "桥下",
+  "giver": "scout",
+  "desc": "别走桥。但如果你非要走，帮我看看桥下有什么。",
+  "kind": "visit",
+  "target": "tunnel",
+  "count": 1,
+  "rewardXP": 90,
+  "rewardItems": {
+   "light_core": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_sergeant_1",
+  "title": "哨兵的补给",
+  "giver": "sergeant",
+  "desc": "检查站的存粮只够四天。",
+  "kind": "collect",
+  "target": "mre",
+  "count": 2,
+  "rewardXP": 80,
+  "rewardItems": {
+   "ammo_556": 10
+  },
+  "next": null
+ },
+ {
+  "id": "q_sergeant_2",
+  "title": "清理道路",
+  "giver": "sergeant",
+  "desc": "把盘踞在军械库门口的东西清掉。",
+  "kind": "kill",
+  "target": "brute",
+  "count": 3,
+  "rewardXP": 120,
+  "rewardItems": {
+   "vest_kevlar": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_kid_1",
+  "title": "兔子玩偶",
+  "giver": "kid",
+  "desc": "小满说她的兔子丢在小学了。",
+  "kind": "visit",
+  "target": "school",
+  "count": 1,
+  "rewardXP": 50,
+  "rewardItems": {
+   "candy": 3
+  },
+  "next": null
+ },
+ {
+  "id": "q_kid_2",
+  "title": "画里的太阳",
+  "giver": "kid",
+  "desc": "找到三张画，她想把它们贴起来。",
+  "kind": "collect",
+  "target": "child_drawing",
+  "count": 3,
+  "rewardXP": 80,
+  "rewardItems": {
+   "photo": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_trader_1",
+  "title": "三件货",
+  "giver": "trader",
+  "desc": "给我三块能用的金属，我给你一个消息。",
+  "kind": "collect",
+  "target": "steel_plate",
+  "count": 3,
+  "rewardXP": 90,
+  "rewardItems": {
+   "binoculars": 1,
+   "ammo_45": 12
+  },
+  "next": null
+ },
+ {
+  "id": "q_hunter_1",
+  "title": "林子里的东西",
+  "giver": "hunter",
+  "desc": "有东西在咬我的陷阱。去处理一下。",
+  "kind": "kill",
+  "target": "hound",
+  "count": 4,
+  "rewardXP": 90,
+  "rewardItems": {
+   "cooked_meat": 2,
+   "arrow": 8
+  },
+  "next": null
+ },
+ {
+  "id": "q_hunter_2",
+  "title": "鹿角",
+  "giver": "hunter",
+  "desc": "我需要一副完整的鹿角做诱饵。",
+  "kind": "kill",
+  "target": "animal",
+  "count": 3,
+  "rewardXP": 100,
+  "rewardItems": {
+   "bow_compound": 0,
+   "arrow": 12
+  },
+  "next": null
+ },
+ {
+  "id": "q_priest_1",
+  "title": "名字",
+  "giver": "priest",
+  "desc": "帮我把教堂里那些人的名字记下来。",
+  "kind": "visit",
+  "target": "church",
+  "count": 1,
+  "rewardXP": 70,
+  "rewardItems": {
+   "book": 1,
+   "cigar": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_priest_2",
+  "title": "祭坛上的东西",
+  "giver": "priest",
+  "desc": "去 cathedral，别碰那些核心，只看。",
+  "kind": "visit",
+  "target": "cathedral",
+  "count": 1,
+  "rewardXP": 120,
+  "rewardItems": {
+   "light_core": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_doctor_1",
+  "title": "样本",
+  "giver": "doctor",
+  "desc": "我需要一份新鲜的实验样本。",
+  "kind": "collect",
+  "target": "lab_sample",
+  "count": 2,
+  "rewardXP": 140,
+  "rewardItems": {
+   "serum": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_doctor_2",
+  "title": "血",
+  "giver": "doctor",
+  "desc": "抗体血样。越多越好。",
+  "kind": "collect",
+  "target": "blood_sample",
+  "count": 1,
+  "rewardXP": 160,
+  "rewardItems": {
+   "serum": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_cook_1",
+  "title": "一口锅",
+  "giver": "cook",
+  "desc": "没有锅，我只能给你们吃冷的。",
+  "kind": "collect",
+  "target": "cooking_pot",
+  "count": 1,
+  "rewardXP": 50,
+  "rewardItems": {
+   "soup_can": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_cook_2",
+  "title": "五十罐",
+  "giver": "cook",
+  "desc": "营地要过冬了。",
+  "kind": "collect",
+  "target": "canned_food",
+  "count": 6,
+  "rewardXP": 100,
+  "rewardItems": {
+   "mre": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_singer_1",
+  "title": "电台",
+  "giver": "singer",
+  "desc": "修好它，我就继续播。",
+  "kind": "collect",
+  "target": "radio_part",
+  "count": 2,
+  "rewardXP": 110,
+  "rewardItems": {
+   "radio": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_singer_2",
+  "title": "新的频率",
+  "giver": "singer",
+  "desc": "去通讯塔，把天线转个方向。",
+  "kind": "visit",
+  "target": "comm_tower",
+  "count": 1,
+  "rewardXP": 120,
+  "rewardItems": {
+   "circuit": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_prisoner_1",
+  "title": "撬棍",
+  "giver": "prisoner",
+  "desc": "给我一根撬棍，我帮你开任何门。",
+  "kind": "collect",
+  "target": "crowbar",
+  "count": 1,
+  "rewardXP": 60,
+  "rewardItems": {
+   "lockpick": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_grave_1",
+  "title": "埋了他们",
+  "giver": "gravedigger",
+  "desc": "医院后面还有十七具。",
+  "kind": "visit",
+  "target": "field_hospital",
+  "count": 1,
+  "rewardXP": 80,
+  "rewardItems": {
+   "shovel": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_grave_2",
+  "title": "名字牌",
+  "giver": "gravedigger",
+  "desc": "找些木板来，给他们做个记号。",
+  "kind": "collect",
+  "target": "wood",
+  "count": 8,
+  "rewardXP": 70,
+  "rewardItems": {
+   "bone": 3
+  },
+  "next": null
+ },
+ {
+  "id": "q_deserter_1",
+  "title": "销毁档案",
+  "giver": "deserter",
+  "desc": "把雷达站里那份名单烧了。",
+  "kind": "visit",
+  "target": "radar_station",
+  "count": 1,
+  "rewardXP": 110,
+  "rewardItems": {
+   "military_keycard": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_engineer_1",
+  "title": "点亮营地",
+  "giver": "engineer",
+  "desc": "给我一台发电机，还有燃料。",
+  "kind": "collect",
+  "target": "generator",
+  "count": 1,
+  "rewardXP": 150,
+  "rewardItems": {
+   "battery_pack": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_engineer_2",
+  "title": "电网",
+  "giver": "engineer",
+  "desc": "变电站里还有能用的一段线。",
+  "kind": "collect",
+  "target": "wire",
+  "count": 10,
+  "rewardXP": 100,
+  "rewardItems": {
+   "circuit": 3
+  },
+  "next": null
+ },
+ {
+  "id": "q_teacher_1",
+  "title": "点名册",
+  "giver": "teacher",
+  "desc": "去学校，把点名册带回来。",
+  "kind": "visit",
+  "target": "school",
+  "count": 1,
+  "rewardXP": 70,
+  "rewardItems": {
+   "paper": 5,
+   "candy": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_warden_1",
+  "title": "守夜",
+  "giver": "warden",
+  "desc": "陪我守着这扇门，到天亮。",
+  "kind": "collect",
+  "target": "battery",
+  "count": 3,
+  "rewardXP": 80,
+  "rewardItems": {
+   "flashlight": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_1",
+  "title": "补给清单",
+  "giver": "board",
+  "desc": "营地需要废铁、布料和木板。",
+  "kind": "collect",
+  "target": "scrap",
+  "count": 10,
+  "rewardXP": 80,
+  "rewardItems": {
+   "duct_tape": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_2",
+  "title": "净水",
+  "giver": "board",
+  "desc": "水不够了。",
+  "kind": "collect",
+  "target": "water_bottle",
+  "count": 6,
+  "rewardXP": 80,
+  "rewardItems": {
+   "purify_tablet": 3
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_3",
+  "title": "医药",
+  "giver": "board",
+  "desc": "伤员在增加。",
+  "kind": "collect",
+  "target": "bandage",
+  "count": 5,
+  "rewardXP": 90,
+  "rewardItems": {
+   "antibiotics": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_4",
+  "title": "子弹",
+  "giver": "board",
+  "desc": "围墙外的枪声越来越近。",
+  "kind": "collect",
+  "target": "ammo_9mm",
+  "count": 12,
+  "rewardXP": 80,
+  "rewardItems": {
+   "ammo_9mm": 6
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_5",
+  "title": "探路",
+  "giver": "board",
+  "desc": "去商业区看看还能不能走。",
+  "kind": "visit",
+  "target": "supermarket",
+  "count": 1,
+  "rewardXP": 90,
+  "rewardItems": {
+   "water_bottle": 3
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_6",
+  "title": "清剿",
+  "giver": "board",
+  "desc": "把附近的感染者压低到能睡觉的程度。",
+  "kind": "kill",
+  "target": "walker",
+  "count": 10,
+  "rewardXP": 100,
+  "rewardItems": {
+   "jerky": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_7",
+  "title": "猎兽",
+  "giver": "board",
+  "desc": "肉食短缺。",
+  "kind": "kill",
+  "target": "animal",
+  "count": 4,
+  "rewardXP": 100,
+  "rewardItems": {
+   "cooked_meat": 3
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_8",
+  "title": "制作者",
+  "giver": "board",
+  "desc": "营地需要更多手工制品。",
+  "kind": "craft",
+  "target": "any",
+  "count": 5,
+  "rewardXP": 90,
+  "rewardItems": {
+   "toolbox": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_9",
+  "title": "守住十天",
+  "giver": "board",
+  "desc": "活过第十天，你会习惯的。",
+  "kind": "day",
+  "target": "any",
+  "count": 10,
+  "rewardXP": 100,
+  "rewardItems": {
+   "mre": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_board_10",
+  "title": "军械库",
+  "giver": "board",
+  "desc": "去军械库，看看还能不能补充弹药。",
+  "kind": "visit",
+  "target": "armory",
+  "count": 1,
+  "rewardXP": 130,
+  "rewardItems": {
+   "ammo_556": 12
+  },
+  "next": null
+ }
+]

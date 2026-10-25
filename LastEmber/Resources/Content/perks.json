@@ -1,0 +1,536 @@
+[
+ {
+  "id": "brawler",
+  "name": "街头斗殴",
+  "branch": "combat",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "在巷子里学会的，比训练场管用。",
+  "effect": {
+   "dmg": 2
+  }
+ },
+ {
+  "id": "marksman",
+  "name": "枪法",
+  "branch": "combat",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "呼吸、准星、扣扳机。顺序不能乱。",
+  "effect": {
+   "acc": 4
+  }
+ },
+ {
+  "id": "shield_wall",
+  "name": "铁壁",
+  "branch": "combat",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "挨打也是一种本事。",
+  "effect": {
+   "hpMax": 8
+  }
+ },
+ {
+  "id": "brutal",
+  "name": "野蛮",
+  "branch": "combat",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "用最省事的方式结束战斗。",
+  "effect": {
+   "dmg": 3,
+   "crit": 2
+  }
+ },
+ {
+  "id": "quick_draw",
+  "name": "快拔",
+  "branch": "combat",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "先出手的人活下来。",
+  "effect": {
+   "acc": 3,
+   "flee": 5
+  }
+ },
+ {
+  "id": "steady_aim",
+  "name": "稳定瞄准",
+  "branch": "combat",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "手不抖，是因为你不再害怕。",
+  "effect": {
+   "acc": 5
+  }
+ },
+ {
+  "id": "iron_fist",
+  "name": "铁拳",
+  "branch": "combat",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "关节上全是老茧。",
+  "effect": {
+   "dmg": 4,
+   "hpMax": 4
+  }
+ },
+ {
+  "id": "executioner",
+  "name": "处决者",
+  "branch": "combat",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "你知道该往哪里下手。",
+  "effect": {
+   "crit": 6
+  }
+ },
+ {
+  "id": "deadeye",
+  "name": "鹰眼",
+  "branch": "combat",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "一百米外，风偏三指。",
+  "effect": {
+   "crit": 8,
+   "acc": 3
+  }
+ },
+ {
+  "id": "butcher",
+  "name": "屠夫",
+  "branch": "combat",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "分解过太多东西，知道骨头在哪里。",
+  "effect": {
+   "dmg": 3,
+   "crit": 2
+  }
+ },
+ {
+  "id": "berserk",
+  "name": "狂怒",
+  "branch": "combat",
+  "tier": 4,
+  "maxRank": 1,
+  "desc": "当恐惧用完之后，剩下的是怒火。",
+  "effect": {
+   "dmg": 7,
+   "flee": -5
+  }
+ },
+ {
+  "id": "scrounger",
+  "name": "拾荒眼",
+  "branch": "survival",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "垃圾堆里也有活路。",
+  "effect": {
+   "scavenge": 6
+  }
+ },
+ {
+  "id": "pack_mule",
+  "name": "负重",
+  "branch": "survival",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "背得动，才走得远。",
+  "effect": {
+   "carry": 8
+  }
+ },
+ {
+  "id": "light_step",
+  "name": "轻步",
+  "branch": "survival",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "踩下去之前先想好落点。",
+  "effect": {
+   "stealth": 6,
+   "flee": 4
+  }
+ },
+ {
+  "id": "field_medic",
+  "name": "战地医疗",
+  "branch": "survival",
+  "tier": 2,
+  "maxRank": 3,
+  "desc": "止血、固定、抗感染。",
+  "effect": {
+   "heal": 5,
+   "infectResist": 8
+  }
+ },
+ {
+  "id": "iron_stomach",
+  "name": "铁胃",
+  "branch": "survival",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "什么都吃得下，什么都扛得住。",
+  "effect": {
+   "hpMax": 5,
+   "infectResist": 6
+  }
+ },
+ {
+  "id": "camper",
+  "name": "露营者",
+  "branch": "survival",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "任何地方都能睡一觉。",
+  "effect": {
+   "heal": 3,
+   "sanity": 2
+  }
+ },
+ {
+  "id": "water_finder",
+  "name": "找水人",
+  "branch": "survival",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "水比子弹重要。",
+  "effect": {
+   "scavenge": 4,
+   "sanity": 1
+  }
+ },
+ {
+  "id": "silent",
+  "name": "静默",
+  "branch": "survival",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "你走过的地方，连灰都不动。",
+  "effect": {
+   "stealth": 8
+  }
+ },
+ {
+  "id": "tough",
+  "name": "硬汉",
+  "branch": "survival",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "疼归疼，路还是要走。",
+  "effect": {
+   "hpMax": 10
+  }
+ },
+ {
+  "id": "survivor",
+  "name": "老手",
+  "branch": "survival",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "你已经活过了大多数人。",
+  "effect": {
+   "hpMax": 6,
+   "infectResist": 6
+  }
+ },
+ {
+  "id": "lucky",
+  "name": "幸运",
+  "branch": "survival",
+  "tier": 4,
+  "maxRank": 1,
+  "desc": "有些人就是运气好。",
+  "effect": {
+   "sanity": 3,
+   "scavenge": 3
+  }
+ },
+ {
+  "id": "handy",
+  "name": "巧手",
+  "branch": "tech",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "给你一堆垃圾，你能造出点什么。",
+  "effect": {
+   "craft": 1
+  }
+ },
+ {
+  "id": "tinker",
+  "name": "修补匠",
+  "branch": "tech",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "坏了就修，修不好就拆。",
+  "effect": {
+   "craft": 1,
+   "heal": 2
+  }
+ },
+ {
+  "id": "salvager",
+  "name": "拆解师",
+  "branch": "tech",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "一架废车能拆出三十种零件。",
+  "effect": {
+   "scavenge": 4,
+   "carry": 4
+  }
+ },
+ {
+  "id": "locksmith",
+  "name": "锁匠",
+  "branch": "tech",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "锁只是耐心的问题。",
+  "effect": {
+   "scavenge": 5
+  }
+ },
+ {
+  "id": "grease_monkey",
+  "name": "机修工",
+  "branch": "tech",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "手上永远洗不干净的油。",
+  "effect": {
+   "craft": 1,
+   "carry": 4
+  }
+ },
+ {
+  "id": "demolisher",
+  "name": "爆破手",
+  "branch": "tech",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "炸药是万能钥匙。",
+  "effect": {
+   "craft": 1,
+   "dmg": 2
+  }
+ },
+ {
+  "id": "medic_tech",
+  "name": "器械医",
+  "branch": "tech",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "会用缝合包，也会修输液泵。",
+  "effect": {
+   "heal": 6
+  }
+ },
+ {
+  "id": "night_owl",
+  "name": "夜猫子",
+  "branch": "tech",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "黑暗里反而看得更清楚。",
+  "effect": {
+   "stealth": 4,
+   "sanity": 2
+  }
+ },
+ {
+  "id": "gunsmith",
+  "name": "枪匠",
+  "branch": "tech",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "枪是工具，工具需要保养。",
+  "effect": {
+   "craft": 1,
+   "acc": 2
+  }
+ },
+ {
+  "id": "quartermaster",
+  "name": "军需官",
+  "branch": "tech",
+  "tier": 4,
+  "maxRank": 1,
+  "desc": "你知道每样东西该放在哪。",
+  "effect": {
+   "carry": 12
+  }
+ },
+ {
+  "id": "engineer",
+  "name": "总工程师",
+  "branch": "tech",
+  "tier": 4,
+  "maxRank": 1,
+  "desc": "给你一座废墟，你能让它亮起来。",
+  "effect": {
+   "craft": 2,
+   "scavenge": 3
+  }
+ },
+ {
+  "id": "zeal",
+  "name": "狂热",
+  "branch": "will",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "信念能挡住一些东西。",
+  "effect": {
+   "sanity": 4,
+   "hpMax": 4
+  }
+ },
+ {
+  "id": "stubborn",
+  "name": "固执",
+  "branch": "will",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "别人都倒下了，你还站着。",
+  "effect": {
+   "hpMax": 8
+  }
+ },
+ {
+  "id": "calm",
+  "name": "冷静",
+  "branch": "will",
+  "tier": 1,
+  "maxRank": 3,
+  "desc": "数到十，再做决定。",
+  "effect": {
+   "sanity": 5,
+   "crit": 1
+  }
+ },
+ {
+  "id": "faith",
+  "name": "信仰",
+  "branch": "will",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "灰烬之后，总得信点什么。",
+  "effect": {
+   "sanity": 6,
+   "infectResist": 4
+  }
+ },
+ {
+  "id": "pain_tolerance",
+  "name": "忍痛",
+  "branch": "will",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "痛是信号，不是命令。",
+  "effect": {
+   "heal": 4,
+   "hpMax": 4
+  }
+ },
+ {
+  "id": "clear_mind",
+  "name": "清醒",
+  "branch": "will",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "你能分清哪个声音是自己的。",
+  "effect": {
+   "sanity": 4,
+   "acc": 2
+  }
+ },
+ {
+  "id": "field_surgery",
+  "name": "战地手术",
+  "branch": "will",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "没有麻醉，也要把子弹取出来。",
+  "effect": {
+   "heal": 8
+  }
+ },
+ {
+  "id": "ghost",
+  "name": "幽灵",
+  "branch": "will",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "他们已经不记得你的样子了。",
+  "effect": {
+   "stealth": 10,
+   "flee": 6
+  }
+ },
+ {
+  "id": "priest_faith",
+  "name": "布道",
+  "branch": "will",
+  "tier": 3,
+  "maxRank": 2,
+  "desc": "你说话时，别人会安静下来。",
+  "effect": {
+   "sanity": 5
+  }
+ },
+ {
+  "id": "singer",
+  "name": "歌者",
+  "branch": "will",
+  "tier": 2,
+  "maxRank": 1,
+  "desc": "你唱歌的时候，营地会安静。",
+  "effect": {
+   "sanity": 6
+  }
+ },
+ {
+  "id": "dog_bond",
+  "name": "伙伴",
+  "branch": "will",
+  "tier": 1,
+  "maxRank": 1,
+  "desc": "它会在你睡着的时候守着门。",
+  "effect": {
+   "sanity": 4,
+   "scavenge": 2
+  }
+ },
+ {
+  "id": "nurse_hands",
+  "name": "护理",
+  "branch": "will",
+  "tier": 2,
+  "maxRank": 2,
+  "desc": "手很稳，心很软。",
+  "effect": {
+   "heal": 5,
+   "infectResist": 6
+  }
+ },
+ {
+  "id": "sharp_eye",
+  "name": "锐眼",
+  "branch": "combat",
+  "tier": 2,
+  "maxRank": 1,
+  "desc": "你总能先看见对方。",
+  "effect": {
+   "crit": 5
+  }
+ }
+]

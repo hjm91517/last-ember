@@ -1,0 +1,242 @@
+[
+ {
+  "id": "bench",
+  "name": "工作台",
+  "desc": "木桌、台钳、一盏灯。大部分东西都从这里造出来。",
+  "maxLevel": 4,
+  "baseCost": {
+   "scrap": 8,
+   "wood": 6,
+   "nail": 8
+  },
+  "scale": 1.7,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "hammer.fill"
+ },
+ {
+  "id": "kitchen",
+  "name": "厨房",
+  "desc": "能烧水、能煮东西，能把生的变成能吃的。",
+  "maxLevel": 3,
+  "baseCost": {
+   "scrap": 5,
+   "wood": 8,
+   "cooking_pot": 1
+  },
+  "scale": 1.8,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "fork.knife"
+ },
+ {
+  "id": "medbay",
+  "name": "医疗台",
+  "desc": "一张干净的床，一盏头灯，一套缝合工具。",
+  "maxLevel": 3,
+  "baseCost": {
+   "bandage": 4,
+   "cloth": 6,
+   "scrap": 6
+  },
+  "scale": 1.9,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "armory",
+  "name": "军械台",
+  "desc": "压弹、修枪、把废铁变成能打响的东西。",
+  "maxLevel": 3,
+  "baseCost": {
+   "steel_plate": 2,
+   "scrap": 10,
+   "toolbox": 1
+  },
+  "scale": 2.0,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "shield.fill"
+ },
+ {
+  "id": "radio",
+  "name": "电台",
+  "desc": "天线架在屋顶，能听见很远的地方。",
+  "maxLevel": 2,
+  "baseCost": {
+   "radio_part": 2,
+   "wire": 6,
+   "battery": 4
+  },
+  "scale": 2.0,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "antenna.radiowaves.left.and.right"
+ },
+ {
+  "id": "garden",
+  "name": "菜园",
+  "desc": "翻过的土，插着几根标尺。每天能收一点菜。",
+  "maxLevel": 4,
+  "baseCost": {
+   "wood": 6,
+   "seed_pack": 1,
+   "fertilizer": 2
+  },
+  "scale": 1.6,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "leaf.fill"
+ },
+ {
+  "id": "collector",
+  "name": "雨水收集器",
+  "desc": "帆布和塑料布搭的斜面，每天能接一点浑水。",
+  "maxLevel": 4,
+  "baseCost": {
+   "plastic": 6,
+   "fabric": 2,
+   "rope": 3
+  },
+  "scale": 1.5,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "drop.fill"
+ },
+ {
+  "id": "wall",
+  "name": "围墙",
+  "desc": "钢板、沙袋、铁丝网。夜袭时能多挡一会儿。",
+  "maxLevel": 4,
+  "baseCost": {
+   "steel_plate": 2,
+   "cement": 4,
+   "scrap": 8
+  },
+  "scale": 1.8,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "shield.lefthalf.filled"
+ },
+ {
+  "id": "tower",
+  "name": "瞭望塔",
+  "desc": "三米高，能看见两条街以外。守夜的人喜欢它。",
+  "maxLevel": 3,
+  "baseCost": {
+   "wood": 10,
+   "scrap": 8,
+   "rope": 4
+  },
+  "scale": 1.9,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "binoculars.fill"
+ },
+ {
+  "id": "bed",
+  "name": "床铺",
+  "desc": "干净的床垫和一床被子。睡得好，第二天才走得动。",
+  "maxLevel": 3,
+  "baseCost": {
+   "cloth": 6,
+   "wood": 4,
+   "sleeping_bag": 1
+  },
+  "scale": 1.8,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "bed.double.fill"
+ },
+ {
+  "id": "storage",
+  "name": "储物架",
+  "desc": "钉在墙上的架子，能多放不少东西。",
+  "maxLevel": 4,
+  "baseCost": {
+   "wood": 8,
+   "nail": 10,
+   "scrap": 4
+  },
+  "scale": 1.5,
+  "effectKey": "none",
+  "perLevel": 4,
+  "icon": "shippingbox.fill"
+ },
+ {
+  "id": "still",
+  "name": "蒸馏器",
+  "desc": "铜管、密封罐、小火。能把菜变成酒，也能消毒。",
+  "maxLevel": 3,
+  "baseCost": {
+   "copper": 3,
+   "valve": 1,
+   "empty_bottle": 4
+  },
+  "scale": 1.8,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "flame.fill"
+ },
+ {
+  "id": "trap_line",
+  "name": "陷阱阵",
+  "desc": "铁丝、铃铛、兽夹。夜里会有东西替你站岗。",
+  "maxLevel": 3,
+  "baseCost": {
+   "wire": 6,
+   "trap": 1,
+   "scrap": 6
+  },
+  "scale": 1.7,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "circle.hexagongrid.fill"
+ },
+ {
+  "id": "infirmary",
+  "name": "病房",
+  "desc": "几张床，一条帘子，一个能安静躺着的地方。",
+  "maxLevel": 3,
+  "baseCost": {
+   "bandage": 3,
+   "cloth": 8,
+   "wood": 5
+  },
+  "scale": 1.8,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "bed.double.fill"
+ },
+ {
+  "id": "training",
+  "name": "训练桩",
+  "desc": "绑着草绳的木桩。每天挥几百下，肌肉会记住。",
+  "maxLevel": 3,
+  "baseCost": {
+   "wood": 8,
+   "cloth": 4,
+   "rope": 3
+  },
+  "scale": 1.9,
+  "effectKey": "hpMax",
+  "perLevel": 5,
+  "icon": "figure.strengthtraining.traditional"
+ },
+ {
+  "id": "doghouse",
+  "name": "犬舍",
+  "desc": "门口的小木屋和一只旧饭盆。有它在，夜里踏实些。",
+  "maxLevel": 2,
+  "baseCost": {
+   "wood": 6,
+   "fabric": 2,
+   "canned_food": 2
+  },
+  "scale": 2.0,
+  "effectKey": "none",
+  "perLevel": 0,
+  "icon": "dog.fill"
+ }
+]

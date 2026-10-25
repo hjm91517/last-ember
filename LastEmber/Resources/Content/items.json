@@ -1,0 +1,2949 @@
+[
+ {
+  "id": "scrap",
+  "name": "废铁",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 5,
+  "stack": 99,
+  "desc": "锈得发黑的金属碎片。能换东西，也能磨成刀。",
+  "effect": {},
+  "tags": [
+   "metal"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "wood",
+  "name": "木板",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.8,
+  "value": 4,
+  "stack": 99,
+  "desc": "从家具上拆下来的松木板，带着潮气。",
+  "effect": {},
+  "tags": [
+   "wood"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "cloth",
+  "name": "布料",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 3,
+  "stack": 99,
+  "desc": "撕成条的床单，绷带和燃烧瓶都要它。",
+  "effect": {},
+  "tags": [
+   "fabric"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "leather",
+  "name": "皮革",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.4,
+  "value": 9,
+  "stack": 99,
+  "desc": "从旧沙发上割下来的皮，结实，有股霉味。",
+  "effect": {},
+  "tags": [
+   "fabric"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "rubber",
+  "name": "橡胶",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.3,
+  "value": 5,
+  "stack": 99,
+  "desc": "轮胎碎片。烧起来味道很难闻。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "plastic",
+  "name": "塑料瓶",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 2,
+  "stack": 99,
+  "desc": "洗过的塑料容器，装水装药都行。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "glass",
+  "name": "碎玻璃",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 2,
+  "stack": 99,
+  "desc": "锋利的碎片，可以当简易箭头。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "wire",
+  "name": "铜线",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 5,
+  "stack": 99,
+  "desc": "从墙里抽出来的线，营地到处都用得上。",
+  "effect": {},
+  "tags": [
+   "electric"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "duct_tape",
+  "name": "强力胶带",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 7,
+  "stack": 99,
+  "desc": "灰色的一整卷。文明退场后，它仍是万能答案。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "nail",
+  "name": "铁钉",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 3,
+  "stack": 99,
+  "desc": "从废墟里捡的钉子，直的，锈的，够用。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "screw",
+  "name": "螺丝",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 3,
+  "stack": 99,
+  "desc": "长短不一的螺丝，装满了一个罐头盒。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "charcoal",
+  "name": "木炭",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.3,
+  "value": 4,
+  "stack": 99,
+  "desc": "烧过的木头，能过滤水，也能生火。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "gunpowder",
+  "name": "火药",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 12,
+  "stack": 99,
+  "desc": "从子弹里倒出来的黑粉。别靠火太近。",
+  "effect": {},
+  "tags": [
+   "explosive"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "alcohol",
+  "name": "工业酒精",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.4,
+  "value": 10,
+  "stack": 99,
+  "desc": "刺鼻，易燃，消毒时比喝下去更合适。",
+  "effect": {},
+  "tags": [
+   "flammable"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "battery",
+  "name": "电池",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 12,
+  "stack": 99,
+  "desc": "还有一点电，手电和无线电都靠它。",
+  "effect": {},
+  "tags": [
+   "electric"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "circuit",
+  "name": "电子元件",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.2,
+  "value": 18,
+  "stack": 99,
+  "desc": "从旧电脑上拆的板子，白鸦愿意收。",
+  "effect": {},
+  "tags": [
+   "electric"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "oil",
+  "name": "机油",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.6,
+  "value": 9,
+  "stack": 99,
+  "desc": "黑乎乎的，润滑、点火、防锈都行。",
+  "effect": {},
+  "tags": [
+   "flammable"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "cement",
+  "name": "水泥",
+  "cat": "material",
+  "tier": 2,
+  "weight": 1.2,
+  "value": 8,
+  "stack": 99,
+  "desc": "结块的半袋水泥，加固围墙必需。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "rope",
+  "name": "绳索",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 6,
+  "stack": 99,
+  "desc": "十五米长的尼龙绳，晾着干了的血。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "fabric",
+  "name": "帆布",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 8,
+  "stack": 99,
+  "desc": "防水帆布，能做背包，也能补屋顶。",
+  "effect": {},
+  "tags": [
+   "fabric"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "spring",
+  "name": "弹簧",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 7,
+  "stack": 99,
+  "desc": "陷阱和自制枪械的心脏。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "magnet",
+  "name": "磁铁",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 10,
+  "stack": 99,
+  "desc": "从扬声器上撬下来的，能吸住很多小东西。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "sulfur",
+  "name": "硫磺",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.2,
+  "value": 14,
+  "stack": 99,
+  "desc": "黄色粉末，火药配方的一部分。",
+  "effect": {},
+  "tags": [
+   "explosive"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "saltpeter",
+  "name": "硝石",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.2,
+  "value": 14,
+  "stack": 99,
+  "desc": "从旧仓库墙角刮下来的白色结晶。",
+  "effect": {},
+  "tags": [
+   "explosive"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "fat",
+  "name": "兽脂",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.3,
+  "value": 5,
+  "stack": 99,
+  "desc": "熬出来的油脂，能做肥皂，也能点灯。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "wax",
+  "name": "蜂蜡",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 6,
+  "stack": 99,
+  "desc": "蜂场废墟里剩下的蜡块，有股甜味。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "resin",
+  "name": "树脂",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 7,
+  "stack": 99,
+  "desc": "松树伤口流出的黏稠物，防水黏合剂。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "herb",
+  "name": "草药",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 6,
+  "stack": 99,
+  "desc": "灰灰的草叶。奶奶说这个能退烧，你只能选择相信。",
+  "effect": {},
+  "tags": [
+   "medical"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "bone",
+  "name": "骨粉",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.3,
+  "value": 4,
+  "stack": 99,
+  "desc": "磨成粉的骨头。园艺和肥料都用得上。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "feather",
+  "name": "羽毛",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 2,
+  "stack": 99,
+  "desc": "乌鸦的羽毛，扎箭用。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "fishing_line",
+  "name": "鱼线",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 3,
+  "stack": 99,
+  "desc": "细而韧的线，能缝伤口，也能钓鱼。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "copper",
+  "name": "铜管",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.6,
+  "value": 16,
+  "stack": 99,
+  "desc": "从水暖管上锯下来的，做蒸馏器正合适。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "valve",
+  "name": "阀门",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.5,
+  "value": 15,
+  "stack": 99,
+  "desc": "还能拧动的金属阀门。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "pump_part",
+  "name": "水泵零件",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.8,
+  "value": 20,
+  "stack": 99,
+  "desc": "抽水机的关键部件，沉得压手。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "generator_part",
+  "name": "发电机零件",
+  "cat": "material",
+  "tier": 4,
+  "weight": 1.0,
+  "value": 30,
+  "stack": 99,
+  "desc": "铜线圈和转子，营地电力的核心。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "radio_part",
+  "name": "无线电零件",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.4,
+  "value": 24,
+  "stack": 99,
+  "desc": "一块还能工作的放大板，能让死人说话。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "filter_core",
+  "name": "滤芯",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.4,
+  "value": 18,
+  "stack": 99,
+  "desc": "防毒面具的心脏，吸过它的人都说值。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "fuel",
+  "name": "汽油",
+  "cat": "material",
+  "tier": 2,
+  "weight": 0.8,
+  "value": 16,
+  "stack": 99,
+  "desc": "从废弃汽车油箱里抽出来的，混着水。",
+  "effect": {},
+  "tags": [
+   "flammable"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "propane",
+  "name": "丙烷罐",
+  "cat": "material",
+  "tier": 3,
+  "weight": 1.4,
+  "value": 20,
+  "stack": 99,
+  "desc": "还能听见液体晃动的声音。",
+  "effect": {},
+  "tags": [
+   "flammable"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "steel_plate",
+  "name": "钢板",
+  "cat": "material",
+  "tier": 3,
+  "weight": 1.8,
+  "value": 22,
+  "stack": 99,
+  "desc": "一块切好的钢板，能挡刀，也能做护甲。",
+  "effect": {},
+  "tags": [
+   "metal"
+  ],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "carbon",
+  "name": "碳纤维板",
+  "cat": "material",
+  "tier": 4,
+  "weight": 0.7,
+  "value": 35,
+  "stack": 99,
+  "desc": "又轻又硬，来自某辆报废的跑车。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "chemical",
+  "name": "化学试剂",
+  "cat": "material",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 20,
+  "stack": 99,
+  "desc": "标签被腐蚀了，白鸦的人会认。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "empty_bottle",
+  "name": "空玻璃瓶",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 2,
+  "stack": 99,
+  "desc": "洗干净还能装水，装满酒精就是武器。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "can_empty",
+  "name": "空罐",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 1,
+  "stack": 99,
+  "desc": "踩扁了可以做警报器。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "paper",
+  "name": "纸张",
+  "cat": "material",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 1,
+  "stack": 99,
+  "desc": "发黄的纸，写遗书或者生火。",
+  "effect": {},
+  "tags": [],
+  "icon": "gearshape.fill"
+ },
+ {
+  "id": "book",
+  "name": "旧书",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 8,
+  "stack": 99,
+  "desc": "一本翻烂的《野外生存手册》。读两页，心会静一点。",
+  "effect": {
+   "sanity": 6,
+   "xp": 8
+  },
+  "tags": [
+   "readable"
+  ],
+  "icon": "book.fill"
+ },
+ {
+  "id": "map_fragment",
+  "name": "地图残页",
+  "cat": "quest",
+  "tier": 3,
+  "weight": 0.1,
+  "value": 15,
+  "stack": 99,
+  "desc": "标注了检查站与灯塔之间的旧公路。",
+  "effect": {},
+  "tags": [],
+  "icon": "map.fill"
+ },
+ {
+  "id": "light_core",
+  "name": "灯塔核心",
+  "cat": "quest",
+  "tier": 4,
+  "weight": 1.2,
+  "value": 80,
+  "stack": 99,
+  "desc": "六枚之一。外壳刻着褪色的编号，摸上去还是温的。",
+  "effect": {},
+  "tags": [],
+  "icon": "light.beacon.max.fill"
+ },
+ {
+  "id": "military_keycard",
+  "name": "军方密钥卡",
+  "cat": "quest",
+  "tier": 3,
+  "weight": 0.05,
+  "value": 40,
+  "stack": 99,
+  "desc": "残军上尉的通行卡，边角被烧焦了。",
+  "effect": {},
+  "tags": [],
+  "icon": "key.fill"
+ },
+ {
+  "id": "lab_sample",
+  "name": "实验样本",
+  "cat": "quest",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 45,
+  "stack": 99,
+  "desc": "贴着手写标签的冷冻管。标签上写着一个日期，和你的生日同月。",
+  "effect": {},
+  "tags": [],
+  "icon": "testtube.2"
+ },
+ {
+  "id": "blood_sample",
+  "name": "抗体血样",
+  "cat": "quest",
+  "tier": 4,
+  "weight": 0.2,
+  "value": 70,
+  "stack": 99,
+  "desc": "从一名免疫者身上抽出的血。白鸦说这是最后的希望。",
+  "effect": {},
+  "tags": [],
+  "icon": "drop.triangle.fill"
+ },
+ {
+  "id": "serum_formula",
+  "name": "血清配方",
+  "cat": "quest",
+  "tier": 4,
+  "weight": 0.1,
+  "value": 90,
+  "stack": 99,
+  "desc": "三页手写笔记，最后一行被水泡开了。",
+  "effect": {},
+  "tags": [],
+  "icon": "doc.text.fill"
+ },
+ {
+  "id": "fuel_rod",
+  "name": "燃料棒",
+  "cat": "quest",
+  "tier": 4,
+  "weight": 2.0,
+  "value": 80,
+  "stack": 99,
+  "desc": "从反应堆备用槽里拆出来的，铅盒装着。",
+  "effect": {},
+  "tags": [],
+  "icon": "bolt.fill"
+ },
+ {
+  "id": "radio_codebook",
+  "name": "密码本",
+  "cat": "quest",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 55,
+  "stack": 99,
+  "desc": "残军的通讯密码，纸页上全是咖啡渍。",
+  "effect": {},
+  "tags": [],
+  "icon": "lock.fill"
+ },
+ {
+  "id": "hard_drive",
+  "name": "加密硬盘",
+  "cat": "quest",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 50,
+  "stack": 99,
+  "desc": "白鸦实验室的备份。接口还能用。",
+  "effect": {},
+  "tags": [],
+  "icon": "externaldrive.fill"
+ },
+ {
+  "id": "dog_tag",
+  "name": "狗牌",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.05,
+  "value": 20,
+  "stack": 99,
+  "desc": "两片金属，一个名字，一串编号。没人来认领。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "photo",
+  "name": "照片",
+  "cat": "valuable",
+  "tier": 1,
+  "weight": 0.02,
+  "value": 12,
+  "stack": 99,
+  "desc": "一家四口在海边。背面写着：我们很好。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "child_drawing",
+  "name": "蜡笔画",
+  "cat": "valuable",
+  "tier": 1,
+  "weight": 0.02,
+  "value": 14,
+  "stack": 99,
+  "desc": "画上是太阳、房子和三个手拉手的人。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "wedding_ring",
+  "name": "婚戒",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.02,
+  "value": 60,
+  "stack": 99,
+  "desc": "内圈刻着两个字母。你试着戴了一下，太松。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "gold_ring",
+  "name": "金戒指",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.02,
+  "value": 45,
+  "stack": 99,
+  "desc": "沉甸甸的。秃鹫帮愿意为它多给两罐水。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "handcuffs",
+  "name": "手铐",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.4,
+  "value": 18,
+  "stack": 99,
+  "desc": "黄铜手铐，钥匙丢了一把。秃鹫帮很需要它。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "cigarettes",
+  "name": "香烟",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 16,
+  "stack": 99,
+  "desc": "压扁的一包烟。在这里，它比钱好用。",
+  "effect": {
+   "sanity": 8
+  },
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "suitcase",
+  "name": "旧行李箱",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 1.5,
+  "value": 22,
+  "stack": 99,
+  "desc": "轮子坏了一个，里面塞满别人的衣服。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "watch",
+  "name": "手表",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 30,
+  "stack": 99,
+  "desc": "停在 4 点 17 分。你每天给它上弦，只为了让秒针再走一会儿。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "silverware",
+  "name": "银餐具",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 28,
+  "stack": 99,
+  "desc": "一整套银勺，用绒布裹着。曾经很贵，现在只是金属。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "laptop",
+  "name": "笔记本电脑",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 1.6,
+  "value": 55,
+  "stack": 99,
+  "desc": "电池鼓包了，硬盘也许还有东西。",
+  "effect": {},
+  "tags": [],
+  "icon": "laptopcomputer"
+ },
+ {
+  "id": "jewelry",
+  "name": "首饰盒",
+  "cat": "valuable",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 24,
+  "stack": 99,
+  "desc": "打开时还有一股香水味。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "painting",
+  "name": "卷起的画",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.6,
+  "value": 60,
+  "stack": 99,
+  "desc": "你不知道它值多少，只知道画里的天空还没有变灰。",
+  "effect": {},
+  "tags": [],
+  "icon": "photo.artframe"
+ },
+ {
+  "id": "whiskey",
+  "name": "威士忌",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.8,
+  "value": 40,
+  "stack": 99,
+  "desc": "喝下去会暖和一会儿，也会更想家。",
+  "effect": {
+   "sanity": 12,
+   "warmth": 10
+  },
+  "tags": [],
+  "icon": "wineglass.fill"
+ },
+ {
+  "id": "cigar",
+  "name": "雪茄",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.1,
+  "value": 22,
+  "stack": 99,
+  "desc": "干了，但还能点着。老周说这玩意比命金贵。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "coffee_beans",
+  "name": "咖啡豆",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 26,
+  "stack": 99,
+  "desc": "密封罐里剩下的半罐豆子，香味盖过了腐臭。",
+  "effect": {},
+  "tags": [],
+  "icon": "cup.and.saucer.fill"
+ },
+ {
+  "id": "camera",
+  "name": "相机",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.5,
+  "value": 30,
+  "stack": 99,
+  "desc": "胶卷还有十几张。你想拍点值得留下的东西。",
+  "effect": {},
+  "tags": [],
+  "icon": "camera.fill"
+ },
+ {
+  "id": "violin",
+  "name": "小提琴",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.7,
+  "value": 45,
+  "stack": 99,
+  "desc": "琴弦断了一根，琴身没有裂。",
+  "effect": {},
+  "tags": [],
+  "icon": "music.note"
+ },
+ {
+  "id": "stamp_album",
+  "name": "邮票册",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 22,
+  "stack": 99,
+  "desc": "整整齐齐贴满了一百多个国家，那个时代已经不存在了。",
+  "effect": {},
+  "tags": [],
+  "icon": "sparkles"
+ },
+ {
+  "id": "console",
+  "name": "游戏机",
+  "cat": "valuable",
+  "tier": 3,
+  "weight": 0.9,
+  "value": 34,
+  "stack": 99,
+  "desc": "没有电，也没有屏幕。但它还能换东西。",
+  "effect": {},
+  "tags": [],
+  "icon": "gamecontroller.fill"
+ },
+ {
+  "id": "vinyl",
+  "name": "黑胶唱片",
+  "cat": "valuable",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 20,
+  "stack": 99,
+  "desc": "封面是一个穿白裙子的女人。",
+  "effect": {},
+  "tags": [],
+  "icon": "opticaldisc.fill"
+ },
+ {
+  "id": "canned_food",
+  "name": "罐头",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 12,
+  "stack": 99,
+  "desc": "没有标签的罐头，打开前永远不知道是什么。",
+  "effect": {
+   "hunger": 22
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "beans_can",
+  "name": "豆罐头",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 10,
+  "stack": 99,
+  "desc": "冷着吃也能咽下去，只是胃会抗议。",
+  "effect": {
+   "hunger": 20,
+   "fatigue": 2
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "corn_can",
+  "name": "玉米罐头",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.4,
+  "value": 9,
+  "stack": 99,
+  "desc": "甜得不像这个世界的东西。",
+  "effect": {
+   "hunger": 17,
+   "sanity": 3
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "peach_can",
+  "name": "黄桃罐头",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 11,
+  "stack": 99,
+  "desc": "糖水比果肉更珍贵。",
+  "effect": {
+   "hunger": 16,
+   "thirst": 5,
+   "sanity": 4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "fish_can",
+  "name": "鱼罐头",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.4,
+  "value": 10,
+  "stack": 99,
+  "desc": "腥味很重，但热量是真的。",
+  "effect": {
+   "hunger": 19
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "spam",
+  "name": "午餐肉",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 16,
+  "stack": 99,
+  "desc": "油汪汪的一整块，煎一下就是节日。",
+  "effect": {
+   "hunger": 28,
+   "sanity": 3
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "mre",
+  "name": "军用口粮",
+  "cat": "food",
+  "tier": 3,
+  "weight": 0.8,
+  "value": 26,
+  "stack": 99,
+  "desc": "自热包还能用。包装上印着『第 3 号餐』。",
+  "effect": {
+   "hunger": 40,
+   "sanity": 4,
+   "fatigue": -4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "crackers",
+  "name": "压缩饼干",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 10,
+  "stack": 99,
+  "desc": "干得掉渣，得配水。",
+  "effect": {
+   "hunger": 24,
+   "thirst": -6
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "energy_bar",
+  "name": "能量棒",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.15,
+  "value": 9,
+  "stack": 99,
+  "desc": "黏牙，但能让你多跑两条街。",
+  "effect": {
+   "hunger": 14,
+   "fatigue": -8
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "noodles",
+  "name": "泡面",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 8,
+  "stack": 99,
+  "desc": "碎了也没关系，干吃是另一种活法。",
+  "effect": {
+   "hunger": 18,
+   "thirst": -5
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "rice",
+  "name": "大米",
+  "cat": "food",
+  "tier": 2,
+  "weight": 1.0,
+  "value": 12,
+  "stack": 99,
+  "desc": "半袋生米。得煮，但营地里没有那么多柴。",
+  "effect": {
+   "hunger": 26,
+   "thirst": -8
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "cereal",
+  "name": "麦片",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.4,
+  "value": 9,
+  "stack": 99,
+  "desc": "受潮结块了，甜味还在。",
+  "effect": {
+   "hunger": 16
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "chocolate",
+  "name": "巧克力",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.15,
+  "value": 14,
+  "stack": 99,
+  "desc": "化过又凝固，形状很丑。你会留到最后一天吃。",
+  "effect": {
+   "hunger": 8,
+   "sanity": 10
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "honey",
+  "name": "蜂蜜",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 13,
+  "stack": 99,
+  "desc": "结晶了，但蜂蜜不会坏。这是小时候学的。",
+  "effect": {
+   "hunger": 10,
+   "hp": 3
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "dried_meat",
+  "name": "肉干",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 15,
+  "stack": 99,
+  "desc": "不知道是什么肉。别问。",
+  "effect": {
+   "hunger": 24,
+   "thirst": -4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "cheese",
+  "name": "干酪",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 12,
+  "stack": 99,
+  "desc": "硬得像石头，咸得能省水。",
+  "effect": {
+   "hunger": 15,
+   "thirst": -3
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "wild_berry",
+  "name": "野果",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 3,
+  "stack": 99,
+  "desc": "酸得皱眉，至少不是苦的。",
+  "effect": {
+   "hunger": 8,
+   "thirst": 4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "mushroom",
+  "name": "蘑菇",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 4,
+  "stack": 99,
+  "desc": "你不确定有没有毒。生火煮过之后大概没事。",
+  "effect": {
+   "hunger": 10,
+   "infection": 2
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "rat_meat",
+  "name": "鼠肉",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 5,
+  "stack": 99,
+  "desc": "剥了皮，肉是粉色的。饥饿会让人降低标准。",
+  "effect": {
+   "hunger": 16,
+   "sanity": -4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "cooked_meat",
+  "name": "烤肉",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 12,
+  "stack": 99,
+  "desc": "炭火烤过，油滴进火里滋滋响。",
+  "effect": {
+   "hunger": 30,
+   "sanity": 4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "military_biscuit",
+  "name": "军用饼干",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 11,
+  "stack": 99,
+  "desc": "硬得能砸碎牙，但保质期写着 2031。",
+  "effect": {
+   "hunger": 22
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "candy",
+  "name": "硬糖",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 4,
+  "stack": 99,
+  "desc": "橘子味。含在嘴里的时候，世界会安静一点。",
+  "effect": {
+   "hunger": 4,
+   "sanity": 6
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "baby_formula",
+  "name": "婴儿奶粉",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.4,
+  "value": 20,
+  "stack": 99,
+  "desc": "铁罐还没开封。你不知道该拿它换什么。",
+  "effect": {
+   "hunger": 14,
+   "sanity": 2
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "pet_food",
+  "name": "宠物粮",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.4,
+  "value": 5,
+  "stack": 99,
+  "desc": "闻起来比某些罐头更像食物。",
+  "effect": {
+   "hunger": 12,
+   "sanity": -3
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "jerky",
+  "name": "风干肉",
+  "cat": "food",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 18,
+  "stack": 99,
+  "desc": "用盐和烟熏了三天，能放很久。",
+  "effect": {
+   "hunger": 26
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "soup_can",
+  "name": "罐头汤",
+  "cat": "food",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 14,
+  "stack": 99,
+  "desc": "浓缩的，得兑水。热一下会让手不再抖。",
+  "effect": {
+   "hunger": 18,
+   "warmth": 6
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "pemmican",
+  "name": "肉糜饼",
+  "cat": "food",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 20,
+  "stack": 99,
+  "desc": "高热量，味道像纸板。猎人都会做。",
+  "effect": {
+   "hunger": 34,
+   "fatigue": -5
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "protein_powder",
+  "name": "蛋白粉",
+  "cat": "food",
+  "tier": 3,
+  "weight": 0.6,
+  "value": 16,
+  "stack": 99,
+  "desc": "健身房的遗物。现在它真的能救命。",
+  "effect": {
+   "hunger": 12,
+   "fatigue": -10
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "salt",
+  "name": "盐",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 6,
+  "stack": 99,
+  "desc": "一小袋。保存食物、交换物资都靠它。",
+  "effect": {
+   "thirst": -4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "sugar",
+  "name": "糖",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 5,
+  "stack": 99,
+  "desc": "结块的白糖。放一点在舌头上，能止住手抖。",
+  "effect": {
+   "hunger": 5,
+   "sanity": 2
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "vegetable",
+  "name": "蔬菜",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 5,
+  "stack": 99,
+  "desc": "菜园里刚拔出来的，带着泥。",
+  "effect": {
+   "hunger": 12,
+   "thirst": 4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "potato",
+  "name": "土豆",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 5,
+  "stack": 99,
+  "desc": "发芽了，把芽挖掉还能吃。",
+  "effect": {
+   "hunger": 14
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "flour",
+  "name": "面粉",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 7,
+  "stack": 99,
+  "desc": "掺了灰，但筛一筛还能用。",
+  "effect": {
+   "hunger": 12,
+   "thirst": -4
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "snack",
+  "name": "薯片",
+  "cat": "food",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 6,
+  "stack": 99,
+  "desc": "袋子鼓得像要炸开。里面全是空气和盐。",
+  "effect": {
+   "hunger": 9,
+   "sanity": 3
+  },
+  "tags": [],
+  "icon": "fork.knife"
+ },
+ {
+  "id": "water_bottle",
+  "name": "瓶装水",
+  "cat": "drink",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 10,
+  "stack": 99,
+  "desc": "塑料瓶身已经磨花，水是清的。",
+  "effect": {
+   "thirst": 28
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "water_dirty",
+  "name": "浑水",
+  "cat": "drink",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 2,
+  "stack": 99,
+  "desc": "得烧开或者过滤，直接喝会出事。",
+  "effect": {
+   "thirst": 18,
+   "infection": 4
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "water_boiled",
+  "name": "凉白开",
+  "cat": "drink",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 6,
+  "stack": 99,
+  "desc": "烧开过的水，有股铁锈味。",
+  "effect": {
+   "thirst": 30
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "soda",
+  "name": "汽水",
+  "cat": "drink",
+  "tier": 1,
+  "weight": 0.4,
+  "value": 7,
+  "stack": 99,
+  "desc": "气已经跑光了，甜味还在。",
+  "effect": {
+   "thirst": 18,
+   "sanity": 3
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "beer",
+  "name": "啤酒",
+  "cat": "drink",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 8,
+  "stack": 99,
+  "desc": "温的，苦的。喝完之后更想抽烟。",
+  "effect": {
+   "thirst": 12,
+   "sanity": 7,
+   "fatigue": -3
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "moonshine",
+  "name": "私酿",
+  "cat": "drink",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 10,
+  "stack": 99,
+  "desc": "营地里自己蒸的，喝一口从喉咙烧到胃。",
+  "effect": {
+   "thirst": 6,
+   "sanity": 12,
+   "hp": -4
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "milk",
+  "name": "牛奶",
+  "cat": "drink",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 9,
+  "stack": 99,
+  "desc": "超高温灭菌的，保质期一年。还没过期。",
+  "effect": {
+   "thirst": 15,
+   "hunger": 5
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "sports_drink",
+  "name": "运动饮料",
+  "cat": "drink",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 12,
+  "stack": 99,
+  "desc": "电解质。你从没像现在这样感激它。",
+  "effect": {
+   "thirst": 24,
+   "fatigue": -5
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "juice",
+  "name": "果汁",
+  "cat": "drink",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 8,
+  "stack": 99,
+  "desc": "橙汁，甜得发腻。",
+  "effect": {
+   "thirst": 18,
+   "sanity": 2
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "coffee",
+  "name": "咖啡",
+  "cat": "drink",
+  "tier": 2,
+  "weight": 0.4,
+  "value": 11,
+  "stack": 99,
+  "desc": "速溶粉，冲开之后整个房间都像有人住。",
+  "effect": {
+   "thirst": 10,
+   "fatigue": -16,
+   "sanity": 3
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "herbs_tea",
+  "name": "草药茶",
+  "cat": "drink",
+  "tier": 2,
+  "weight": 0.4,
+  "value": 9,
+  "stack": 99,
+  "desc": "苦得舌根发麻，但伤口不那么烫了。",
+  "effect": {
+   "thirst": 12,
+   "infection": -4,
+   "sanity": 6
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "coconut_water",
+  "name": "椰子水",
+  "cat": "drink",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 13,
+  "stack": 99,
+  "desc": "从超市废墟里翻出来的进口货。",
+  "effect": {
+   "thirst": 22,
+   "sanity": 3
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "liquor",
+  "name": "白酒",
+  "cat": "drink",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 12,
+  "stack": 99,
+  "desc": "高度的，能消毒，也能让你忘了冷。",
+  "effect": {
+   "thirst": 6,
+   "sanity": 10,
+   "warmth": 12
+  },
+  "tags": [],
+  "icon": "drop.fill"
+ },
+ {
+  "id": "bandage",
+  "name": "绷带",
+  "cat": "med",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 8,
+  "stack": 99,
+  "desc": "干净的纱布卷。止血比什么都重要。",
+  "effect": {
+   "hp": 14
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "antibiotics",
+  "name": "抗生素",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 24,
+  "stack": 99,
+  "desc": "还剩四粒。省着吃，感染不会等你。",
+  "effect": {
+   "hp": 5,
+   "infection": -26
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "pills_pain",
+  "name": "止痛药",
+  "cat": "med",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 10,
+  "stack": 99,
+  "desc": "白色的药片，能骗过身体，骗不过伤口。",
+  "effect": {
+   "hp": 6,
+   "sanity": 5
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "pills_fever",
+  "name": "退烧药",
+  "cat": "med",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 11,
+  "stack": 99,
+  "desc": "铝箔板，压碎了两粒。",
+  "effect": {
+   "hp": 4,
+   "infection": -9,
+   "warmth": 5
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "antiviral",
+  "name": "抗病毒药",
+  "cat": "med",
+  "tier": 3,
+  "weight": 0.1,
+  "value": 28,
+  "stack": 99,
+  "desc": "白鸦发的，说明书上没有中文。",
+  "effect": {
+   "infection": -32,
+   "hp": 4
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "serum",
+  "name": "抗感染血清",
+  "cat": "med",
+  "tier": 4,
+  "weight": 0.2,
+  "value": 65,
+  "stack": 99,
+  "desc": "琥珀色的液体，针管已经预充。用完就没有了。",
+  "effect": {
+   "infection": -58,
+   "hp": 12
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "adrenaline",
+  "name": "肾上腺素",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 20,
+  "stack": 99,
+  "desc": "自动注射笔。能跑，也能让你在事后瘫倒。",
+  "effect": {
+   "hp": 16,
+   "fatigue": -26,
+   "sanity": -4
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "stitch_kit",
+  "name": "缝合包",
+  "cat": "med",
+  "tier": 3,
+  "weight": 0.2,
+  "value": 30,
+  "stack": 99,
+  "desc": "针、线、弯钳。你需要一个不发抖的人帮忙。",
+  "effect": {
+   "hp": 28
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "splint",
+  "name": "夹板",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.4,
+  "value": 14,
+  "stack": 99,
+  "desc": "两块铝板和一卷带子。",
+  "effect": {
+   "hp": 12
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "medical_tape",
+  "name": "医用胶带",
+  "cat": "med",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 6,
+  "stack": 99,
+  "desc": "粘得住绷带，也粘得住嘴。",
+  "effect": {
+   "hp": 6
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "saline",
+  "name": "生理盐水",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 12,
+  "stack": 99,
+  "desc": "冲洗伤口，或者补液。",
+  "effect": {
+   "hp": 9,
+   "thirst": 15
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "sedative",
+  "name": "镇静剂",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 18,
+  "stack": 99,
+  "desc": "让你睡过去，不做梦。",
+  "effect": {
+   "sanity": 14,
+   "fatigue": -10
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "antidote",
+  "name": "广谱解毒剂",
+  "cat": "med",
+  "tier": 3,
+  "weight": 0.2,
+  "value": 26,
+  "stack": 99,
+  "desc": "苦得离谱，据说对尸毒也有一点用。",
+  "effect": {
+   "infection": -22,
+   "hp": 4
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "vitamins",
+  "name": "维生素",
+  "cat": "med",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 8,
+  "stack": 99,
+  "desc": "瓶底还剩几片，颜色很鲜艳。",
+  "effect": {
+   "hp": 3,
+   "sanity": 3
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "burn_cream",
+  "name": "烧伤膏",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 12,
+  "stack": 99,
+  "desc": "涂在伤口上，凉一下，然后更疼。",
+  "effect": {
+   "hp": 9
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "antiseptic",
+  "name": "消毒液",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 13,
+  "stack": 99,
+  "desc": "碘伏，棕色的。别喝。",
+  "effect": {
+   "infection": -13,
+   "hp": 3
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "tourniquet",
+  "name": "止血带",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 14,
+  "stack": 99,
+  "desc": "橡皮管加扣环。能救命，也可能让你失去一条腿。",
+  "effect": {
+   "hp": 18
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "insulin",
+  "name": "胰岛素",
+  "cat": "med",
+  "tier": 3,
+  "weight": 0.1,
+  "value": 22,
+  "stack": 99,
+  "desc": "冷藏箱里剩下的最后一支。有人愿意用它换命。",
+  "effect": {
+   "hp": 6
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "morphine",
+  "name": "吗啡",
+  "cat": "med",
+  "tier": 3,
+  "weight": 0.1,
+  "value": 32,
+  "stack": 99,
+  "desc": "小瓶装。疼痛会消失，危险不会。",
+  "effect": {
+   "hp": 12,
+   "sanity": 10,
+   "fatigue": -8
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "medkit",
+  "name": "医疗箱",
+  "cat": "med",
+  "tier": 3,
+  "weight": 0.8,
+  "value": 48,
+  "stack": 99,
+  "desc": "一个完整的急救箱，纱布、剪刀、止血钳全在。",
+  "effect": {
+   "hp": 44,
+   "infection": -10
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "herbs_poultice",
+  "name": "草药敷料",
+  "cat": "med",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 6,
+  "stack": 99,
+  "desc": "捣碎的草药裹在布里，味道刺鼻。",
+  "effect": {
+   "hp": 10,
+   "infection": -5
+  },
+  "tags": [
+   "heal"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "purify_tablet",
+  "name": "净水药片",
+  "cat": "med",
+  "tier": 2,
+  "weight": 0.02,
+  "value": 6,
+  "stack": 99,
+  "desc": "一片能净化一升水。别数错。",
+  "effect": {},
+  "tags": [
+   "water"
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "mask_filter",
+  "name": "口罩滤芯",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 10,
+  "stack": 99,
+  "desc": "换上之后呼吸会顺畅一些，在粉尘大的地方能保命。",
+  "effect": {},
+  "tags": [
+   "mask"
+  ],
+  "icon": "facemask.fill"
+ },
+ {
+  "id": "ammo_9mm",
+  "name": "9mm 子弹",
+  "cat": "ammo",
+  "tier": 1,
+  "weight": 0.01,
+  "value": 3,
+  "stack": 200,
+  "desc": "手枪弹，铜壳还亮着。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "ammo_45",
+  "name": ".45 子弹",
+  "cat": "ammo",
+  "tier": 2,
+  "weight": 0.02,
+  "value": 4,
+  "stack": 150,
+  "desc": "又粗又重，后坐力能震麻手腕。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "ammo_556",
+  "name": "5.56 子弹",
+  "cat": "ammo",
+  "tier": 3,
+  "weight": 0.02,
+  "value": 6,
+  "stack": 200,
+  "desc": "步枪弹，绿色弹尖。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "ammo_762",
+  "name": "7.62 子弹",
+  "cat": "ammo",
+  "tier": 3,
+  "weight": 0.02,
+  "value": 6,
+  "stack": 200,
+  "desc": "钢壳，打进砖墙会碎。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "ammo_shotgun",
+  "name": "12 号霰弹",
+  "cat": "ammo",
+  "tier": 2,
+  "weight": 0.04,
+  "value": 6,
+  "stack": 100,
+  "desc": "红色塑料壳，里面是铅丸。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "ammo_22",
+  "name": ".22 子弹",
+  "cat": "ammo",
+  "tier": 1,
+  "weight": 0.01,
+  "value": 2,
+  "stack": 250,
+  "desc": "小口径，打不死人，但能打穿脑袋。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "arrow",
+  "name": "箭矢",
+  "cat": "ammo",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 4,
+  "stack": 100,
+  "desc": "木杆，铁箭头，尾羽有点歪。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "bolt",
+  "name": "弩矢",
+  "cat": "ammo",
+  "tier": 2,
+  "weight": 0.08,
+  "value": 6,
+  "stack": 80,
+  "desc": "短而粗，铝制，能重复回收。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "flare",
+  "name": "信号弹",
+  "cat": "ammo",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 8,
+  "stack": 30,
+  "desc": "红色的，能照亮一整条街。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.grid.2x2.fill"
+ },
+ {
+  "id": "molotov",
+  "name": "燃烧瓶",
+  "cat": "throwable",
+  "tier": 2,
+  "weight": 0.6,
+  "value": 15,
+  "stack": 99,
+  "desc": "玻璃瓶、酒精、布条。点火，扔出去，别回头看。",
+  "effect": {
+   "throw": 25
+  },
+  "tags": [
+   "fire"
+  ],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "grenade",
+  "name": "手雷",
+  "cat": "throwable",
+  "tier": 3,
+  "weight": 0.4,
+  "value": 40,
+  "stack": 99,
+  "desc": "拉环还在，保险销有点弯。",
+  "effect": {
+   "throw": 46
+  },
+  "tags": [
+   "explosive"
+  ],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "pipe_bomb",
+  "name": "土制炸弹",
+  "cat": "throwable",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 20,
+  "stack": 99,
+  "desc": "钢管、火药、定时引信。引信只有三秒。",
+  "effect": {
+   "throw": 36
+  },
+  "tags": [
+   "explosive"
+  ],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "smoke_grenade",
+  "name": "烟雾弹",
+  "cat": "throwable",
+  "tier": 2,
+  "weight": 0.3,
+  "value": 14,
+  "stack": 99,
+  "desc": "能遮住一条走廊，也能遮住你的逃跑路线。",
+  "effect": {
+   "throw": 4
+  },
+  "tags": [],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "flashbang",
+  "name": "闪光弹",
+  "cat": "throwable",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 18,
+  "stack": 99,
+  "desc": "响得让你自己也想捂耳朵。",
+  "effect": {
+   "throw": 8
+  },
+  "tags": [],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "brick",
+  "name": "砖块",
+  "cat": "throwable",
+  "tier": 1,
+  "weight": 0.9,
+  "value": 2,
+  "stack": 99,
+  "desc": "最古老的远程武器。",
+  "effect": {
+   "throw": 11
+  },
+  "tags": [],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "throwing_knife",
+  "name": "飞刀",
+  "cat": "throwable",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 12,
+  "stack": 99,
+  "desc": "刀刃平衡得不错，落在门框上时你会心疼。",
+  "effect": {
+   "throw": 17
+  },
+  "tags": [],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "flashlight",
+  "name": "手电筒",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.3,
+  "value": 12,
+  "stack": 99,
+  "desc": "光柱里全是灰尘。电池快没了。",
+  "effect": {},
+  "tags": [],
+  "icon": "flashlight.on.fill"
+ },
+ {
+  "id": "headlamp",
+  "name": "头灯",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 16,
+  "stack": 99,
+  "desc": "解放双手，在黑暗里拆东西时是神器。",
+  "effect": {},
+  "tags": [],
+  "icon": "lightbulb.fill"
+ },
+ {
+  "id": "lighter",
+  "name": "打火机",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 6,
+  "stack": 99,
+  "desc": "还能打出火。你摇了摇，听见液体声。",
+  "effect": {},
+  "tags": [],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "multitool",
+  "name": "多功能刀",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.2,
+  "value": 18,
+  "stack": 99,
+  "desc": "刀、锯、开瓶器。文明的浓缩版。",
+  "effect": {},
+  "tags": [],
+  "icon": "wrench.and.screwdriver.fill"
+ },
+ {
+  "id": "binoculars",
+  "name": "望远镜",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.5,
+  "value": 20,
+  "stack": 99,
+  "desc": "镜片上有一道划痕，不影响看远处的东西。",
+  "effect": {},
+  "tags": [],
+  "icon": "binoculars.fill"
+ },
+ {
+  "id": "radio",
+  "name": "收音机",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 0.6,
+  "value": 30,
+  "stack": 99,
+  "desc": "能收到一个女声，每隔四小时重复一次坐标。",
+  "effect": {},
+  "tags": [],
+  "icon": "radio.fill"
+ },
+ {
+  "id": "walkie",
+  "name": "对讲机",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 0.3,
+  "value": 24,
+  "stack": 99,
+  "desc": "两只一对，有效距离三公里。",
+  "effect": {},
+  "tags": [],
+  "icon": "antenna.radiowaves.left.and.right"
+ },
+ {
+  "id": "metal_detector",
+  "name": "金属探测器",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 1.0,
+  "value": 34,
+  "stack": 99,
+  "desc": "扫过地面时会叫，像在替你高兴。",
+  "effect": {},
+  "tags": [],
+  "icon": "sensor.fill"
+ },
+ {
+  "id": "lockpick",
+  "name": "撬锁工具",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 16,
+  "stack": 99,
+  "desc": "细钢针和张力扳手，用坏了就没了。",
+  "effect": {},
+  "tags": [],
+  "icon": "key.horizontal.fill"
+ },
+ {
+  "id": "camp_stove",
+  "name": "便携炉",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 1.2,
+  "value": 22,
+  "stack": 99,
+  "desc": "烧丙烷的小炉子，能煮一锅热的东西。",
+  "effect": {},
+  "tags": [],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "canteen",
+  "name": "军用水壶",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.4,
+  "value": 12,
+  "stack": 99,
+  "desc": "磕掉漆的铝壶，保温一般，但摔不坏。",
+  "effect": {},
+  "tags": [],
+  "icon": "waterbottle.fill"
+ },
+ {
+  "id": "water_filter",
+  "name": "便携净水器",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 0.5,
+  "value": 30,
+  "stack": 99,
+  "desc": "手压式，滤芯还能撑一阵子。",
+  "effect": {},
+  "tags": [],
+  "icon": "drop.circle.fill"
+ },
+ {
+  "id": "tent",
+  "name": "帐篷",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 2.4,
+  "value": 26,
+  "stack": 99,
+  "desc": "两人帐，少一根地钉。",
+  "effect": {},
+  "tags": [],
+  "icon": "tent.fill"
+ },
+ {
+  "id": "sleeping_bag",
+  "name": "睡袋",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 1.2,
+  "value": 20,
+  "stack": 99,
+  "desc": "有股别人的味道，但很暖。",
+  "effect": {},
+  "tags": [],
+  "icon": "bed.double.fill"
+ },
+ {
+  "id": "map_book",
+  "name": "地图册",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.6,
+  "value": 18,
+  "stack": 99,
+  "desc": "行政地图，边角标着水库和铁路。",
+  "effect": {},
+  "tags": [],
+  "icon": "map.fill"
+ },
+ {
+  "id": "compass",
+  "name": "指南针",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 0.1,
+  "value": 14,
+  "stack": 99,
+  "desc": "指针会晃，但最终会停下来。",
+  "effect": {},
+  "tags": [],
+  "icon": "location.north.fill"
+ },
+ {
+  "id": "raincoat",
+  "name": "雨衣",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.5,
+  "value": 12,
+  "stack": 99,
+  "desc": "黄色的，背后印着市政字样。",
+  "effect": {},
+  "tags": [],
+  "icon": "cloud.rain.fill"
+ },
+ {
+  "id": "gas_mask",
+  "name": "防毒面具",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 0.8,
+  "value": 28,
+  "stack": 99,
+  "desc": "橡胶老化，但滤芯是新的。",
+  "effect": {},
+  "tags": [],
+  "icon": "facemask.fill"
+ },
+ {
+  "id": "goggles",
+  "name": "护目镜",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 10,
+  "stack": 99,
+  "desc": "实验室的护目镜，镜片有细小划痕。",
+  "effect": {},
+  "tags": [],
+  "icon": "eyeglasses"
+ },
+ {
+  "id": "work_boots",
+  "name": "工装靴",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 1.0,
+  "value": 14,
+  "stack": 99,
+  "desc": "鞋底厚，踩过玻璃和血。",
+  "effect": {},
+  "tags": [],
+  "icon": "shoeprints.fill"
+ },
+ {
+  "id": "solar_panel",
+  "name": "太阳能板",
+  "cat": "tool",
+  "tier": 4,
+  "weight": 2.0,
+  "value": 45,
+  "stack": 99,
+  "desc": "折叠式，能给电池充一点点救命的电。",
+  "effect": {},
+  "tags": [],
+  "icon": "sun.max.fill"
+ },
+ {
+  "id": "generator",
+  "name": "发电机",
+  "cat": "tool",
+  "tier": 4,
+  "weight": 8.0,
+  "value": 80,
+  "stack": 99,
+  "desc": "小型汽油发电机，营地电力的心脏。",
+  "effect": {},
+  "tags": [],
+  "icon": "bolt.circle.fill"
+ },
+ {
+  "id": "battery_pack",
+  "name": "电池组",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 1.0,
+  "value": 30,
+  "stack": 99,
+  "desc": "一组并联的锂电池，接口是自己焊的。",
+  "effect": {},
+  "tags": [],
+  "icon": "battery.100"
+ },
+ {
+  "id": "toolbox",
+  "name": "工具箱",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 2.0,
+  "value": 24,
+  "stack": 99,
+  "desc": "扳手、钳子、螺丝刀，摆得整整齐齐。",
+  "effect": {},
+  "tags": [],
+  "icon": "wrench.and.screwdriver.fill"
+ },
+ {
+  "id": "ammo_box",
+  "name": "弹药箱",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 1.6,
+  "value": 26,
+  "stack": 99,
+  "desc": "金属箱，密封条还完好。",
+  "effect": {},
+  "tags": [],
+  "icon": "shippingbox.fill"
+ },
+ {
+  "id": "cooler",
+  "name": "冷藏箱",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 2.2,
+  "value": 22,
+  "stack": 99,
+  "desc": "泡沫箱加冰袋，能保冷一天。",
+  "effect": {},
+  "tags": [],
+  "icon": "snowflake"
+ },
+ {
+  "id": "bait",
+  "name": "诱饵",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 5,
+  "stack": 99,
+  "desc": "腐肉和谷物的混合物，味道很有说服力。",
+  "effect": {},
+  "tags": [],
+  "icon": "fish.fill"
+ },
+ {
+  "id": "trap",
+  "name": "捕兽夹",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 1.2,
+  "value": 18,
+  "stack": 99,
+  "desc": "弹簧还很硬，合上时声音清脆。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.hexagongrid.fill"
+ },
+ {
+  "id": "fishing_rod",
+  "name": "鱼竿",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 1.0,
+  "value": 16,
+  "stack": 99,
+  "desc": "伸缩杆，鱼线卷还有半卷。",
+  "effect": {},
+  "tags": [],
+  "icon": "fish.fill"
+ },
+ {
+  "id": "seed_pack",
+  "name": "种子包",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 8,
+  "stack": 99,
+  "desc": "番茄、生菜、豆子。如果还有春天的话。",
+  "effect": {},
+  "tags": [],
+  "icon": "leaf.fill"
+ },
+ {
+  "id": "fertilizer",
+  "name": "肥料",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 1.0,
+  "value": 6,
+  "stack": 99,
+  "desc": "味道刺鼻，但菜园需要它。",
+  "effect": {},
+  "tags": [],
+  "icon": "leaf.circle.fill"
+ },
+ {
+  "id": "welder",
+  "name": "焊枪",
+  "cat": "tool",
+  "tier": 3,
+  "weight": 1.5,
+  "value": 32,
+  "stack": 99,
+  "desc": "带着半罐气，能焊开铁门。",
+  "effect": {},
+  "tags": [],
+  "icon": "bolt.fill"
+ },
+ {
+  "id": "jack",
+  "name": "千斤顶",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 3.0,
+  "value": 20,
+  "stack": 99,
+  "desc": "液压的，能顶起一辆车。",
+  "effect": {},
+  "tags": [],
+  "icon": "car.fill"
+ },
+ {
+  "id": "car_battery",
+  "name": "汽车电瓶",
+  "cat": "tool",
+  "tier": 2,
+  "weight": 5.0,
+  "value": 24,
+  "stack": 99,
+  "desc": "又重又酸，但还能供电。",
+  "effect": {},
+  "tags": [],
+  "icon": "battery.100"
+ },
+ {
+  "id": "thermal_blanket",
+  "name": "保温毯",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.2,
+  "value": 8,
+  "stack": 99,
+  "desc": "锡箔一样的薄毯，能保住体温。",
+  "effect": {},
+  "tags": [],
+  "icon": "square.grid.3x3.fill"
+ },
+ {
+  "id": "sewing_kit",
+  "name": "针线包",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 8,
+  "stack": 99,
+  "desc": "缝衣服，也能缝人。",
+  "effect": {},
+  "tags": [],
+  "icon": "scissors"
+ },
+ {
+  "id": "grindstone",
+  "name": "磨刀石",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.8,
+  "value": 9,
+  "stack": 99,
+  "desc": "把刀磨快，是把命磨长。",
+  "effect": {},
+  "tags": [],
+  "icon": "square.fill"
+ },
+ {
+  "id": "cooking_pot",
+  "name": "锅",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 1.2,
+  "value": 12,
+  "stack": 99,
+  "desc": "有盖的铝锅，烧水煮汤都行。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.hexagongrid.fill"
+ },
+ {
+  "id": "can_opener",
+  "name": "开罐器",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.1,
+  "value": 5,
+  "stack": 99,
+  "desc": "没有它的时候，你用石头砸罐头。",
+  "effect": {},
+  "tags": [],
+  "icon": "circle.circle.fill"
+ },
+ {
+  "id": "whistle",
+  "name": "哨子",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.05,
+  "value": 4,
+  "stack": 99,
+  "desc": "三短一长，是小队的集合信号。",
+  "effect": {},
+  "tags": [],
+  "icon": "speaker.wave.2.fill"
+ },
+ {
+  "id": "padlock",
+  "name": "挂锁",
+  "cat": "tool",
+  "tier": 1,
+  "weight": 0.3,
+  "value": 8,
+  "stack": 99,
+  "desc": "黄铜锁，钥匙还插在上面。",
+  "effect": {},
+  "tags": [],
+  "icon": "lock.fill"
+ }
+]

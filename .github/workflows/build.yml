@@ -1,0 +1,104 @@
+name: Build IPA
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate content JSON
+        run: |
+          python3 - <<'PY'
+          import glob, json, sys
+          files = sorted(glob.glob('LastEmber/Resources/Content/*.json'))
+          if not files:
+              print('no content files found'); sys.exit(1)
+          total = 0
+          for f in files:
+              try:
+                  data = json.load(open(f, encoding='utf-8'))
+                  n = len(data) if isinstance(data, list) else 1
+                  total += n
+                  print(f'{f}: {n} entries')
+              except Exception as e:
+                  print(f'INVALID {f}: {e}'); sys.exit(1)
+          print(f'OK, {len(files)} files / {total} entries')
+          PY
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Build (unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project LastEmber.xcodeproj \
+            -scheme LastEmber \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            PROVISIONING_PROFILE_SPECIFIER="" \
+            build 2>&1 | tee build.log | grep -E "error:|warning: .*deprecated|BUILD" || true
+          if ! grep -q "BUILD SUCCEEDED" build.log; then
+            echo "===== build failed, tail ====="
+            tail -n 120 build.log
+            exit 1
+          fi
+
+      - name: Package IPA
+        run: |
+          APP_PATH="build/Build/Products/Release-iphoneos/LastEmber.app"
+          test -d "$APP_PATH" || { echo "app not found"; exit 1; }
+          /usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$APP_PATH/Info.plist" || true
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          zip -qry LastEmber-unsigned.ipa Payload
+          ls -lh LastEmber-unsigned.ipa
+          sha256sum LastEmber-unsigned.ipa | tee LastEmber-unsigned.ipa.sha256
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LastEmber-unsigned-ipa
+          path: |
+            LastEmber-unsigned.ipa
+            LastEmber-unsigned.ipa.sha256
+          if-no-files-found: error
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${GITHUB_REF_TYPE}" = "tag" ]; then
+            TAG="${GITHUB_REF_NAME}"
+          else
+            TAG="build-${GITHUB_RUN_NUMBER}"
+          fi
+          NOTES=$(cat <<EOF
+          ## 余烬 · Last Ember
+          末日生存 Roguelike，纯 SwiftUI，离线运行。
+
+          **安装说明**：本 IPA 为未签名版本，需要用 Sideloadly / AltStore / TrollStore 自签安装。
+          EOF
+          )
+          gh release create "$TAG" LastEmber-unsigned.ipa LastEmber-unsigned.ipa.sha256 \
+            --title "余烬 Last Ember ${TAG}" --notes "$NOTES" || \
+          gh release upload "$TAG" LastEmber-unsigned.ipa LastEmber-unsigned.ipa.sha256 --clobber

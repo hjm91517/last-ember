@@ -1,0 +1,950 @@
+[
+ {
+  "id": "r_bandage",
+  "name": "卷绷带",
+  "desc": "把干净布料撕成条，卷紧，蒸过。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "cloth": 2
+  },
+  "out": {
+   "bandage": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_boil_water",
+  "name": "煮水",
+  "desc": "浑水煮沸后，至少不会再让你拉肚子。",
+  "station": "kitchen",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "water_dirty": 1,
+   "charcoal": 1
+  },
+  "out": {
+   "water_boiled": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_cook_rat",
+  "name": "烤鼠肉",
+  "desc": "别想太多，火能杀死大部分东西。",
+  "station": "kitchen",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "rat_meat": 1,
+   "wood": 1
+  },
+  "out": {
+   "cooked_meat": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_tea",
+  "name": "熬草药茶",
+  "desc": "草药加开水，苦味能压住发烧。",
+  "station": "kitchen",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "herb": 1,
+   "water_boiled": 1
+  },
+  "out": {
+   "herbs_tea": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_molotov",
+  "name": "燃烧瓶",
+  "desc": "酒精灌进瓶子，塞上布条。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "empty_bottle": 1,
+   "alcohol": 1,
+   "cloth": 1
+  },
+  "out": {
+   "molotov": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_pipebomb",
+  "name": "土制炸弹",
+  "desc": "火药、钢管、引信。三秒，跑。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "gunpowder": 2,
+   "scrap": 2,
+   "duct_tape": 1
+  },
+  "out": {
+   "pipe_bomb": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_ammo9",
+  "name": "复装 9mm",
+  "desc": "把弹壳重新压紧，稳定性看运气。",
+  "station": "armory",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "gunpowder": 1,
+   "scrap": 2
+  },
+  "out": {
+   "ammo_9mm": 6
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_arrows",
+  "name": "削箭",
+  "desc": "木杆、羽毛、磨尖的铁钉。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "wood": 1,
+   "feather": 2,
+   "nail": 2
+  },
+  "out": {
+   "arrow": 4
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_bolts",
+  "name": "装弩矢",
+  "desc": "铝杆配重箭头，回收率还行。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "scrap": 1,
+   "wood": 1,
+   "duct_tape": 1
+  },
+  "out": {
+   "bolt": 3
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_medkit",
+  "name": "组装医疗箱",
+  "desc": "把零散的药和纱布装进一个箱子。",
+  "station": "medbay",
+  "stationLevel": 2,
+  "ap": 2,
+  "cost": {
+   "bandage": 3,
+   "antibiotics": 1,
+   "cloth": 2
+  },
+  "out": {
+   "medkit": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_herbal",
+  "name": "草药敷料",
+  "desc": "把草药捣碎，裹进布里。",
+  "station": "medbay",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "herb": 2,
+   "cloth": 1
+  },
+  "out": {
+   "herbs_poultice": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_antiseptic",
+  "name": "稀释消毒液",
+  "desc": "酒精兑水，浓度刚好够用。",
+  "station": "medbay",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "alcohol": 1,
+   "water_boiled": 1
+  },
+  "out": {
+   "antiseptic": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_purify",
+  "name": "压制净水片",
+  "desc": "化学试剂压片，一片一升。",
+  "station": "medbay",
+  "stationLevel": 3,
+  "ap": 1,
+  "cost": {
+   "chemical": 1
+  },
+  "out": {
+   "purify_tablet": 4
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_splint",
+  "name": "做夹板",
+  "desc": "铝板裁条，边缘磨钝。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "scrap": 2,
+   "duct_tape": 1
+  },
+  "out": {
+   "splint": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_nailbat",
+  "name": "钉头棒",
+  "desc": "把钉子一根根敲进棒球棍。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 2,
+  "cost": {
+   "baseball_bat": 1,
+   "nail": 6,
+   "duct_tape": 1
+  },
+  "out": {},
+  "outWeapon": "nail_bat",
+  "outArmor": null
+ },
+ {
+  "id": "r_spear",
+  "name": "自制长矛",
+  "desc": "木柄前端绑上磨尖的铁条。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "wood": 1,
+   "scrap": 1,
+   "duct_tape": 1
+  },
+  "out": {},
+  "outWeapon": "spear_homemade",
+  "outArmor": null
+ },
+ {
+  "id": "r_tactical_axe",
+  "name": "战术斧",
+  "desc": "短柄斧重新配重，斧背加撬口。",
+  "station": "bench",
+  "stationLevel": 3,
+  "ap": 2,
+  "cost": {
+   "hatchet": 1,
+   "steel_plate": 1,
+   "grindstone": 1,
+   "duct_tape": 1
+  },
+  "out": {},
+  "outWeapon": "tactical_axe",
+  "outArmor": null
+ },
+ {
+  "id": "r_pipe_pistol",
+  "name": "自制手枪",
+  "desc": "钢管、弹簧、击针，能打响一发。",
+  "station": "armory",
+  "stationLevel": 2,
+  "ap": 2,
+  "cost": {
+   "steel_plate": 1,
+   "spring": 1,
+   "duct_tape": 2
+  },
+  "out": {},
+  "outWeapon": "pipe_pistol",
+  "outArmor": null
+ },
+ {
+  "id": "r_vest_plate",
+  "name": "钢板护甲",
+  "desc": "钢板打孔，皮带穿过去。",
+  "station": "bench",
+  "stationLevel": 3,
+  "ap": 2,
+  "cost": {
+   "steel_plate": 2,
+   "leather": 2,
+   "rope": 1
+  },
+  "out": {},
+  "outWeapon": null,
+  "outArmor": "vest_plate"
+ },
+ {
+  "id": "r_vest_stab",
+  "name": "防刺背心",
+  "desc": "芳纶内衬缝进旧背心。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "vest_tactical": 1,
+   "cloth": 3,
+   "fishing_line": 2
+  },
+  "out": {},
+  "outWeapon": null,
+  "outArmor": "vest_stab"
+ },
+ {
+  "id": "r_backpack",
+  "name": "大背包",
+  "desc": "帆布裁剪，加缝外袋和绑带。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "fabric": 3,
+   "rope": 2,
+   "sewing_kit": 1
+  },
+  "out": {},
+  "outWeapon": null,
+  "outArmor": "backpack_large"
+ },
+ {
+  "id": "r_medbag",
+  "name": "医疗背包",
+  "desc": "把医疗箱改成背包，方便带走。",
+  "station": "medbay",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "fabric": 2,
+   "medkit": 1,
+   "cloth": 2
+  },
+  "out": {},
+  "outWeapon": null,
+  "outArmor": "medic_bag"
+ },
+ {
+  "id": "r_filter",
+  "name": "净水器",
+  "desc": "木炭、布、塑料瓶，层层过滤。",
+  "station": "bench",
+  "stationLevel": 3,
+  "ap": 2,
+  "cost": {
+   "charcoal": 3,
+   "cloth": 2,
+   "plastic": 2
+  },
+  "out": {
+   "water_filter": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_flashlight",
+  "name": "修手电筒",
+  "desc": "换电池，焊上松动的触点。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "battery": 1,
+   "circuit": 1,
+   "wire": 1
+  },
+  "out": {
+   "flashlight": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_radio",
+  "name": "组装收音机",
+  "desc": "零件来自三台不同的机器。",
+  "station": "radio",
+  "stationLevel": 2,
+  "ap": 2,
+  "cost": {
+   "radio_part": 1,
+   "circuit": 2,
+   "battery": 2
+  },
+  "out": {
+   "radio": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_walkie",
+  "name": "配对对讲机",
+  "desc": "调频到同一个死频道。",
+  "station": "radio",
+  "stationLevel": 3,
+  "ap": 1,
+  "cost": {
+   "radio_part": 1,
+   "circuit": 1,
+   "battery": 1
+  },
+  "out": {
+   "walkie": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_lockpick",
+  "name": "做撬锁工具",
+  "desc": "钢丝磨尖，扳手压弯。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "wire": 1,
+   "screw": 1,
+   "grindstone": 1
+  },
+  "out": {
+   "lockpick": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_whistle",
+  "name": "做哨子",
+  "desc": "空罐剪开，折出哨口。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "can_empty": 1,
+   "scrap": 1
+  },
+  "out": {
+   "whistle": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_trap",
+  "name": "捕兽夹",
+  "desc": "弹簧和锯齿，用铁丝固定。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "spring": 2,
+   "steel_plate": 1,
+   "wire": 2
+  },
+  "out": {
+   "trap": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_stove",
+  "name": "组装便携炉",
+  "desc": "铜管弯成炉头，阀门控制火力。",
+  "station": "bench",
+  "stationLevel": 3,
+  "ap": 2,
+  "cost": {
+   "copper": 2,
+   "valve": 1,
+   "scrap": 2
+  },
+  "out": {
+   "camp_stove": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_generator",
+  "name": "拼装发电机",
+  "desc": "转子和线圈来自两台报废机器。",
+  "station": "bench",
+  "stationLevel": 4,
+  "ap": 3,
+  "cost": {
+   "generator_part": 2,
+   "copper": 3,
+   "wire": 4,
+   "steel_plate": 2
+  },
+  "out": {
+   "generator": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_battery_pack",
+  "name": "电池组",
+  "desc": "把还能用的电芯并联，焊上保护板。",
+  "station": "bench",
+  "stationLevel": 3,
+  "ap": 2,
+  "cost": {
+   "battery": 4,
+   "circuit": 1,
+   "wire": 2
+  },
+  "out": {
+   "battery_pack": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_seeds",
+  "name": "留种",
+  "desc": "从野果里挑出还能发芽的种子。",
+  "station": "garden",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "wild_berry": 4
+  },
+  "out": {
+   "seed_pack": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_fertilizer",
+  "name": "沤肥",
+  "desc": "骨粉、灰烬、厨余，埋进土里。",
+  "station": "garden",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "bone": 3,
+   "charcoal": 2
+  },
+  "out": {
+   "fertilizer": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_vegetable",
+  "name": "种菜",
+  "desc": "播下种子，等它长出来。",
+  "station": "garden",
+  "stationLevel": 2,
+  "ap": 2,
+  "cost": {
+   "seed_pack": 1,
+   "fertilizer": 1,
+   "water_boiled": 2
+  },
+  "out": {
+   "vegetable": 4
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_moonshine",
+  "name": "蒸馏私酿",
+  "desc": "发酵、蒸馏，第一口要敬活着的人。",
+  "station": "kitchen",
+  "stationLevel": 3,
+  "ap": 2,
+  "cost": {
+   "vegetable": 2,
+   "sugar": 2,
+   "copper": 1
+  },
+  "out": {
+   "moonshine": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_energybar",
+  "name": "能量棒",
+  "desc": "蜂蜜、麦片、坚果压紧切块。",
+  "station": "kitchen",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "honey": 1,
+   "cereal": 1,
+   "sugar": 1
+  },
+  "out": {
+   "energy_bar": 3
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_jerky",
+  "name": "熏肉干",
+  "desc": "盐腌一夜，再用炭火慢慢熏。",
+  "station": "kitchen",
+  "stationLevel": 2,
+  "ap": 2,
+  "cost": {
+   "cooked_meat": 1,
+   "salt": 1,
+   "charcoal": 1
+  },
+  "out": {
+   "jerky": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_soup",
+  "name": "热汤",
+  "desc": "罐头兑水，加一点蔬菜。",
+  "station": "kitchen",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "soup_can": 1,
+   "water_boiled": 1,
+   "vegetable": 1
+  },
+  "out": {
+   "soup_can": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_herbtea2",
+  "name": "草药茶包",
+  "desc": "把草药晒干装袋，方便携带。",
+  "station": "kitchen",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "herb": 3,
+   "cloth": 1
+  },
+  "out": {
+   "herbs_tea": 3
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_smoke",
+  "name": "烟雾弹",
+  "desc": "糖和硝石在低温下熬成烟剂。",
+  "station": "bench",
+  "stationLevel": 3,
+  "ap": 1,
+  "cost": {
+   "saltpeter": 1,
+   "sugar": 1,
+   "can_empty": 1
+  },
+  "out": {
+   "smoke_grenade": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_flashbang",
+  "name": "闪光弹",
+  "desc": "镁粉和引信，响得能让人短暂失明。",
+  "station": "armory",
+  "stationLevel": 3,
+  "ap": 1,
+  "cost": {
+   "chemical": 1,
+   "gunpowder": 1,
+   "can_empty": 1
+  },
+  "out": {
+   "flashbang": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_hatchet",
+  "name": "装短柄斧",
+  "desc": "钢板磨出刃口，木柄打楔。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 2,
+  "cost": {
+   "steel_plate": 1,
+   "wood": 1,
+   "grindstone": 1,
+   "duct_tape": 1
+  },
+  "out": {},
+  "outWeapon": "hatchet",
+  "outArmor": null
+ },
+ {
+  "id": "r_helmet",
+  "name": "加固头盔",
+  "desc": "在头盔内侧加一层泡沫和布。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "steel_plate": 1,
+   "cloth": 2,
+   "duct_tape": 1
+  },
+  "out": {},
+  "outWeapon": null,
+  "outArmor": "helmet_swat"
+ },
+ {
+  "id": "r_gasmask",
+  "name": "修防毒面具",
+  "desc": "换滤芯，检查气密性。",
+  "station": "bench",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "filter_core": 1,
+   "rubber": 1,
+   "duct_tape": 1
+  },
+  "out": {},
+  "outWeapon": null,
+  "outArmor": "gas_mask_full"
+ },
+ {
+  "id": "r_armor_bone",
+  "name": "骨甲",
+  "desc": "把感染者的骨头磨平，串成护甲。",
+  "station": "bench",
+  "stationLevel": 3,
+  "ap": 2,
+  "cost": {
+   "bone": 6,
+   "leather": 2,
+   "rope": 1
+  },
+  "out": {},
+  "outWeapon": null,
+  "outArmor": "armor_bone"
+ },
+ {
+  "id": "r_medkit2",
+  "name": "急救包",
+  "desc": "绷带、止血带、消毒液，一套配齐。",
+  "station": "medbay",
+  "stationLevel": 3,
+  "ap": 1,
+  "cost": {
+   "bandage": 2,
+   "tourniquet": 1,
+   "antiseptic": 1,
+   "cloth": 1
+  },
+  "out": {
+   "medkit": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_serum_from_sample",
+  "name": "提取血清",
+  "desc": "用抗体血样和实验设备提取。需要白鸦的帮助。",
+  "station": "medbay",
+  "stationLevel": 4,
+  "ap": 3,
+  "cost": {
+   "blood_sample": 1,
+   "chemical": 2,
+   "lab_sample": 1
+  },
+  "out": {
+   "serum": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_bullet_45",
+  "name": "复装 .45",
+  "desc": "底火还能用，药量要自己掂。",
+  "station": "armory",
+  "stationLevel": 3,
+  "ap": 1,
+  "cost": {
+   "gunpowder": 2,
+   "scrap": 2
+  },
+  "out": {
+   "ammo_45": 4
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_bullet_556",
+  "name": "复装 5.56",
+  "desc": "弹壳整形是最麻烦的一步。",
+  "station": "armory",
+  "stationLevel": 4,
+  "ap": 2,
+  "cost": {
+   "gunpowder": 2,
+   "scrap": 3
+  },
+  "out": {
+   "ammo_556": 6
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_shotgun_shells",
+  "name": "装填霰弹",
+  "desc": "铅丸来自渔网坠子。",
+  "station": "armory",
+  "stationLevel": 3,
+  "ap": 1,
+  "cost": {
+   "gunpowder": 2,
+   "scrap": 2,
+   "plastic": 1
+  },
+  "out": {
+   "ammo_shotgun": 3
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_signal_flare",
+  "name": "改信号弹",
+  "desc": "把照明弹改成手持式。",
+  "station": "armory",
+  "stationLevel": 2,
+  "ap": 1,
+  "cost": {
+   "chemical": 1,
+   "paper": 2
+  },
+  "out": {
+   "flare": 2
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_maps",
+  "name": "拼接地图",
+  "desc": "把残页贴在一起，用炭笔补线。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "map_fragment": 1,
+   "paper": 2
+  },
+  "out": {
+   "map_book": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_bait",
+  "name": "做诱饵",
+  "desc": "腐肉混谷物，味道能传很远。",
+  "station": "kitchen",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "rat_meat": 1,
+   "cereal": 1
+  },
+  "out": {
+   "bait": 3
+  },
+  "outWeapon": null,
+  "outArmor": null
+ },
+ {
+  "id": "r_fishing",
+  "name": "修鱼竿",
+  "desc": "换线，绑钩。",
+  "station": "bench",
+  "stationLevel": 1,
+  "ap": 1,
+  "cost": {
+   "fishing_line": 1,
+   "wood": 1
+  },
+  "out": {
+   "fishing_rod": 1
+  },
+  "outWeapon": null,
+  "outArmor": null
+ }
+]

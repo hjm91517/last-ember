@@ -1,0 +1,866 @@
+[
+ {
+  "id": "first_blood",
+  "name": "第一次",
+  "desc": "杀死第一个感染者。",
+  "hidden": false,
+  "key": "kills",
+  "goal": 1
+ },
+ {
+  "id": "kills_10",
+  "name": "手感",
+  "desc": "累计杀死 10 个敌人。",
+  "hidden": false,
+  "key": "kills",
+  "goal": 10
+ },
+ {
+  "id": "kills_25",
+  "name": "街区的清道夫",
+  "desc": "累计杀死 25 个敌人。",
+  "hidden": false,
+  "key": "kills",
+  "goal": 25
+ },
+ {
+  "id": "kills_60",
+  "name": "老手",
+  "desc": "累计杀死 60 个敌人。",
+  "hidden": false,
+  "key": "kills",
+  "goal": 60
+ },
+ {
+  "id": "kills_120",
+  "name": "屠夫",
+  "desc": "累计杀死 120 个敌人。",
+  "hidden": false,
+  "key": "kills",
+  "goal": 120
+ },
+ {
+  "id": "kills_250",
+  "name": "行走的墓地",
+  "desc": "累计杀死 250 个敌人。",
+  "hidden": false,
+  "key": "kills",
+  "goal": 250
+ },
+ {
+  "id": "first_search",
+  "name": "第一次翻找",
+  "desc": "完成一次搜刮。",
+  "hidden": false,
+  "key": "searches",
+  "goal": 1
+ },
+ {
+  "id": "search_20",
+  "name": "熟门熟路",
+  "desc": "搜刮 20 次。",
+  "hidden": false,
+  "key": "searches",
+  "goal": 20
+ },
+ {
+  "id": "search_60",
+  "name": "拾荒者",
+  "desc": "搜刮 60 次。",
+  "hidden": false,
+  "key": "searches",
+  "goal": 60
+ },
+ {
+  "id": "search_150",
+  "name": "废墟考古学家",
+  "desc": "搜刮 150 次。",
+  "hidden": false,
+  "key": "searches",
+  "goal": 150
+ },
+ {
+  "id": "first_craft",
+  "name": "第一件作品",
+  "desc": "完成一次制作。",
+  "hidden": false,
+  "key": "crafts",
+  "goal": 1
+ },
+ {
+  "id": "craft_10",
+  "name": "手艺人",
+  "desc": "制作 10 次。",
+  "hidden": false,
+  "key": "crafts",
+  "goal": 10
+ },
+ {
+  "id": "craft_40",
+  "name": "工程师",
+  "desc": "制作 40 次。",
+  "hidden": false,
+  "key": "crafts",
+  "goal": 40
+ },
+ {
+  "id": "craft_100",
+  "name": "流水线",
+  "desc": "制作 100 次。",
+  "hidden": false,
+  "key": "crafts",
+  "goal": 100
+ },
+ {
+  "id": "first_heal",
+  "name": "止血",
+  "desc": "第一次使用医疗物品。",
+  "hidden": false,
+  "key": "heals",
+  "goal": 1
+ },
+ {
+  "id": "build_1",
+  "name": "据点雏形",
+  "desc": "升级一次设施。",
+  "hidden": false,
+  "key": "builds",
+  "goal": 1
+ },
+ {
+  "id": "build_10",
+  "name": "堡垒",
+  "desc": "累计升级 10 次设施。",
+  "hidden": false,
+  "key": "builds",
+  "goal": 10
+ },
+ {
+  "id": "build_25",
+  "name": "混凝土与铁",
+  "desc": "累计升级 25 次设施。",
+  "hidden": false,
+  "key": "builds",
+  "goal": 25
+ },
+ {
+  "id": "visit_5",
+  "name": "周边",
+  "desc": "到访 5 个地点。",
+  "hidden": false,
+  "key": "places_visited",
+  "goal": 5
+ },
+ {
+  "id": "visit_15",
+  "name": "城市地图",
+  "desc": "到访 15 个地点。",
+  "hidden": false,
+  "key": "places_visited",
+  "goal": 15
+ },
+ {
+  "id": "visit_30",
+  "name": "无处可去",
+  "desc": "到访 30 个地点。",
+  "hidden": false,
+  "key": "places_visited",
+  "goal": 30
+ },
+ {
+  "id": "visit_40",
+  "name": "走遍废墟",
+  "desc": "到访 40 个地点。",
+  "hidden": false,
+  "key": "places_visited",
+  "goal": 40
+ },
+ {
+  "id": "item_50",
+  "name": "囤积癖",
+  "desc": "累计拾取 50 件物品。",
+  "hidden": false,
+  "key": "items_found",
+  "goal": 50
+ },
+ {
+  "id": "item_150",
+  "name": "仓库",
+  "desc": "累计拾取 150 件物品。",
+  "hidden": false,
+  "key": "items_found",
+  "goal": 150
+ },
+ {
+  "id": "item_400",
+  "name": "蚂蚁",
+  "desc": "累计拾取 400 件物品。",
+  "hidden": false,
+  "key": "items_found",
+  "goal": 400
+ },
+ {
+  "id": "battle_20",
+  "name": "习惯暴力",
+  "desc": "经历 20 场战斗。",
+  "hidden": false,
+  "key": "battles",
+  "goal": 20
+ },
+ {
+  "id": "battle_60",
+  "name": "战场常客",
+  "desc": "经历 60 场战斗。",
+  "hidden": false,
+  "key": "battles",
+  "goal": 60
+ },
+ {
+  "id": "damage_1000",
+  "name": "千点伤害",
+  "desc": "累计造成 1000 点伤害。",
+  "hidden": false,
+  "key": "damage_dealt",
+  "goal": 1000
+ },
+ {
+  "id": "damage_5000",
+  "name": "暴力美学",
+  "desc": "累计造成 5000 点伤害。",
+  "hidden": false,
+  "key": "damage_dealt",
+  "goal": 5000
+ },
+ {
+  "id": "day_5",
+  "name": "第五天",
+  "desc": "活到第 5 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 5
+ },
+ {
+  "id": "day_10",
+  "name": "第十天",
+  "desc": "活到第 10 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 10
+ },
+ {
+  "id": "day_20",
+  "name": "三周",
+  "desc": "活到第 20 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 20
+ },
+ {
+  "id": "day_30",
+  "name": "一个月",
+  "desc": "活到第 30 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 30
+ },
+ {
+  "id": "day_45",
+  "name": "撑过冬天",
+  "desc": "活到第 45 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 45
+ },
+ {
+  "id": "day_60",
+  "name": "第六十天",
+  "desc": "活到第 60 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 60
+ },
+ {
+  "id": "day_90",
+  "name": "活成传说",
+  "desc": "活到第 90 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 90
+ },
+ {
+  "id": "boss_1",
+  "name": "首领杀手",
+  "desc": "击败一名首领。",
+  "hidden": false,
+  "key": "boss_kills",
+  "goal": 1
+ },
+ {
+  "id": "boss_5",
+  "name": "名字被记住",
+  "desc": "击败 5 名首领。",
+  "hidden": false,
+  "key": "boss_kills",
+  "goal": 5
+ },
+ {
+  "id": "boss_10",
+  "name": "没有王",
+  "desc": "击败 10 名首领。",
+  "hidden": false,
+  "key": "boss_kills",
+  "goal": 10
+ },
+ {
+  "id": "recruit_1",
+  "name": "同伴",
+  "desc": "招募第一名同伴。",
+  "hidden": false,
+  "key": "recruited",
+  "goal": 1
+ },
+ {
+  "id": "recruit_4",
+  "name": "满编",
+  "desc": "招募 4 名同伴。",
+  "hidden": false,
+  "key": "recruited",
+  "goal": 4
+ },
+ {
+  "id": "quest_1",
+  "name": "第一份委托",
+  "desc": "完成一个任务。",
+  "hidden": false,
+  "key": "quests_done",
+  "goal": 1
+ },
+ {
+  "id": "quest_10",
+  "name": "可靠的人",
+  "desc": "完成 10 个任务。",
+  "hidden": false,
+  "key": "quests_done",
+  "goal": 10
+ },
+ {
+  "id": "quest_30",
+  "name": "所有人都找你",
+  "desc": "完成 30 个任务。",
+  "hidden": false,
+  "key": "quests_done",
+  "goal": 30
+ },
+ {
+  "id": "runs_5",
+  "name": "反复",
+  "desc": "开始 5 次生存。",
+  "hidden": false,
+  "key": "runs",
+  "goal": 5
+ },
+ {
+  "id": "runs_20",
+  "name": "轮回",
+  "desc": "开始 20 次生存。",
+  "hidden": false,
+  "key": "runs",
+  "goal": 20
+ },
+ {
+  "id": "shards_20",
+  "name": "记忆碎片",
+  "desc": "累计获得 20 枚碎片。",
+  "hidden": false,
+  "key": "shards",
+  "goal": 20
+ },
+ {
+  "id": "shards_100",
+  "name": "记忆之海",
+  "desc": "累计获得 100 枚碎片。",
+  "hidden": false,
+  "key": "shards",
+  "goal": 100
+ },
+ {
+  "id": "ending_3",
+  "name": "三种结局",
+  "desc": "解锁 3 种结局。",
+  "hidden": false,
+  "key": "endings",
+  "goal": 3
+ },
+ {
+  "id": "ending_8",
+  "name": "收藏家",
+  "desc": "解锁 8 种结局。",
+  "hidden": false,
+  "key": "endings",
+  "goal": 8
+ },
+ {
+  "id": "ending_16",
+  "name": "全知",
+  "desc": "解锁 16 种结局。",
+  "hidden": false,
+  "key": "endings",
+  "goal": 16
+ },
+ {
+  "id": "ending_24",
+  "name": "所有可能",
+  "desc": "解锁全部 24 种结局。",
+  "hidden": false,
+  "key": "endings",
+  "goal": 24
+ },
+ {
+  "id": "tag_walker_30",
+  "name": "行尸收割",
+  "desc": "杀死 30 个行尸。",
+  "hidden": false,
+  "key": "kill_walker",
+  "goal": 30
+ },
+ {
+  "id": "tag_runner_20",
+  "name": "追不上",
+  "desc": "杀死 20 个奔行者。",
+  "hidden": false,
+  "key": "kill_runner",
+  "goal": 20
+ },
+ {
+  "id": "tag_brute_10",
+  "name": "以硬碰硬",
+  "desc": "杀死 10 个重装感染者。",
+  "hidden": false,
+  "key": "kill_brute",
+  "goal": 10
+ },
+ {
+  "id": "tag_spitter_8",
+  "name": "别沾到",
+  "desc": "杀死 8 个喷吐者。",
+  "hidden": false,
+  "key": "kill_spitter",
+  "goal": 8
+ },
+ {
+  "id": "tag_crawler_8",
+  "name": "低头看",
+  "desc": "杀死 8 个爬行者。",
+  "hidden": false,
+  "key": "kill_crawler",
+  "goal": 8
+ },
+ {
+  "id": "tag_hound_15",
+  "name": "打的什么针",
+  "desc": "杀死 15 只感染兽。",
+  "hidden": false,
+  "key": "kill_hound",
+  "goal": 15
+ },
+ {
+  "id": "tag_animal_10",
+  "name": "野味",
+  "desc": "杀死 10 只感染动物。",
+  "hidden": false,
+  "key": "kill_animal",
+  "goal": 10
+ },
+ {
+  "id": "tag_human_20",
+  "name": "同类",
+  "desc": "杀死 20 个人类敌人。",
+  "hidden": false,
+  "key": "kill_human",
+  "goal": 20
+ },
+ {
+  "id": "tag_screamer_6",
+  "name": "让它们闭嘴",
+  "desc": "杀死 6 个尖啸者。",
+  "hidden": false,
+  "key": "kill_screamer",
+  "goal": 6
+ },
+ {
+  "id": "human_mercy",
+  "name": "手下留情",
+  "desc": "放走一个掠夺者。",
+  "hidden": false,
+  "key": "kill_mercy",
+  "goal": 1
+ },
+ {
+  "id": "kill_rustking",
+  "name": "铁锈王",
+  "desc": "击败废料场的王。",
+  "hidden": false,
+  "key": "kill_boss_rustking",
+  "goal": 1
+ },
+ {
+  "id": "kill_mother",
+  "name": "母亲的怀抱",
+  "desc": "击败体育场中央的东西。",
+  "hidden": false,
+  "key": "kill_boss_mother",
+  "goal": 1
+ },
+ {
+  "id": "kill_hive",
+  "name": "拆巢",
+  "desc": "摧毁地铁深处的巢。",
+  "hidden": false,
+  "key": "kill_boss_hive",
+  "goal": 1
+ },
+ {
+  "id": "kill_whitecrow",
+  "name": "白鸦坠落",
+  "desc": "击败白鸦实验体。",
+  "hidden": false,
+  "key": "kill_boss_whitecrow",
+  "goal": 1
+ },
+ {
+  "id": "kill_preacher",
+  "name": "布道结束",
+  "desc": "击败灰袍牧师。",
+  "hidden": false,
+  "key": "kill_boss_preacher",
+  "goal": 1
+ },
+ {
+  "id": "kill_twins",
+  "name": "双子",
+  "desc": "击败双子。",
+  "hidden": false,
+  "key": "kill_boss_twins",
+  "goal": 1
+ },
+ {
+  "id": "kill_trainman",
+  "name": "列车长",
+  "desc": "击败守住列车的人。",
+  "hidden": false,
+  "key": "kill_boss_trainman",
+  "goal": 1
+ },
+ {
+  "id": "kill_tide",
+  "name": "退潮",
+  "desc": "击败港口的东西。",
+  "hidden": false,
+  "key": "kill_boss_tide",
+  "goal": 1
+ },
+ {
+  "id": "kill_ash",
+  "name": "灰烬行者",
+  "desc": "击败灰烬行者。",
+  "hidden": false,
+  "key": "kill_boss_ash",
+  "goal": 1
+ },
+ {
+  "id": "kill_bell",
+  "name": "钟声停止",
+  "desc": "击败钟楼暴君。",
+  "hidden": false,
+  "key": "kill_boss_bell",
+  "goal": 1
+ },
+ {
+  "id": "end_light",
+  "name": "灯塔",
+  "desc": "解锁结局：在灯塔交付全部核心。",
+  "hidden": false,
+  "key": "ending_win_light",
+  "goal": 1
+ },
+ {
+  "id": "end_stay",
+  "name": "留下",
+  "desc": "解锁结局：选择留在灯塔。",
+  "hidden": false,
+  "key": "ending_win_stay",
+  "goal": 1
+ },
+ {
+  "id": "end_burn",
+  "name": "烧塔",
+  "desc": "解锁结局：烧掉灯塔。",
+  "hidden": false,
+  "key": "ending_win_burn",
+  "goal": 1
+ },
+ {
+  "id": "end_boat",
+  "name": "向海",
+  "desc": "解锁结局：从港口离开。",
+  "hidden": false,
+  "key": "ending_win_boat",
+  "goal": 1
+ },
+ {
+  "id": "end_signal",
+  "name": "有人听见了",
+  "desc": "解锁结局：广播坐标。",
+  "hidden": false,
+  "key": "ending_win_signal",
+  "goal": 1
+ },
+ {
+  "id": "end_bunker",
+  "name": "门后",
+  "desc": "解锁结局：封闭掩体。",
+  "hidden": false,
+  "key": "ending_win_bunker",
+  "goal": 1
+ },
+ {
+  "id": "end_whitecrow",
+  "name": "样本",
+  "desc": "解锁结局：接受白鸦的实验。",
+  "hidden": false,
+  "key": "ending_win_whitecrow",
+  "goal": 1
+ },
+ {
+  "id": "end_train",
+  "name": "铁轨尽头",
+  "desc": "解锁结局：发动列车。",
+  "hidden": false,
+  "key": "ending_win_train",
+  "goal": 1
+ },
+ {
+  "id": "end_serum",
+  "name": "第一支",
+  "desc": "解锁结局：完成血清。",
+  "hidden": false,
+  "key": "ending_win_serum",
+  "goal": 1
+ },
+ {
+  "id": "end_mother",
+  "name": "母亲",
+  "desc": "解锁结局：坐上体育场的椅子。",
+  "hidden": false,
+  "key": "ending_end_mother",
+  "goal": 1
+ },
+ {
+  "id": "end_cult",
+  "name": "新生",
+  "desc": "解锁结局：接受灰袍的注射。",
+  "hidden": false,
+  "key": "ending_end_cult",
+  "goal": 1
+ },
+ {
+  "id": "end_king",
+  "name": "铁锈王",
+  "desc": "解锁结局：戴上王冠。",
+  "hidden": false,
+  "key": "ending_end_king",
+  "goal": 1
+ },
+ {
+  "id": "end_ash",
+  "name": "灰",
+  "desc": "解锁结局：在焚化厂添燃料。",
+  "hidden": false,
+  "key": "ending_end_ash",
+  "goal": 1
+ },
+ {
+  "id": "end_loop",
+  "name": "第七盏灯",
+  "desc": "解锁结局：在地铁里继续走。",
+  "hidden": false,
+  "key": "ending_end_loop",
+  "goal": 1
+ },
+ {
+  "id": "end_winter",
+  "name": "冬天",
+  "desc": "解锁结局：关掉灯塔控制台。",
+  "hidden": false,
+  "key": "ending_end_winter",
+  "goal": 1
+ },
+ {
+  "id": "end_silence",
+  "name": "安静",
+  "desc": "解锁结局：在街上坐下来。",
+  "hidden": false,
+  "key": "ending_end_silence",
+  "goal": 1
+ },
+ {
+  "id": "end_mercy",
+  "name": "放过",
+  "desc": "解锁结局：放下刀。",
+  "hidden": false,
+  "key": "ending_end_mercy",
+  "goal": 1
+ },
+ {
+  "id": "end_exile",
+  "name": "被赶走的人",
+  "desc": "解锁结局：被营地驱逐。",
+  "hidden": false,
+  "key": "ending_end_exile",
+  "goal": 1
+ },
+ {
+  "id": "end_witness",
+  "name": "记录者",
+  "desc": "解锁结局：写下这一切。",
+  "hidden": false,
+  "key": "ending_end_witness",
+  "goal": 1
+ },
+ {
+  "id": "end_dog",
+  "name": "铁钉",
+  "desc": "解锁结局：埋葬铁钉。",
+  "hidden": false,
+  "key": "ending_end_dog",
+  "goal": 1
+ },
+ {
+  "id": "end_sacrifice",
+  "name": "最后一次注射",
+  "desc": "解锁结局：把血清留给孩子。",
+  "hidden": false,
+  "key": "ending_end_sacrifice",
+  "goal": 1
+ },
+ {
+  "id": "survive_infection",
+  "name": "带病生存",
+  "desc": "感染值超过 80 后活过 5 天。",
+  "hidden": false,
+  "key": "infection_survived",
+  "goal": 5
+ },
+ {
+  "id": "near_death",
+  "name": "一线",
+  "desc": "生命值低于 10 后活下来。",
+  "hidden": false,
+  "key": "near_death",
+  "goal": 1
+ },
+ {
+  "id": "no_ammo",
+  "name": "冷兵器",
+  "desc": "在没有弹药的情况下击杀 20 个敌人。",
+  "hidden": false,
+  "key": "melee_kills",
+  "goal": 20
+ },
+ {
+  "id": "guns_50",
+  "name": "火力覆盖",
+  "desc": "用枪械击杀 50 个敌人。",
+  "hidden": false,
+  "key": "gun_kills",
+  "goal": 50
+ },
+ {
+  "id": "craft_weapon",
+  "name": "自制",
+  "desc": "制作一把武器。",
+  "hidden": false,
+  "key": "weapons_crafted",
+  "goal": 1
+ },
+ {
+  "id": "craft_armor",
+  "name": "缝纫课",
+  "desc": "制作一件护甲。",
+  "hidden": false,
+  "key": "armors_crafted",
+  "goal": 1
+ },
+ {
+  "id": "win_50",
+  "name": "五十场",
+  "desc": "赢下 50 场战斗。",
+  "hidden": false,
+  "key": "battles_won",
+  "goal": 50
+ },
+ {
+  "id": "night_owl",
+  "name": "夜行动物",
+  "desc": "在夜间战斗 20 次。",
+  "hidden": false,
+  "key": "night_battles",
+  "goal": 20
+ },
+ {
+  "id": "looter",
+  "name": "满载",
+  "desc": "背包负重达到上限。",
+  "hidden": false,
+  "key": "overweight",
+  "goal": 1
+ },
+ {
+  "id": "codex_half",
+  "name": "半个图鉴",
+  "desc": "记录 30 种敌人。",
+  "hidden": false,
+  "key": "enemy_types",
+  "goal": 30
+ },
+ {
+  "id": "codex_full",
+  "name": "全图鉴",
+  "desc": "记录 60 种敌人。",
+  "hidden": false,
+  "key": "enemy_types",
+  "goal": 60
+ },
+ {
+  "id": "friend_dog",
+  "name": "铁钉",
+  "desc": "和一条狗成为朋友。",
+  "hidden": false,
+  "key": "flag_dog",
+  "goal": 1
+ },
+ {
+  "id": "music",
+  "name": "一首歌",
+  "desc": "听完一整张唱片。",
+  "hidden": false,
+  "key": "flag_music",
+  "goal": 1
+ },
+ {
+  "id": "core_6",
+  "name": "六枚",
+  "desc": "同时持有 6 枚核心。",
+  "hidden": false,
+  "key": "cores_held",
+  "goal": 6
+ },
+ {
+  "id": "rich",
+  "name": "有钱人",
+  "desc": "持有价值 500 的贵重品。",
+  "hidden": false,
+  "key": "valuables",
+  "goal": 500
+ }
+]

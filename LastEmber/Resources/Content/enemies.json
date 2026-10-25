@@ -1,0 +1,2466 @@
+[
+ {
+  "id": "animal_crow",
+  "name": "乌鸦群",
+  "tag": "animal",
+  "tier": 2,
+  "desc": "它们落在电线上，一排一排，像在开会。你走过时，所有头同时转过来。",
+  "hp": 30,
+  "dmg": 9,
+  "armor": 0,
+  "acc": 76,
+  "evade": 22,
+  "xp": 16,
+  "night": false,
+  "abilities": [
+   "swarm"
+  ],
+  "loot": [
+   {
+    "item": "feather",
+    "chance": 60,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "bone",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "dog_tag",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "bird.fill"
+ },
+ {
+  "id": "walker_shambler",
+  "name": "蹒跚者",
+  "tag": "walker",
+  "tier": 1,
+  "desc": "最普通的一种。走得很慢，但从不休息。",
+  "hp": 24,
+  "dmg": 7,
+  "armor": 0,
+  "acc": 62,
+  "evade": 6,
+  "xp": 10,
+  "night": false,
+  "abilities": [
+   "grab"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 55,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "dog_tag",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "walker_stagger",
+  "name": "醉步",
+  "tag": "walker",
+  "tier": 1,
+  "desc": "半边肩膀塌下去，走路像在跳一支慢舞。",
+  "hp": 30,
+  "dmg": 8,
+  "armor": 1,
+  "acc": 60,
+  "evade": 5,
+  "xp": 12,
+  "night": false,
+  "abilities": [
+   "grab",
+   "bite"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "walker_thin",
+  "name": "干瘪者",
+  "tag": "walker",
+  "tier": 1,
+  "desc": "皮肤紧紧贴在骨头上，关节处磨出了声音。",
+  "hp": 20,
+  "dmg": 6,
+  "armor": 0,
+  "acc": 66,
+  "evade": 12,
+  "xp": 11,
+  "night": false,
+  "abilities": [
+   "grab"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rubber",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bone",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "walker_fresh",
+  "name": "新死者",
+  "tag": "walker",
+  "tier": 2,
+  "desc": "衣服还很干净，指甲缝里没有泥。它刚死不久。",
+  "hp": 38,
+  "dmg": 11,
+  "armor": 2,
+  "acc": 68,
+  "evade": 8,
+  "xp": 18,
+  "night": false,
+  "abilities": [
+   "bite",
+   "lunge"
+  ],
+  "loot": [
+   {
+    "item": "bandage",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "watch",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "canned_food",
+    "chance": 16,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "photo",
+    "chance": 14,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "walker_worker",
+  "name": "工装者",
+  "tag": "walker",
+  "tier": 2,
+  "desc": "安全帽还扣在头上，反光背心被血浸成了黑色。",
+  "hp": 44,
+  "dmg": 10,
+  "armor": 4,
+  "acc": 64,
+  "evade": 6,
+  "xp": 18,
+  "night": false,
+  "abilities": [
+   "grab",
+   "slam"
+  ],
+  "loot": [
+   {
+    "item": "scrap",
+    "chance": 55,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "duct_tape",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "steel_plate",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "toolbox",
+    "chance": 6,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "walker_police",
+  "name": "警服者",
+  "tag": "walker",
+  "tier": 3,
+  "desc": "腰间的枪套空了，钥匙还挂在皮带上。",
+  "hp": 52,
+  "dmg": 13,
+  "armor": 8,
+  "acc": 70,
+  "evade": 8,
+  "xp": 30,
+  "night": false,
+  "abilities": [
+   "bite",
+   "grapple"
+  ],
+  "loot": [
+   {
+    "item": "police_baton",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 35,
+    "min": 3,
+    "max": 9
+   },
+   {
+    "item": "vest_stab",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "walker_patient",
+  "name": "病号",
+  "tag": "walker",
+  "tier": 2,
+  "desc": "病号服背后印着医院的名字，手环上的名字被磨掉了。",
+  "hp": 34,
+  "dmg": 9,
+  "armor": 1,
+  "acc": 60,
+  "evade": 7,
+  "xp": 16,
+  "night": false,
+  "abilities": [
+   "grab",
+   "inject"
+  ],
+  "loot": [
+   {
+    "item": "pills_pain",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "saline",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "lab_sample",
+    "chance": 6,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "walker_doctor",
+  "name": "白大褂",
+  "tag": "walker",
+  "tier": 3,
+  "desc": "听诊器还挂在脖子上，口袋里插着三支笔。",
+  "hp": 46,
+  "dmg": 12,
+  "armor": 3,
+  "acc": 66,
+  "evade": 9,
+  "xp": 28,
+  "night": false,
+  "abilities": [
+   "inject",
+   "bite"
+  ],
+  "loot": [
+   {
+    "item": "antibiotics",
+    "chance": 28,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "stitch_kit",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "lab_sample",
+    "chance": 16,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "medkit",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.walk"
+ },
+ {
+  "id": "runner_lean",
+  "name": "奔行者",
+  "tag": "runner",
+  "tier": 2,
+  "desc": "膝盖反折，跑起来像一只受伤的鸟。",
+  "hp": 30,
+  "dmg": 12,
+  "armor": 0,
+  "acc": 78,
+  "evade": 18,
+  "xp": 22,
+  "night": false,
+  "abilities": [
+   "lunge"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 20,
+    "min": 2,
+    "max": 6
+   },
+   {
+    "item": "energy_bar",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.run"
+ },
+ {
+  "id": "runner_feral",
+  "name": "野性者",
+  "tag": "runner",
+  "tier": 3,
+  "desc": "它不再有任何人类的动作，只剩下冲刺的本能。",
+  "hp": 42,
+  "dmg": 15,
+  "armor": 0,
+  "acc": 84,
+  "evade": 22,
+  "xp": 32,
+  "night": false,
+  "abilities": [
+   "lunge",
+   "bite"
+  ],
+  "loot": [
+   {
+    "item": "dried_meat",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cloth",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "adrenaline",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.run"
+ },
+ {
+  "id": "runner_night",
+  "name": "夜行者",
+  "tag": "runner",
+  "tier": 3,
+  "desc": "只有在黑暗里才会动。它怕光，但不怕你。",
+  "hp": 38,
+  "dmg": 16,
+  "armor": 1,
+  "acc": 82,
+  "evade": 26,
+  "xp": 34,
+  "night": true,
+  "abilities": [
+   "lunge",
+   "shriek"
+  ],
+  "loot": [
+   {
+    "item": "battery",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "flashlight",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_fragment",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.run"
+ },
+ {
+  "id": "walker_screamer",
+  "name": "尖啸者",
+  "tag": "screamer",
+  "tier": 3,
+  "desc": "喉咙肿成一个球，张嘴时没有脸。",
+  "hp": 36,
+  "dmg": 8,
+  "armor": 0,
+  "acc": 60,
+  "evade": 15,
+  "xp": 30,
+  "night": false,
+  "abilities": [
+   "shriek",
+   "call_pack"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.wave"
+ },
+ {
+  "id": "screamer_wail",
+  "name": "哀嚎者",
+  "tag": "screamer",
+  "tier": 3,
+  "desc": "它总是对着空无一人的街道尖叫，像是在通知谁。",
+  "hp": 50,
+  "dmg": 10,
+  "armor": 2,
+  "acc": 62,
+  "evade": 12,
+  "xp": 34,
+  "night": false,
+  "abilities": [
+   "howl",
+   "shriek"
+  ],
+  "loot": [
+   {
+    "item": "battery",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "painting",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "photo",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.wave"
+ },
+ {
+  "id": "crawler_legless",
+  "name": "无腿者",
+  "tag": "crawler",
+  "tier": 1,
+  "desc": "它用双手拖着半截身体爬行，指甲已经磨没了。",
+  "hp": 18,
+  "dmg": 9,
+  "armor": 0,
+  "acc": 54,
+  "evade": 8,
+  "xp": 12,
+  "night": false,
+  "abilities": [
+   "grab"
+  ],
+  "loot": [
+   {
+    "item": "scrap",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cloth",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.roll"
+ },
+ {
+  "id": "crawler_ceiling",
+  "name": "天花板行者",
+  "tag": "crawler",
+  "tier": 3,
+  "desc": "它从天花板上掉下来之前，你只听见灰尘落下的声音。",
+  "hp": 34,
+  "dmg": 14,
+  "armor": 1,
+  "acc": 76,
+  "evade": 30,
+  "xp": 32,
+  "night": true,
+  "abilities": [
+   "lunge",
+   "grab"
+  ],
+  "loot": [
+   {
+    "item": "wire",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "circuit",
+    "chance": 14,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "filter_core",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.roll"
+ },
+ {
+  "id": "spitter_acid",
+  "name": "酸液者",
+  "tag": "spitter",
+  "tier": 3,
+  "desc": "下颌脱臼，喉咙里养着一窝冒泡的酸。",
+  "hp": 40,
+  "dmg": 10,
+  "armor": 3,
+  "acc": 62,
+  "evade": 10,
+  "xp": 30,
+  "night": false,
+  "abilities": [
+   "acid",
+   "bite"
+  ],
+  "loot": [
+   {
+    "item": "chemical",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "filter_core",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antiseptic",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "chemical",
+  "name": "呕胆者",
+  "tag": "spitter",
+  "tier": 3,
+  "desc": "它走到哪都留下一道绿色的痕迹。",
+  "hp": 48,
+  "dmg": 12,
+  "armor": 2,
+  "acc": 58,
+  "evade": 8,
+  "xp": 32,
+  "night": false,
+  "abilities": [
+   "bile",
+   "acid"
+  ],
+  "loot": [
+   {
+    "item": "antidote",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "herb",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "brute_heavy",
+  "name": "重装者",
+  "tag": "brute",
+  "tier": 4,
+  "desc": "肩膀宽得像一堵墙，皮肤下鼓起不自然的硬块。",
+  "hp": 110,
+  "dmg": 20,
+  "armor": 10,
+  "acc": 60,
+  "evade": 4,
+  "xp": 55,
+  "night": false,
+  "abilities": [
+   "slam",
+   "charge"
+  ],
+  "loot": [
+   {
+    "item": "steel_plate",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "scrap",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "vest_plate",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "generator_part",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.strengthtraining.traditional"
+ },
+ {
+  "id": "brute_bloated",
+  "name": "臃肿者",
+  "tag": "brute",
+  "tier": 4,
+  "desc": "它胀得几乎透明，里面像装着一锅沸腾的东西。",
+  "hp": 130,
+  "dmg": 18,
+  "armor": 6,
+  "acc": 52,
+  "evade": 2,
+  "xp": 60,
+  "night": false,
+  "abilities": [
+   "bile",
+   "slam"
+  ],
+  "loot": [
+   {
+    "item": "chemical",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "propane",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "medkit",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.strengthtraining.traditional"
+ },
+ {
+  "id": "brute_armored",
+  "name": "铁壳",
+  "tag": "brute",
+  "tier": 5,
+  "desc": "它把汽车门板绑在身上，走路时金属互相撞击。",
+  "hp": 160,
+  "dmg": 24,
+  "armor": 18,
+  "acc": 58,
+  "evade": 3,
+  "xp": 80,
+  "night": false,
+  "abilities": [
+   "charge",
+   "slam",
+   "grapple"
+  ],
+  "loot": [
+   {
+    "item": "steel_plate",
+    "chance": 55,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "helmet_swat",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "carbon",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_762",
+    "chance": 30,
+    "min": 4,
+    "max": 10
+   }
+  ],
+  "icon": "figure.strengthtraining.traditional"
+ },
+ {
+  "id": "hound_stray",
+  "name": "流浪感染犬",
+  "tag": "hound",
+  "tier": 2,
+  "desc": "毛掉光了，肋骨清晰可见，但速度没有减。",
+  "hp": 26,
+  "dmg": 10,
+  "armor": 2,
+  "acc": 80,
+  "evade": 24,
+  "xp": 16,
+  "night": false,
+  "abilities": [
+   "lunge",
+   "bite"
+  ],
+  "loot": [
+   {
+    "item": "dog_tag",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fat",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "pemmican",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "dog.fill"
+ },
+ {
+  "id": "hound_pack",
+  "name": "犬群",
+  "tag": "hound",
+  "tier": 3,
+  "desc": "你听见不止一条。三个方向都有。",
+  "hp": 44,
+  "dmg": 12,
+  "armor": 2,
+  "acc": 80,
+  "evade": 28,
+  "xp": 26,
+  "night": false,
+  "abilities": [
+   "swarm",
+   "bite"
+  ],
+  "loot": [
+   {
+    "item": "dog_tag",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "leather",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fat",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "dog.fill"
+ },
+ {
+  "id": "hound_alpha",
+  "name": "犬王",
+  "tag": "hound",
+  "tier": 5,
+  "desc": "它的肩高到你腰，脖子上一圈断掉的项圈。",
+  "hp": 120,
+  "dmg": 22,
+  "armor": 6,
+  "acc": 86,
+  "evade": 30,
+  "xp": 70,
+  "night": false,
+  "abilities": [
+   "swarm",
+   "lunge",
+   "call_pack"
+  ],
+  "loot": [
+   {
+    "item": "leather",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "bone",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "blood_sample",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "serum",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "dog.fill"
+ },
+ {
+  "id": "animal_boar",
+  "name": "感染野猪",
+  "tag": "animal",
+  "tier": 3,
+  "desc": "獠牙上挂着布条，说明它见过人。",
+  "hp": 70,
+  "dmg": 17,
+  "armor": 8,
+  "acc": 62,
+  "evade": 10,
+  "xp": 28,
+  "night": false,
+  "abilities": [
+   "charge"
+  ],
+  "loot": [
+   {
+    "item": "cooked_meat",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fat",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bone",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "pawprint.fill"
+ },
+ {
+  "id": "animal_deer",
+  "name": "感染鹿",
+  "tag": "animal",
+  "tier": 2,
+  "desc": "鹿角上缠着塑料袋，跑起来像在挣脱什么。",
+  "hp": 44,
+  "dmg": 9,
+  "armor": 2,
+  "acc": 70,
+  "evade": 20,
+  "xp": 18,
+  "night": false,
+  "abilities": [
+   "lunge"
+  ],
+  "loot": [
+   {
+    "item": "cooked_meat",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "leather",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bone",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "pawprint.fill"
+ },
+ {
+  "id": "animal_bear",
+  "name": "感染熊",
+  "tag": "animal",
+  "tier": 5,
+  "desc": "它站着的时候比门框还高。你希望它已经死了，但它没有。",
+  "hp": 240,
+  "dmg": 28,
+  "armor": 16,
+  "acc": 68,
+  "evade": 4,
+  "xp": 110,
+  "night": false,
+  "abilities": [
+   "slam",
+   "charge",
+   "rage"
+  ],
+  "loot": [
+   {
+    "item": "cooked_meat",
+    "chance": 60,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "fat",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "leather",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "carbon",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "pawprint.fill"
+ },
+ {
+  "id": "animal_wolf",
+  "name": "感染狼",
+  "tag": "animal",
+  "tier": 3,
+  "desc": "它绕过你，堵住了来时的路。",
+  "hp": 52,
+  "dmg": 14,
+  "armor": 3,
+  "acc": 82,
+  "evade": 26,
+  "xp": 30,
+  "night": false,
+  "abilities": [
+   "lunge",
+   "swarm"
+  ],
+  "loot": [
+   {
+    "item": "leather",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "dog_tag",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "dried_meat",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "pawprint.fill"
+ },
+ {
+  "id": "swarm_rat",
+  "name": "鼠群",
+  "tag": "animal",
+  "tier": 1,
+  "desc": "地板在动。你花了半秒才明白那是什么。",
+  "hp": 30,
+  "dmg": 8,
+  "armor": 0,
+  "acc": 74,
+  "evade": 24,
+  "xp": 14,
+  "night": false,
+  "abilities": [
+   "swarm",
+   "infect"
+  ],
+  "loot": [
+   {
+    "item": "bone",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cloth",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "ant.fill"
+ },
+ {
+  "id": "human_looter",
+  "name": "掠夺者",
+  "tag": "human",
+  "tier": 2,
+  "desc": "衣服上缝着自制的护片，眼神比刀子更直接。",
+  "hp": 46,
+  "dmg": 13,
+  "armor": 5,
+  "acc": 72,
+  "evade": 12,
+  "xp": 28,
+  "night": false,
+  "abilities": [
+   "stab",
+   "smoke"
+  ],
+  "loot": [
+   {
+    "item": "ammo_9mm",
+    "chance": 30,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "canned_food",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gold_ring",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "human_scout",
+  "name": "斥候",
+  "tag": "human",
+  "tier": 3,
+  "desc": "他先看见你，你后看见他。这通常意味着结局。",
+  "hp": 44,
+  "dmg": 12,
+  "armor": 4,
+  "acc": 80,
+  "evade": 20,
+  "xp": 32,
+  "night": false,
+  "abilities": [
+   "stab",
+   "smoke",
+   "gunshot"
+  ],
+  "loot": [
+   {
+    "item": "binoculars",
+    "chance": 28,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_fragment",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_556",
+    "chance": 22,
+    "min": 2,
+    "max": 6
+   },
+   {
+    "item": "walkie",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "human_gunner",
+  "name": "秃鹫枪手",
+  "tag": "human",
+  "tier": 4,
+  "desc": "他叼着烟，用手势让别人绕到你身后。",
+  "hp": 58,
+  "dmg": 16,
+  "armor": 7,
+  "acc": 76,
+  "evade": 12,
+  "xp": 44,
+  "night": false,
+  "abilities": [
+   "burst",
+   "gunshot"
+  ],
+  "loot": [
+   {
+    "item": "ammo_556",
+    "chance": 40,
+    "min": 4,
+    "max": 10
+   },
+   {
+    "item": "rifle_ar",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vest_tactical",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cigarettes",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "human_sniper",
+  "name": "制高者",
+  "tag": "human",
+  "tier": 5,
+  "desc": "他在水塔上待了三天，只为等一个更好的时机。",
+  "hp": 52,
+  "dmg": 22,
+  "armor": 5,
+  "acc": 88,
+  "evade": 18,
+  "xp": 70,
+  "night": false,
+  "abilities": [
+   "snipe",
+   "stab"
+  ],
+  "loot": [
+   {
+    "item": "rifle_hunting",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_762",
+    "chance": 50,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "goggles",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "coffee_beans",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "human_pyro",
+  "name": "纵火者",
+  "tag": "human",
+  "tier": 4,
+  "desc": "他把燃烧瓶在手里颠了颠，像是在考虑什么。",
+  "hp": 66,
+  "dmg": 15,
+  "armor": 4,
+  "acc": 70,
+  "evade": 10,
+  "xp": 48,
+  "night": false,
+  "abilities": [
+   "fire_spit",
+   "smoke"
+  ],
+  "loot": [
+   {
+    "item": "molotov",
+    "chance": 45,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "fuel",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "lighter",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "welder",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "human_brute",
+  "name": "打手",
+  "tag": "human",
+  "tier": 4,
+  "desc": "他戴着摩托头盔，拳头上缠着铁链。",
+  "hp": 95,
+  "dmg": 19,
+  "armor": 10,
+  "acc": 66,
+  "evade": 4,
+  "xp": 46,
+  "night": false,
+  "abilities": [
+   "slam",
+   "grapple"
+  ],
+  "loot": [
+   {
+    "item": "vest_plate",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "steel_plate",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "moonshine",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_45",
+    "chance": 20,
+    "min": 2,
+    "max": 5
+   }
+  ],
+  "icon": "figure.strengthtraining.traditional"
+ },
+ {
+  "id": "cultist_zealot",
+  "name": "灰袍狂信者",
+  "tag": "human",
+  "tier": 3,
+  "desc": "他一边靠近一边念着你的名字，你不知道他怎么知道。",
+  "hp": 54,
+  "dmg": 14,
+  "armor": 4,
+  "acc": 70,
+  "evade": 12,
+  "xp": 34,
+  "night": false,
+  "abilities": [
+   "pray",
+   "stab"
+  ],
+  "loot": [
+   {
+    "item": "cloth",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "liquor",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "herb",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "child_drawing",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "cultist_priest",
+  "name": "灰袍牧师",
+  "tag": "human",
+  "tier": 4,
+  "desc": "他的袍子上缝满了死者的名字，密密麻麻。",
+  "hp": 70,
+  "dmg": 12,
+  "armor": 6,
+  "acc": 66,
+  "evade": 10,
+  "xp": 55,
+  "night": false,
+  "abilities": [
+   "pray",
+   "smoke",
+   "inject"
+  ],
+  "loot": [
+   {
+    "item": "serum_formula",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antidote",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wedding_ring",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "moonshine",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "soldier_deserter",
+  "name": "逃兵",
+  "tag": "human",
+  "tier": 3,
+  "desc": "制服上的臂章被扯掉了，留下一个浅色的方块。",
+  "hp": 60,
+  "dmg": 15,
+  "armor": 8,
+  "acc": 72,
+  "evade": 10,
+  "xp": 38,
+  "night": false,
+  "abilities": [
+   "gunshot",
+   "stab"
+  ],
+  "loot": [
+   {
+    "item": "ammo_556",
+    "chance": 35,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "mre",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_biscuit",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "soldier_guard",
+  "name": "残军哨兵",
+  "tag": "human",
+  "tier": 4,
+  "desc": "他站在检查站的沙袋后面，枪口一直对着路。",
+  "hp": 68,
+  "dmg": 16,
+  "armor": 12,
+  "acc": 78,
+  "evade": 8,
+  "xp": 50,
+  "night": false,
+  "abilities": [
+   "burst",
+   "shield_bash"
+  ],
+  "loot": [
+   {
+    "item": "ammo_556",
+    "chance": 45,
+    "min": 4,
+    "max": 10
+   },
+   {
+    "item": "vest_kevlar",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "mre",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_codebook",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "vulture_slaver",
+  "name": "秃鹫贩子",
+  "tag": "human",
+  "tier": 4,
+  "desc": "腰上挂着一串手铐，钥匙丢了一把。",
+  "hp": 62,
+  "dmg": 15,
+  "armor": 6,
+  "acc": 74,
+  "evade": 14,
+  "xp": 46,
+  "night": false,
+  "abilities": [
+   "stab",
+   "smoke",
+   "throw_grenade"
+  ],
+  "loot": [
+   {
+    "item": "rope",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "handcuffs",
+    "chance": 0,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gold_ring",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wedding_ring",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 30,
+    "min": 2,
+    "max": 7
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "hunter_poacher",
+  "name": "偷猎者",
+  "tag": "human",
+  "tier": 3,
+  "desc": "他身上有松脂和血的味道，陷阱是他布的。",
+  "hp": 50,
+  "dmg": 13,
+  "armor": 3,
+  "acc": 82,
+  "evade": 22,
+  "xp": 36,
+  "night": false,
+  "abilities": [
+   "stab",
+   "snipe"
+  ],
+  "loot": [
+   {
+    "item": "bow_compound",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "arrow",
+    "chance": 45,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "dried_meat",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "trap",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "doctor_mad",
+  "name": "疯医生",
+  "tag": "human",
+  "tier": 4,
+  "desc": "他穿着沾满血的白大褂，问你有没有感觉不舒服。",
+  "hp": 58,
+  "dmg": 15,
+  "armor": 3,
+  "acc": 68,
+  "evade": 12,
+  "xp": 52,
+  "night": false,
+  "abilities": [
+   "inject",
+   "paralyze"
+  ],
+  "loot": [
+   {
+    "item": "serum",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antibiotics",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "blood_sample",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "armored_swat",
+  "name": "装甲特警",
+  "tag": "brute",
+  "tier": 5,
+  "desc": "防暴装甲上全是抓痕，面罩后面没有脸。",
+  "hp": 150,
+  "dmg": 22,
+  "armor": 20,
+  "acc": 66,
+  "evade": 2,
+  "xp": 85,
+  "night": false,
+  "abilities": [
+   "burst",
+   "shield_bash",
+   "throw_grenade"
+  ],
+  "loot": [
+   {
+    "item": "helmet_swat",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vest_kevlar",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 50,
+    "min": 5,
+    "max": 12
+   },
+   {
+    "item": "smoke_grenade",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "shield.fill"
+ },
+ {
+  "id": "armored_hazmat",
+  "name": "防护服者",
+  "tag": "brute",
+  "tier": 4,
+  "desc": "软管拖在地上，每走一步都喷出一小股白雾。",
+  "hp": 100,
+  "dmg": 16,
+  "armor": 12,
+  "acc": 56,
+  "evade": 0,
+  "xp": 55,
+  "night": false,
+  "abilities": [
+   "infect",
+   "acid"
+  ],
+  "loot": [
+   {
+    "item": "hazmat",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "filter_core",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gas_mask_full",
+    "chance": 18,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.stand"
+ },
+ {
+  "id": "night_stalker",
+  "name": "潜行者",
+  "tag": "walker",
+  "tier": 4,
+  "desc": "你看不见它，但你知道它在看。",
+  "hp": 70,
+  "dmg": 18,
+  "armor": 5,
+  "acc": 84,
+  "evade": 34,
+  "xp": 50,
+  "night": true,
+  "abilities": [
+   "lunge",
+   "grapple",
+   "shriek"
+  ],
+  "loot": [
+   {
+    "item": "nvg",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "combat_knife",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_fragment",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "eye.fill"
+ },
+ {
+  "id": "night_watcher",
+  "name": "守望者",
+  "tag": "walker",
+  "tier": 5,
+  "desc": "它总是站在高处，从不出声，直到你抬头。",
+  "hp": 92,
+  "dmg": 15,
+  "armor": 8,
+  "acc": 70,
+  "evade": 18,
+  "xp": 65,
+  "night": true,
+  "abilities": [
+   "echo",
+   "howl",
+   "drain"
+  ],
+  "loot": [
+   {
+    "item": "watch",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "eye.fill"
+ },
+ {
+  "id": "bloater_bomb",
+  "name": "自爆者",
+  "tag": "brute",
+  "tier": 4,
+  "desc": "它一边走一边漏，肚皮上的皮肤薄得能看见液体晃动。",
+  "hp": 80,
+  "dmg": 14,
+  "armor": 4,
+  "acc": 48,
+  "evade": 0,
+  "xp": 55,
+  "night": false,
+  "abilities": [
+   "bile",
+   "acid",
+   "rage"
+  ],
+  "loot": [
+   {
+    "item": "chemical",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "propane",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "duct_tape",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.strengthtraining.traditional"
+ },
+ {
+  "id": "boss_bell",
+  "name": "钟楼暴君",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "钟楼的守夜人。它把钟绳缠在自己身上，每走一步，整座城都能听见。",
+  "hp": 420,
+  "dmg": 26,
+  "armor": 16,
+  "acc": 68,
+  "evade": 6,
+  "xp": 220,
+  "night": false,
+  "abilities": [
+   "bell_toll",
+   "slam",
+   "call_pack"
+  ],
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "steel_plate",
+    "chance": 80,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "helmet_military",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "bell.fill"
+ },
+ {
+  "id": "boss_mother",
+  "name": "母亲",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "她坐在育婴室的中央，怀里抱着很多东西。她一直在唱摇篮曲。",
+  "hp": 380,
+  "dmg": 24,
+  "armor": 12,
+  "acc": 72,
+  "evade": 10,
+  "xp": 210,
+  "night": false,
+  "abilities": [
+   "mother_call",
+   "swarm",
+   "drain"
+  ],
+  "loot": [
+   {
+    "item": "blood_sample",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "serum_formula",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wedding_ring",
+    "chance": 55,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "photo",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "figure.and.child.holdinghands"
+ },
+ {
+  "id": "boss_whitecrow",
+  "name": "白鸦实验体",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "白鸦最骄傲的作品。它穿着束缚衣，针管还插在脊椎上。",
+  "hp": 460,
+  "dmg": 28,
+  "armor": 18,
+  "acc": 74,
+  "evade": 12,
+  "xp": 240,
+  "night": false,
+  "abilities": [
+   "experiment",
+   "paralyze",
+   "acid"
+  ],
+  "loot": [
+   {
+    "item": "serum",
+    "chance": 100,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "lab_sample",
+    "chance": 100,
+    "min": 1,
+    "max": 2
+   },
+   {
+    "item": "hard_drive",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "carbon",
+    "chance": 70,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "cross.case.fill"
+ },
+ {
+  "id": "boss_rustking",
+  "name": "铁锈王",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "废料场深处，它用汽车零件给自己做了一顶王冠。",
+  "hp": 500,
+  "dmg": 30,
+  "armor": 24,
+  "acc": 62,
+  "evade": 2,
+  "xp": 260,
+  "night": false,
+  "abilities": [
+   "rust_cloud",
+   "slam",
+   "charge"
+  ],
+  "loot": [
+   {
+    "item": "steel_plate",
+    "chance": 100,
+    "min": 3,
+    "max": 5
+   },
+   {
+    "item": "carbon",
+    "chance": 80,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "generator_part",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "crown.fill"
+ },
+ {
+  "id": "boss_tide",
+  "name": "潮汐",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "它从港口的水里站起来，身上缠着渔网和铁链。水面上的油光在它背后燃烧。",
+  "hp": 560,
+  "dmg": 32,
+  "armor": 20,
+  "acc": 70,
+  "evade": 8,
+  "xp": 280,
+  "night": false,
+  "abilities": [
+   "tide_wave",
+   "grapple",
+   "bite"
+  ],
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel_rod",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antibiotics",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   }
+  ],
+  "icon": "water.waves"
+ },
+ {
+  "id": "boss_preacher",
+  "name": "牧师",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "他张开双臂说：孩子，灰烬之后有新生。你看见他袖口里的针管。",
+  "hp": 400,
+  "dmg": 24,
+  "armor": 14,
+  "acc": 76,
+  "evade": 14,
+  "xp": 230,
+  "night": false,
+  "abilities": [
+   "pray",
+   "inject",
+   "smoke"
+  ],
+  "loot": [
+   {
+    "item": "serum_formula",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "moonshine",
+    "chance": 100,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "child_drawing",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "flame.fill"
+ },
+ {
+  "id": "boss_twins",
+  "name": "双子",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "两个几乎一样的女人，一左一右。你只能先解决一个。",
+  "hp": 340,
+  "dmg": 26,
+  "armor": 10,
+  "acc": 82,
+  "evade": 24,
+  "xp": 240,
+  "night": false,
+  "abilities": [
+   "twin_slash",
+   "smoke",
+   "stab"
+  ],
+  "loot": [
+   {
+    "item": "katana",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "combat_knife",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "nvg",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "person.2.fill"
+ },
+ {
+  "id": "boss_trainman",
+  "name": "列车长",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "他守着一列装满物资的军用列车，钥匙挂在他脖子上。",
+  "hp": 440,
+  "dmg": 27,
+  "armor": 18,
+  "acc": 66,
+  "evade": 6,
+  "xp": 235,
+  "night": false,
+  "abilities": [
+   "charge",
+   "burst",
+   "throw_grenade"
+  ],
+  "loot": [
+   {
+    "item": "ammo_762",
+    "chance": 100,
+    "min": 8,
+    "max": 16
+   },
+   {
+    "item": "rifle_ak",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel_rod",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "tram.fill"
+ },
+ {
+  "id": "boss_hive",
+  "name": "巢",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "地铁枢纽的深处，墙在呼吸。你终于明白那些失踪者去了哪里。",
+  "hp": 600,
+  "dmg": 25,
+  "armor": 22,
+  "acc": 58,
+  "evade": 0,
+  "xp": 300,
+  "night": false,
+  "abilities": [
+   "swarm",
+   "acid",
+   "call_pack"
+  ],
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 100,
+    "min": 3,
+    "max": 6
+   },
+   {
+    "item": "blood_sample",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "carbon",
+    "chance": 70,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "ant.fill"
+ },
+ {
+  "id": "boss_ash",
+  "name": "灰烬行者",
+  "tag": "boss",
+  "tier": 5,
+  "desc": "它的皮肤像烧过的纸，风一吹就落下灰。可它还站着，还朝你走来。",
+  "hp": 380,
+  "dmg": 29,
+  "armor": 12,
+  "acc": 86,
+  "evade": 26,
+  "xp": 250,
+  "night": false,
+  "abilities": [
+   "echo",
+   "paralyze",
+   "drain"
+  ],
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "serum",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "carbon",
+    "chance": 55,
+    "min": 1,
+    "max": 1
+   }
+  ],
+  "icon": "flame.fill"
+ }
+]
