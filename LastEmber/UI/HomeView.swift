@@ -122,7 +122,7 @@ struct HomeView: View {
             HStack(spacing: 10) {
                 smallButton(icon: "book.closed", title: "图鉴") { store.panel = .codex }
                 smallButton(icon: "rosette", title: "成就") { store.panel = .achievements }
-                smallButton(icon: "questionmark.circle", title: "档案") { store.panel = .journal }
+                smallButton(icon: "questionmark.circle", title: "玩法") { store.panel = .help }
             }
         }
     }

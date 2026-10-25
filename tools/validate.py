@@ -122,7 +122,7 @@ for k in scen_items:
     if k not in all_ref: bad(f"scenario item {k}")
 for w in ["pipe","pistol_9mm","wrench","knife_scalpel","crowbar","bow_compound","machete","rifle_ar","knife_folding","pistol_silenced"]:
     if w not in weapons: bad(f"scenario weapon {w}")
-for a in ["jakcet_old","gloves_work","robe_gray","vest_kevlar","hood_cloth"]:
+for a in ["jacket_old","gloves_work","robe_gray","vest_kevlar","hood_cloth"]:
     if a not in armors: bad(f"scenario armor {a}")
 for p in ["marksman","handy","field_medic","scrounger","deadeye","zeal","tough","light_step","ghost"]:
     if p not in perks: bad(f"scenario perk {p}")

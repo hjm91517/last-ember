@@ -18,7 +18,7 @@ struct BattleView: View {
                                startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
 
-                VStack(spacing: 12) {
+                VStack(spacing: 10) {
                     topBar(enemy)
                     enemyPanel(enemy, b)
                     battleLog(b)
@@ -119,7 +119,7 @@ struct BattleView: View {
                     .frame(maxWidth: 150, alignment: .trailing)
             }
         }
-        .cardStyle(padding: 14)
+        .cardStyle(padding: 12)
     }
 
     private func battleLog(_ b: BattleState) -> some View {
@@ -144,7 +144,7 @@ struct BattleView: View {
                 }
                 .padding(12)
             }
-            .frame(maxHeight: 190)
+            .frame(minHeight: 96, maxHeight: 176)
             .background(
                 RoundedRectangle(cornerRadius: Theme.rSmall, style: .continuous)
                     .fill(Color.black.opacity(0.35))

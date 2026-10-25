@@ -107,6 +107,7 @@ struct PanelHost: View {
         case .journal: JournalPanel()
         case .achievements: AchievementPanel()
         case .scenarios: ScenarioPanel()
+        case .help: HelpPanel()
         }
     }
 }

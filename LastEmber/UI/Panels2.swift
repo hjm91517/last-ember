@@ -970,3 +970,64 @@ struct EventView: View {
         }.joined(separator: " · ")
     }
 }
+
+// MARK: - 玩法说明
+
+struct HelpPanel: View {
+    @EnvironmentObject var store: GameStore
+
+    private let sections: [(String, String)] = [
+        ("活下去，然后走到灯塔",
+         "目标只有一个：凑齐 6 枚「灯塔核心」，抵达城市核心的白塔灯塔并交付。结局会因为你带去了什么、又选择了什么而改变——目前共有 24 种。"),
+        ("每天 3 点行动点",
+         "搜刮、移动、休息、制作都要消耗行动点。行动点用完就结束今天；结束时会结算饥饿、口渴、感染、体温，并可能发生夜袭与随机事件。"),
+        ("六项生存压力",
+         "生命归零会死；感染到 100 会转化；理智归零会崩溃。饥饿与口渴归零后每天扣血。疲劳过 70 会减少行动点，负重超限也会。"),
+        ("搜刮会耗尽",
+         "每个地点的资源分几层，翻空之后只剩危险。地点越危险，产出越好，遭遇战也越频繁。夜晚遇到夜行种的概率更高。"),
+        ("战斗是回合制",
+         "攻击、重击、瞄准、闪避、用药、投掷、逃跑。武器有耐久，会断；枪械需要对应弹药，没弹药只能当棍子用。打不过就跑。"),
+        ("制作与据点",
+         "配方需要对应工作站等级：工作台、厨房、医疗台、军械台、电台、菜园。据点设施能提供水、食物、行动点、负重与防御。"),
+        ("同伴与任务",
+         "在事件中遇见的幸存者可以招募（最多 4 人），安排搜刮、守夜、做饭或制作。任务会自动结算，完成后奖励经验与物资。"),
+        ("成长与周目",
+         "升级获得属性点，可在四个方向学习技能。死亡不是终点：记忆碎片、成就、结局图鉴与剧本解锁会保留到下一次生存。"),
+        ("最后三条建议",
+         "水比子弹重要；不要在没药的时候深入军事区；如果听见钟声，先想清楚你为什么还要往那边走。")
+    ]
+
+    var body: some View {
+        PanelShell("玩法", subtitle: "灰烬里的九条规矩") {
+            VStack(alignment: .leading, spacing: 0) {
+                ForEach(sections.indices, id: \.self) { i in
+                    let item = sections[i]
+                    HStack(alignment: .top, spacing: 12) {
+                        Text(String(format: "%02d", i + 1))
+                            .font(Theme.mono(10, .semibold))
+                            .foregroundColor(Theme.ember)
+                            .frame(width: 24, alignment: .leading)
+                            .padding(.top, 2)
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(item.0)
+                                .font(Theme.serif(15, .semibold))
+                                .foregroundColor(Theme.text)
+                            Text(item.1)
+                                .font(Theme.mono(10))
+                                .foregroundColor(Theme.faint)
+                                .lineSpacing(4)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                    .padding(.vertical, 14)
+                    .hairline()
+                }
+
+                Text("进度自动保存 · 无需联网 · 无内购")
+                    .font(Theme.mono(9))
+                    .foregroundColor(Theme.faint)
+                    .padding(.top, 16)
+            }
+        }
+    }
+}

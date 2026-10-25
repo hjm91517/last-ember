@@ -307,7 +307,7 @@ for (i, n, kind, d, dmg, dv, crit, acc, ap, dur, val, rar, w, ammo, traits, icon
 
 armors = [
     # id, name, slot, desc, armor, evade, warmth, value, rarity, weight, traits, icon
-    ("jakcet_old", "旧夹克", "body", "肘部磨破了，但比什么都没有强。", 3, 2, 14, 0, 1, 1.2, [], "jacket"),
+    ("jacket_old", "旧夹克", "body", "肘部磨破了，但比什么都没有强。", 3, 2, 14, 0, 1, 1.2, [], "jacket"),
     ("hood_cloth", "连帽布衣", "head", "灰色的兜帽，能遮住脸。", 1, 3, 6, 6, 1, 0.3, [], "face.smiling"),
     ("robe_gray", "灰袍", "body", "教团发的粗布长袍，下摆沾着灰。", 2, 4, 10, 12, 1, 1.0, [], "figure.stand"),
     ("vest_kevlar", "凯夫拉背心", "body", "军用的，护住要害，很沉。", 12, 0, 8, 55, 3, 3.0, [], "shield.fill"),

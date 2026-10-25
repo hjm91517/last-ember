@@ -3,7 +3,7 @@ import SwiftUI
 
 enum Screen { case home, game, ending }
 enum Panel: String, Identifiable {
-    case inventory, craft, base, map, squad, quests, codex, character, journal, scenarios, achievements
+    case inventory, craft, base, map, squad, quests, codex, character, journal, scenarios, achievements, help
     var id: String { rawValue }
 }
 
@@ -50,7 +50,13 @@ final class GameStore: ObservableObject {
         s.apMax = 3 + sc.apBonus
         s.ap = s.apMax
         for (k, v) in sc.items { s.inventory[k, default: 0] += v }
-        for (k, v) in sc.perks { s.perks[k] = v }
+        for (k, v) in sc.perks {
+            s.perks[k] = v
+            if let hpUp = content.perk(k)?.effect["hpMax"], hpUp > 0 {
+                s.hpMax += hpUp * v
+            }
+        }
+        s.hp = s.hpMax
         if let w = sc.weapon, let wp = content.weapon(w) {
             let g = GearInstance(id: UUID().uuidString, item: w, dur: wp.dur)
             s.weapons = [g]
