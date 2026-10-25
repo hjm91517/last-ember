@@ -689,5 +689,173 @@
    "ammo_556": 12
   },
   "next": null
+ },
+ {
+  "id": "q_more_1",
+  "title": "军事档案",
+  "giver": "board",
+  "desc": "去军械库找一份旧作战记录。",
+  "kind": "visit",
+  "target": "armory",
+  "count": 1,
+  "rewardXP": 140,
+  "rewardItems": {
+   "ammo_556": 10
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_2",
+  "title": "黑匣子",
+  "giver": "board",
+  "desc": "通讯塔上的记录仪，拿回来。",
+  "kind": "visit",
+  "target": "comm_tower",
+  "count": 1,
+  "rewardXP": 150,
+  "rewardItems": {
+   "radio_part": 2
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_3",
+  "title": "清空医院",
+  "giver": "board",
+  "desc": "把野战医院里的东西减到能住人。",
+  "kind": "kill",
+  "target": "walker",
+  "count": 12,
+  "rewardXP": 150,
+  "rewardItems": {
+   "medkit": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_4",
+  "title": "夜里的耳朵",
+  "giver": "board",
+  "desc": "处理掉那些会叫的东西。",
+  "kind": "kill",
+  "target": "screamer",
+  "count": 4,
+  "rewardXP": 130,
+  "rewardItems": {
+   "bandage": 4
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_5",
+  "title": "修好发电机",
+  "giver": "board",
+  "desc": "凑齐零件，让营地重新亮起来。",
+  "kind": "collect",
+  "target": "generator_part",
+  "count": 2,
+  "rewardXP": 170,
+  "rewardItems": {
+   "battery_pack": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_6",
+  "title": "六枚核心",
+  "giver": "board",
+  "desc": "灯塔需要它们。越多越好。",
+  "kind": "collect",
+  "target": "light_core",
+  "count": 4,
+  "rewardXP": 220,
+  "rewardItems": {
+   "serum": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_7",
+  "title": "给孩子的糖",
+  "giver": "kid",
+  "desc": "小满说想吃甜的。",
+  "kind": "collect",
+  "target": "candy",
+  "count": 3,
+  "rewardXP": 60,
+  "rewardItems": {
+   "chocolate": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_8",
+  "title": "给铁钉的肉",
+  "giver": "board",
+  "desc": "狗也需要吃东西。",
+  "kind": "collect",
+  "target": "cooked_meat",
+  "count": 3,
+  "rewardXP": 70,
+  "rewardItems": {
+   "dog_tag": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_9",
+  "title": "守夜人",
+  "giver": "warden",
+  "desc": "陪他守到天亮，第三次。",
+  "kind": "day",
+  "target": "any",
+  "count": 20,
+  "rewardXP": 150,
+  "rewardItems": {
+   "flashlight": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_10",
+  "title": "完整的名字",
+  "giver": "gravedigger",
+  "desc": "再埋七个人，把名字都记下来。",
+  "kind": "kill",
+  "target": "human",
+  "count": 5,
+  "rewardXP": 140,
+  "rewardItems": {
+   "book": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_11",
+  "title": "修理工作台",
+  "giver": "mechanic",
+  "desc": "工作台需要加固。",
+  "kind": "craft",
+  "target": "any",
+  "count": 12,
+  "rewardXP": 130,
+  "rewardItems": {
+   "toolbox": 1
+  },
+  "next": null
+ },
+ {
+  "id": "q_more_12",
+  "title": "白鸦的门禁",
+  "giver": "doctor",
+  "desc": "带一张还能刷的卡回来。",
+  "kind": "collect",
+  "target": "military_keycard",
+  "count": 1,
+  "rewardXP": 130,
+  "rewardItems": {
+   "serum": 1
+  },
+  "next": null
  }
 ]

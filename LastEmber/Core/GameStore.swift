@@ -429,6 +429,7 @@ final class GameStore: ObservableObject {
             }
         }
         state.rng = rng
+        checkAchievements()
         normalize()
         save()
     }
@@ -682,6 +683,9 @@ final class GameStore: ObservableObject {
 
         switch action {
         case .attack, .heavy:
+            if state.equippedWeapon == nil, let first = state.weapons.first {
+                state.equippedWeapon = first.id
+            }
             guard let gIndex = state.weapons.firstIndex(where: { $0.id == state.equippedWeapon }) else {
                 extra.append("你没有可用的武器，只能用拳头。")
                 break
@@ -1317,7 +1321,7 @@ final class GameStore: ObservableObject {
         case "days": return state.day
         case "runs": return meta.runs
         case "endings": return meta.endings.count
-        case "kills": return state.stats["kills", default: 0]
+        case "kills": return meta.totalKills
         case "shards": return meta.shards
         default: return state.stats[key, default: 0]
         }

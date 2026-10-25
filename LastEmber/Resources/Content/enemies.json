@@ -2462,5 +2462,989 @@
    }
   ],
   "icon": "flame.fill"
+ },
+ {
+  "id": "walker_hiker",
+  "name": "徒步者",
+  "tag": "walker",
+  "tier": 2,
+  "hp": 40,
+  "dmg": 10,
+  "armor": 2,
+  "acc": 66,
+  "evade": 8,
+  "xp": 18,
+  "night": false,
+  "abilities": [
+   "grab",
+   "lunge"
+  ],
+  "icon": "figure.hiking",
+  "desc": "背包还背在肩上，登山杖拖在身后，划出一路痕迹。",
+  "loot": [
+   {
+    "item": "crackers",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "water_bottle",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_book",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "sleeping_bag",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "energy_bar",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "walker_fisher",
+  "name": "渔夫",
+  "tag": "walker",
+  "tier": 2,
+  "hp": 36,
+  "dmg": 11,
+  "armor": 1,
+  "acc": 64,
+  "evade": 6,
+  "xp": 18,
+  "night": false,
+  "abilities": [
+   "grab",
+   "infect"
+  ],
+  "icon": "figure.fishing",
+  "desc": "雨裤上全是干掉的泥，手里还攥着一截断线。",
+  "loot": [
+   {
+    "item": "fishing_line",
+    "chance": 45,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "dried_meat",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "rope",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fishing_rod",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "walker_soldier",
+  "name": "阵亡士兵",
+  "tag": "walker",
+  "tier": 3,
+  "hp": 62,
+  "dmg": 14,
+  "armor": 9,
+  "acc": 68,
+  "evade": 6,
+  "xp": 30,
+  "night": false,
+  "abilities": [
+   "bite",
+   "grapple"
+  ],
+  "icon": "figure.walk",
+  "desc": "战术背心还扣着，头盔上的夜视支架是空的。",
+  "loot": [
+   {
+    "item": "ammo_556",
+    "chance": 35,
+    "min": 3,
+    "max": 8
+   },
+   {
+    "item": "military_biscuit",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "vest_kevlar",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "military_keycard",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "walker_scientist",
+  "name": "研究员",
+  "tag": "walker",
+  "tier": 3,
+  "hp": 44,
+  "dmg": 12,
+  "armor": 3,
+  "acc": 66,
+  "evade": 10,
+  "xp": 28,
+  "night": false,
+  "abilities": [
+   "inject",
+   "bite"
+  ],
+  "icon": "figure.walk",
+  "desc": "白大褂上别着工牌，照片里的他还戴着眼镜。",
+  "loot": [
+   {
+    "item": "lab_sample",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antibiotics",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "walker_priest",
+  "name": "神职者",
+  "tag": "walker",
+  "tier": 3,
+  "hp": 50,
+  "dmg": 11,
+  "armor": 3,
+  "acc": 62,
+  "evade": 8,
+  "xp": 28,
+  "night": false,
+  "abilities": [
+   "howl",
+   "grab"
+  ],
+  "icon": "figure.walk",
+  "desc": "脖子上挂着十字架，嘴唇还在动，但没有声音。",
+  "loot": [
+   {
+    "item": "book",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gold_ring",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cigar",
+    "chance": 12,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wedding_ring",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "runner_howler",
+  "name": "嚎奔者",
+  "tag": "runner",
+  "tier": 4,
+  "hp": 56,
+  "dmg": 18,
+  "armor": 2,
+  "acc": 86,
+  "evade": 30,
+  "xp": 42,
+  "night": false,
+  "abilities": [
+   "lunge",
+   "shriek",
+   "call_pack"
+  ],
+  "icon": "figure.run",
+  "desc": "它一边跑一边叫，声音把更多的影子带了过来。",
+  "loot": [
+   {
+    "item": "adrenaline",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cloth",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "dog_tag",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_9mm",
+    "chance": 25,
+    "min": 2,
+    "max": 6
+   }
+  ]
+ },
+ {
+  "id": "brute_grappler",
+  "name": "摔跤手",
+  "tag": "brute",
+  "tier": 4,
+  "hp": 124,
+  "dmg": 22,
+  "armor": 8,
+  "acc": 64,
+  "evade": 4,
+  "xp": 62,
+  "night": false,
+  "abilities": [
+   "grapple",
+   "slam",
+   "iron_grip"
+  ],
+  "icon": "figure.wrestling",
+  "desc": "肩膀比门框还宽，护腕上绣着一个模糊的队徽。",
+  "loot": [
+   {
+    "item": "protein_powder",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 35,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "steel_plate",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "energy_bar",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "spitter_bloated",
+  "name": "酸胀者",
+  "tag": "spitter",
+  "tier": 4,
+  "hp": 74,
+  "dmg": 15,
+  "armor": 3,
+  "acc": 58,
+  "evade": 4,
+  "xp": 46,
+  "night": false,
+  "abilities": [
+   "acid",
+   "spore",
+   "bile"
+  ],
+  "icon": "figure.stand",
+  "desc": "它的皮肤像煮过头的香肠，轻轻一碰就会裂开。",
+  "loot": [
+   {
+    "item": "chemical",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "filter_core",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antidote",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "chemical",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "screamer_banshee",
+  "name": "女妖",
+  "tag": "screamer",
+  "tier": 4,
+  "hp": 60,
+  "dmg": 12,
+  "armor": 0,
+  "acc": 66,
+  "evade": 20,
+  "xp": 44,
+  "night": true,
+  "abilities": [
+   "shriek",
+   "chorus",
+   "echo"
+  ],
+  "icon": "figure.wave",
+  "desc": "她的头发很长，遮住了脸。歌声从头发后面传出来。",
+  "loot": [
+   {
+    "item": "jewelry",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "violin",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "painting",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "crawler_wall",
+  "name": "壁行者",
+  "tag": "crawler",
+  "tier": 4,
+  "hp": 52,
+  "dmg": 17,
+  "armor": 4,
+  "acc": 78,
+  "evade": 32,
+  "xp": 44,
+  "night": true,
+  "abilities": [
+   "lunge",
+   "grapple"
+  ],
+  "icon": "figure.climbing",
+  "desc": "它贴在隧道顶上，四肢反向弯折，像一只被钉住的蜘蛛。",
+  "loot": [
+   {
+    "item": "wire",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "circuit",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "filter_core",
+    "chance": 15,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "flashlight",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "hound_pup",
+  "name": "幼犬群",
+  "tag": "hound",
+  "tier": 2,
+  "hp": 28,
+  "dmg": 9,
+  "armor": 0,
+  "acc": 80,
+  "evade": 26,
+  "xp": 16,
+  "night": false,
+  "abilities": [
+   "swarm"
+  ],
+  "icon": "dog.fill",
+  "desc": "它们还没长大，牙齿已经很尖。你数不清有几只。",
+  "loot": [
+   {
+    "item": "dog_tag",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fat",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "leather",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "animal_goat",
+  "name": "感染山羊",
+  "tag": "animal",
+  "tier": 2,
+  "hp": 48,
+  "dmg": 13,
+  "armor": 4,
+  "acc": 66,
+  "evade": 12,
+  "xp": 20,
+  "night": false,
+  "abilities": [
+   "charge",
+   "slam"
+  ],
+  "icon": "pawprint.fill",
+  "desc": "角上缠着铁丝，眼睛是横向的，不像羊。",
+  "loot": [
+   {
+    "item": "cooked_meat",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "leather",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bone",
+    "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fat",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "animal_horse",
+  "name": "感染马",
+  "tag": "animal",
+  "tier": 4,
+  "hp": 150,
+  "dmg": 24,
+  "armor": 6,
+  "acc": 70,
+  "evade": 14,
+  "xp": 70,
+  "night": false,
+  "abilities": [
+   "charge",
+   "slam",
+   "rage"
+  ],
+  "icon": "pawprint.fill",
+  "desc": "它还戴着马鞍，缰绳断了。跑起来的时候，整片田都在震。",
+  "loot": [
+   {
+    "item": "leather",
+    "chance": 60,
+    "min": 2,
+    "max": 4
+   },
+   {
+    "item": "cooked_meat",
+    "chance": 50,
+    "min": 2,
+    "max": 3
+   },
+   {
+    "item": "rope",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bone",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "human_cannibal",
+  "name": "食人族",
+  "tag": "human",
+  "tier": 4,
+  "hp": 78,
+  "dmg": 19,
+  "armor": 5,
+  "acc": 76,
+  "evade": 16,
+  "xp": 48,
+  "night": false,
+  "abilities": [
+   "stab",
+   "grapple",
+   "bite"
+  ],
+  "icon": "figure.stand",
+  "desc": "他围着一圈骨头做的项链，牙齿被磨尖了。",
+  "loot": [
+   {
+    "item": "cleaver",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "cooked_meat",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "wedding_ring",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "bandage",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "human_marauder",
+  "name": "劫掠队长",
+  "tag": "human",
+  "tier": 5,
+  "hp": 96,
+  "dmg": 21,
+  "armor": 12,
+  "acc": 80,
+  "evade": 12,
+  "xp": 80,
+  "night": false,
+  "abilities": [
+   "burst",
+   "smoke",
+   "throw_grenade"
+  ],
+  "icon": "figure.stand",
+  "desc": "他的夹克上缝着七个不同颜色的布条，一条代表一队人。",
+  "loot": [
+   {
+    "item": "rifle_ar",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "ammo_556",
+    "chance": 55,
+    "min": 4,
+    "max": 10
+   },
+   {
+    "item": "vest_plate",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "grenade",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "cultist_flagellant",
+  "name": "苦修者",
+  "tag": "human",
+  "tier": 3,
+  "hp": 64,
+  "dmg": 15,
+  "armor": 3,
+  "acc": 68,
+  "evade": 14,
+  "xp": 40,
+  "night": false,
+  "abilities": [
+   "pray",
+   "stab",
+   "inject"
+  ],
+  "icon": "figure.stand",
+  "desc": "他的背上全是自己划的伤口，说是为了记住。",
+  "loot": [
+   {
+    "item": "serum_formula",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "antidote",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "child_drawing",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "book",
+    "chance": 25,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "night_gaunt",
+  "name": "夜瘦",
+  "tag": "walker",
+  "tier": 4,
+  "hp": 66,
+  "dmg": 20,
+  "armor": 2,
+  "acc": 82,
+  "evade": 30,
+  "xp": 52,
+  "night": true,
+  "abilities": [
+   "lunge",
+   "drain",
+   "echo"
+  ],
+  "icon": "moon.fill",
+  "desc": "它瘦得像一根影子，只有在月光下才会显形。",
+  "loot": [
+   {
+    "item": "nvg",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "battery",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "watch",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "boss_colossus",
+  "name": "巨像",
+  "tag": "boss",
+  "tier": 5,
+  "hp": 520,
+  "dmg": 32,
+  "armor": 26,
+  "acc": 60,
+  "evade": 0,
+  "xp": 280,
+  "night": false,
+  "abilities": [
+   "slam",
+   "rust_cloud",
+   "iron_grip",
+   "charge"
+  ],
+  "icon": "figure.stand",
+  "desc": "它由三具尸体和一台压车机组成，走起来像整座废料场在移动。",
+  "loot": [
+   {
+    "item": "steel_plate",
+    "chance": 100,
+    "min": 3,
+    "max": 6
+   },
+   {
+    "item": "carbon",
+    "chance": 80,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "generator_part",
+    "chance": 70,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel_rod",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "boss_ferryman",
+  "name": "摆渡人",
+  "tag": "boss",
+  "tier": 5,
+  "hp": 430,
+  "dmg": 29,
+  "armor": 14,
+  "acc": 72,
+  "evade": 14,
+  "xp": 250,
+  "night": false,
+  "abilities": [
+   "drown",
+   "tide_wave",
+   "grapple"
+  ],
+  "icon": "water.waves",
+  "desc": "他站在栈桥尽头，手里提着一盏灯。灯照到的地方，水面会分开。",
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fuel_rod",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "hard_drive",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "fishing_rod",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "serum",
+    "chance": 20,
+    "min": 1,
+    "max": 1
+   }
+  ]
+ },
+ {
+  "id": "boss_choir",
+  "name": "合唱团",
+  "tag": "boss",
+  "tier": 5,
+  "hp": 400,
+  "dmg": 26,
+  "armor": 10,
+  "acc": 66,
+  "evade": 6,
+  "xp": 260,
+  "night": false,
+  "abilities": [
+   "chorus",
+   "call_pack",
+   "drain",
+   "pray"
+  ],
+  "icon": "music.note",
+  "desc": "十二个人并排坐着，喉咙被缝在一起。它们唱歌的时候，整座教堂都在响。",
+  "loot": [
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "serum_formula",
+    "chance": 50,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "violin",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "gold_ring",
+    "chance": 60,
+    "min": 2,
+    "max": 3
+   }
+  ]
+ },
+ {
+  "id": "boss_librarian",
+  "name": "档案员",
+  "tag": "boss",
+  "tier": 5,
+  "hp": 380,
+  "dmg": 25,
+  "armor": 8,
+  "acc": 80,
+  "evade": 22,
+  "xp": 240,
+  "night": false,
+  "abilities": [
+   "paper_cut",
+   "echo",
+   "paralyze",
+   "stab"
+  ],
+  "icon": "books.vertical.fill",
+  "desc": "它的身体由卷宗和订书钉构成，每一页上都写着一个失踪者的名字。",
+  "loot": [
+   {
+    "item": "hard_drive",
+    "chance": 80,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_codebook",
+    "chance": 60,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 100,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "map_book",
+    "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "laptop",
+    "chance": 30,
+    "min": 1,
+    "max": 1
+   }
+  ]
  }
 ]

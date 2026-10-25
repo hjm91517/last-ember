@@ -862,5 +862,245 @@
   "hidden": false,
   "key": "valuables",
   "goal": 500
+ },
+ {
+  "id": "kill_colossus",
+  "name": "巨像倒下",
+  "desc": "击败废料场的巨像。",
+  "hidden": false,
+  "key": "kill_boss_colossus",
+  "goal": 1
+ },
+ {
+  "id": "kill_ferryman",
+  "name": "摆渡人",
+  "desc": "击败港口的摆渡人。",
+  "hidden": false,
+  "key": "kill_boss_ferryman",
+  "goal": 1
+ },
+ {
+  "id": "kill_choir",
+  "name": "合唱结束",
+  "desc": "击败教堂的合唱团。",
+  "hidden": false,
+  "key": "kill_boss_choir",
+  "goal": 1
+ },
+ {
+  "id": "kill_librarian",
+  "name": "归档",
+  "desc": "击败档案室的档案员。",
+  "hidden": false,
+  "key": "kill_boss_librarian",
+  "goal": 1
+ },
+ {
+  "id": "kill_marauder",
+  "name": "队伍的尽头",
+  "desc": "杀死一名劫掠队长。",
+  "hidden": false,
+  "key": "kill_human_marauder",
+  "goal": 1
+ },
+ {
+  "id": "kill_cannibal",
+  "name": "同类相食",
+  "desc": "杀死一名食人族。",
+  "hidden": false,
+  "key": "kill_human_cannibal",
+  "goal": 3
+ },
+ {
+  "id": "kill_night_gaunt",
+  "name": "夜色里的影子",
+  "desc": "杀死 5 个夜瘦。",
+  "hidden": false,
+  "key": "kill_night_gaunt",
+  "goal": 5
+ },
+ {
+  "id": "kill_soldier",
+  "name": "军装",
+  "desc": "杀死 10 个穿军装的感染者。",
+  "hidden": false,
+  "key": "kill_walker_soldier",
+  "goal": 10
+ },
+ {
+  "id": "kill_crawler_wall",
+  "name": "天花板",
+  "desc": "杀死 8 个壁行者。",
+  "hidden": false,
+  "key": "kill_crawler_wall",
+  "goal": 8
+ },
+ {
+  "id": "kill_horse",
+  "name": "驯服失败",
+  "desc": "杀死一匹感染马。",
+  "hidden": false,
+  "key": "kill_animal_horse",
+  "goal": 1
+ },
+ {
+  "id": "kills_500",
+  "name": "五百",
+  "desc": "累计杀死 500 个敌人。",
+  "hidden": false,
+  "key": "kills",
+  "goal": 500
+ },
+ {
+  "id": "day_120",
+  "name": "四个月",
+  "desc": "活到第 120 天。",
+  "hidden": false,
+  "key": "days",
+  "goal": 120
+ },
+ {
+  "id": "searches_250",
+  "name": "把城市翻过来",
+  "desc": "搜刮 250 次。",
+  "hidden": false,
+  "key": "searches",
+  "goal": 250
+ },
+ {
+  "id": "crafts_150",
+  "name": "工业级",
+  "desc": "制作 150 次。",
+  "hidden": false,
+  "key": "crafts",
+  "goal": 150
+ },
+ {
+  "id": "quests_45",
+  "name": "有求必应",
+  "desc": "完成 45 个任务。",
+  "hidden": false,
+  "key": "quests_done",
+  "goal": 45
+ },
+ {
+  "id": "boss_15",
+  "name": "无人称王",
+  "desc": "击败 15 名首领。",
+  "hidden": false,
+  "key": "boss_kills",
+  "goal": 15
+ },
+ {
+  "id": "recruit_8",
+  "name": "营地",
+  "desc": "累计招募 8 名同伴。",
+  "hidden": false,
+  "key": "recruited",
+  "goal": 8
+ },
+ {
+  "id": "runs_50",
+  "name": "五十次黎明",
+  "desc": "开始 50 次生存。",
+  "hidden": false,
+  "key": "runs",
+  "goal": 50
+ },
+ {
+  "id": "shards_250",
+  "name": "碎片之河",
+  "desc": "累计获得 250 枚碎片。",
+  "hidden": false,
+  "key": "shards",
+  "goal": 250
+ },
+ {
+  "id": "ending_20",
+  "name": "几乎全部",
+  "desc": "解锁 20 种结局。",
+  "hidden": false,
+  "key": "endings",
+  "goal": 20
+ },
+ {
+  "id": "win_20_battles",
+  "name": "二十场",
+  "desc": "赢下 20 场战斗。",
+  "hidden": false,
+  "key": "battles_won",
+  "goal": 20
+ },
+ {
+  "id": "damage_20000",
+  "name": "两万点",
+  "desc": "累计造成 20000 点伤害。",
+  "hidden": false,
+  "key": "damage_dealt",
+  "goal": 20000
+ },
+ {
+  "id": "valuables_1000",
+  "name": "末日富豪",
+  "desc": "持有价值 1000 的贵重品。",
+  "hidden": false,
+  "key": "valuables",
+  "goal": 1000
+ },
+ {
+  "id": "item_800",
+  "name": "囤积狂",
+  "desc": "累计拾取 800 件物品。",
+  "hidden": false,
+  "key": "items_found",
+  "goal": 800
+ },
+ {
+  "id": "enemy_types_45",
+  "name": "威胁档案",
+  "desc": "记录 45 种敌人。",
+  "hidden": false,
+  "key": "enemy_types",
+  "goal": 45
+ },
+ {
+  "id": "night_50",
+  "name": "长夜",
+  "desc": "在夜间战斗 50 次。",
+  "hidden": false,
+  "key": "night_battles",
+  "goal": 50
+ },
+ {
+  "id": "heals_100",
+  "name": "急救员",
+  "desc": "使用 100 次医疗物品。",
+  "hidden": false,
+  "key": "heals",
+  "goal": 100
+ },
+ {
+  "id": "build_40",
+  "name": "水泥森林",
+  "desc": "累计升级 40 次设施。",
+  "hidden": false,
+  "key": "builds",
+  "goal": 40
+ },
+ {
+  "id": "visit_50",
+  "name": "走遍",
+  "desc": "到访 50 个地点。",
+  "hidden": false,
+  "key": "places_visited",
+  "goal": 50
+ },
+ {
+  "id": "core_6_flag",
+  "name": "核心收藏",
+  "desc": "同时持有 6 枚核心。",
+  "hidden": false,
+  "key": "cores_held",
+  "goal": 6
  }
 ]

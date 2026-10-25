@@ -243,5 +243,40 @@
   "desc": "它把身体缩进硬壳，只露出牙齿。",
   "dmg": 0,
   "kind": "heal"
+ },
+ {
+  "id": "chorus",
+  "name": "合唱",
+  "desc": "几十个喉咙同时发出同一个音，像在唱一首没有词的歌。",
+  "dmg": 0,
+  "kind": "fear"
+ },
+ {
+  "id": "drown",
+  "name": "拖入水中",
+  "desc": "冰冷的手扣住你的脚踝，往下拽。",
+  "dmg": 21,
+  "kind": "drain"
+ },
+ {
+  "id": "paper_cut",
+  "name": "纸割",
+  "desc": "档案的锋边划过皮肤，细而深。",
+  "dmg": 14,
+  "kind": "bleed"
+ },
+ {
+  "id": "iron_grip",
+  "name": "铁握",
+  "desc": "它抓住你的前臂，骨头发出细微的响声。",
+  "dmg": 22,
+  "kind": "stun"
+ },
+ {
+  "id": "spore",
+  "name": "孢子",
+  "desc": "空气里飘着肉眼看不见的东西，你开始咳。",
+  "dmg": 9,
+  "kind": "infect"
  }
 ]
