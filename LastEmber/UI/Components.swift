@@ -32,12 +32,12 @@ struct SceneArt: View {
 
                     // 三层楼群，越远越淡
                     for layer in 0..<3 {
-                        let depth = Double(layer)
+                        let depth = CGFloat(layer)
                         let baseline = h * (0.60 + depth * 0.075)
                         let tint = Color(hex: 0x0D1411).opacity(0.55 + depth * 0.25)
                         var x = -CGFloat(rng.int(4...30))
                         while x < w + 30 {
-                            let bw = CGFloat(rng.int(16...54)) + CGFloat(depth) * 6
+                            let bw = CGFloat(rng.int(16...54)) + depth * 6
                             let bh = CGFloat(rng.int(18...74)) * (1.0 - depth * 0.18) + h * 0.06
                             let rect = CGRect(x: x, y: baseline - bh, width: bw, height: bh + h * 0.5)
                             ctx.fill(Path(rect), with: .color(tint))

@@ -273,14 +273,16 @@ struct BattleView: View {
         .buttonStyle(PlainButtonStyle())
     }
 
+    private var defeated: Bool { store.state.ending != nil }
+
     private func resultOverlay(_ b: BattleState) -> some View {
         ZStack {
             Color.black.opacity(0.72).ignoresSafeArea()
             VStack(alignment: .leading, spacing: 14) {
-                Text(b.victory ? "威胁解除" : "你逃开了")
+                Text(defeated ? "你倒下了" : (b.victory ? "威胁解除" : "你逃开了"))
                     .font(Theme.display(26))
-                    .foregroundColor(b.victory ? Theme.toxic : Theme.dim)
-                Text(b.victory ? "呼吸还很急促，但你还站着。" : "你跑出很远，才敢回头看。")
+                    .foregroundColor(defeated ? Theme.blood : (b.victory ? Theme.toxic : Theme.dim))
+                Text(defeated ? "视线在变暗，声音变得很远。你还想再站起来一次。" : (b.victory ? "呼吸还很急促，但你还站着。" : "你跑出很远，才敢回头看。"))
                     .font(Theme.serif(12))
                     .foregroundColor(Theme.dim)
 
@@ -305,8 +307,9 @@ struct BattleView: View {
 
                 Button {
                     store.closeBattle()
+                    if defeated { store.screen = .ending }
                 } label: {
-                    Text("继续")
+                    Text(defeated ? "闭上眼睛" : "继续")
                 }
                 .buttonStyle(EmberButtonStyle())
                 .padding(.top, 4)

@@ -28,7 +28,7 @@ final class GameStore: ObservableObject {
         state = loaded ?? GameStore.blankState()
         meta = SaveStore.loadMeta() ?? MetaState()
         if loaded != nil && state.ending == nil {
-            screen = .home
+            screen = state.battle != nil ? .game : .home
         }
     }
 
@@ -696,11 +696,17 @@ final class GameStore: ObservableObject {
                 }
             }
             let heavy = action == .heavy
+            var noAmmo = false
+            if let ammo = w.ammo, !hasItem(ammo) {
+                noAmmo = true
+                extra.append("没有弹药，你只能把枪当棍子挥。")
+            }
             var dmg = w.dmg + rng.int(0...max(0, w.dmgVar))
+            if noAmmo { dmg = max(4, w.dmg / 3) }
             dmg += perkValue("dmg")
             if state.scenario == "veteran" { dmg = dmg * 12 / 10 }
             if heavy { dmg = dmg * 3 / 2 }
-            let hitChance = w.acc + perkValue("acc") + b.aim - e.evade - (heavy ? 18 : 0) + (state.fatigue > 60 ? -8 : 0)
+            let hitChance = w.acc + perkValue("acc") + b.aim - e.evade - (heavy ? 18 : 0) + (state.fatigue > 60 ? -8 : 0) - (noAmmo ? 20 : 0)
             if rng.chance(max(12, min(97, hitChance))) {
                 var crit = rng.chance(min(70, w.crit + perkValue("crit") + b.aim / 2))
                 if heavy && rng.chance(12) { crit = true }
@@ -784,8 +790,21 @@ final class GameStore: ObservableObject {
         b.round += 1
         for (k, v) in b.cd { b.cd[k] = max(0, v - 1) }
         state.rng = rng
+        if state.ending != nil {
+            b.ended = true
+            b.victory = false
+            b.escaped = false
+            b.log.append("视野边缘开始发黑。")
+        } else {
+            checkDeath()
+            if state.ending != nil {
+                b.ended = true
+                b.victory = false
+                b.escaped = false
+                b.log.append("视野边缘开始发黑。")
+            }
+        }
         state.battle = b
-        if state.ending == nil { checkDeath() }
         normalize()
         save()
     }
@@ -1074,7 +1093,6 @@ final class GameStore: ObservableObject {
         }
 
         state.ap = apCap
-        state.dodge = 0
         state.rng = rng
 
         if let j = content.journal.randomElement() {
@@ -1254,6 +1272,10 @@ final class GameStore: ObservableObject {
         guard canLearn(p) else { toast("属性点不足或前置未解锁。"); return }
         state.perkPoints -= 1
         state.perks[p.id, default: 0] += 1
+        if let hpUp = p.effect["hpMax"], hpUp > 0 {
+            state.hpMax += hpUp
+            state.hp += hpUp
+        }
         log("技能提升：\(p.name) Lv.\(state.perks[p.id] ?? 1)", kind: "good")
         normalize()
         save()
@@ -1279,7 +1301,7 @@ final class GameStore: ObservableObject {
     }
 
     func statValue(_ key: String) -> Int {
-        if key.hasPrefix("flag_") { return state.flags[key, default: 0] }
+        if key.hasPrefix("flag_") { return state.flags[String(key.dropFirst(5)), default: 0] }
         if key == "cores_held" { return state.inventory["light_core", default: 0] }
         if key == "valuables" {
             var sum = 0
@@ -1318,7 +1340,9 @@ final class GameStore: ObservableObject {
 
     func newRunFromEnding() {
         endingCard = nil
+        state = GameStore.blankState()
         screen = .home
-        state.ending = nil
+        panel = nil
+        save()
     }
 }

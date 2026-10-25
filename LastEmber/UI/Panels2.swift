@@ -390,7 +390,7 @@ struct CharacterPanel: View {
     private var levelCard: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(alignment: .firstTextBaseline) {
-                Text(store.state.scenarioName)
+                Text(store.scenarioName)
                     .font(Theme.display(20))
                     .foregroundColor(Theme.bone)
                 Spacer()

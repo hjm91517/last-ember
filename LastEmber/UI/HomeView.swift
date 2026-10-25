@@ -3,7 +3,6 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var store: GameStore
     @State private var confirmNew = false
-    @State private var showScenarios = false
 
     private var hasRun: Bool {
         !store.state.log.isEmpty && store.state.ending == nil
@@ -38,12 +37,8 @@ struct HomeView: View {
             }
         }
         .confirmationDialog("开始新的生存？当前进度会被覆盖。", isPresented: $confirmNew, titleVisibility: .visible) {
-            Button("覆盖并重新开始", role: .destructive) { showScenarios = true }
+            Button("覆盖并重新开始", role: .destructive) { store.panel = .scenarios }
             Button("取消", role: .cancel) {}
-        }
-        .sheet(isPresented: $showScenarios) {
-            PanelHost(panel: .scenarios)
-                .environmentObject(store)
         }
     }
 
@@ -112,7 +107,7 @@ struct HomeView: View {
             }
 
             Button {
-                if hasRun { confirmNew = true } else { showScenarios = true }
+                if hasRun { confirmNew = true } else { store.panel = .scenarios }
             } label: {
                 HStack(spacing: 10) {
                     Text(hasRun ? "重新开始" : "进入废墟")
