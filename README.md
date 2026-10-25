@@ -41,15 +41,22 @@ xcodebuild -project LastEmber.xcodeproj -scheme LastEmber \
   -sdk iphoneos -configuration Release CODE_SIGNING_ALLOWED=NO build
 ```
 
+## 下载
+
+最新构建产物在 **[Releases](https://github.com/hjm91517/last-ember/releases)**：
+`LastEmber-unsigned.ipa`（约 1.5 MB，未签名，iOS 16+，iPhone / iPad）。
+
 ## 安装 IPA
 
-GitHub Actions 会在每次推送到 `main` 时构建 **未签名** IPA，并发布到 Releases。
+GitHub Actions 会在每次推送到 `main` 或打 `v*` 标签时构建 **未签名** IPA，并发布到 Releases。
 
 未签名 IPA 不能直接双击安装，需要自行签名：
 
 - **Sideloadly / AltStore / SideStore**：用你自己的 Apple ID 签名（免费账号 7 天有效）。
 - **TrollStore**：支持的设备可直接安装（iOS 14–17.x 特定版本）。
 - 有开发者账号也可用 Xcode 直接跑真机。
+
+安装后首次启动即为完整游戏：没有账号、没有联网请求、没有内购。
 
 ## 工程结构
 
@@ -78,8 +85,23 @@ python3 tools/gen_icon.py      # 重新生成 AppIcon
 
 内容全部为 JSON，改完不需要重新编译 Swift；但 id 之间互相引用，改动后请跑一遍 `validate.py`。
 
+## 已验证 / 未验证
+
+已验证：
+
+- `xcodebuild` Release 构建通过（GitHub Actions macOS runner，`CODE_SIGNING_ALLOWED=NO`）。
+- 15 个内容 JSON 的交叉引用与结构校验通过（`tools/validate.py`、`tools/check_schema.py`）。
+- IPA 结构检查：`Payload/LastEmber.app` 内含全部 15 个内容 JSON、Assets.car 与可执行文件；
+  `CFBundleDisplayName=余烬`、`MinimumOSVersion=16.0`。
+
+未验证：
+
+- 真机/模拟器上的运行时表现（本环境无 Xcode 与 iOS 设备），包括布局、触控、长时间游玩与存档读档。
+- 签名与安装（IPA 未签名，需要你自己签）。
+
 ## 说明
 
 - 本作为原创虚构作品，人物、组织、事件均与现实无关。
 - 无内购、无广告、无联网请求、不收集任何数据。
+- 代码以 MIT 许可发布，内容为原创虚构作品。
 - 存档位于 App 沙盒 `Documents/save.json` 与 `meta.json`。
