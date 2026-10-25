@@ -26,7 +26,7 @@ struct RootView: View {
                 EndingView()
             }
 
-            if store.state.battle != nil {
+            if store.state.battle != nil && store.state.ending == nil {
                 BattleView()
                     .transition(.opacity)
             }

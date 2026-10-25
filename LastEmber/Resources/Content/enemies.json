@@ -1950,7 +1950,7 @@
    },
    {
     "item": "light_core",
-    "chance": 12,
+    "chance": 22,
     "min": 1,
     "max": 1
    }
@@ -2009,8 +2009,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "钟楼的守夜人。它把钟绳缠在自己身上，每走一步，整座城都能听见。",
-  "hp": 420,
-  "dmg": 26,
+  "hp": 260,
+  "dmg": 22,
   "armor": 16,
   "acc": 68,
   "evade": 6,
@@ -2024,7 +2024,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -2055,8 +2055,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "她坐在育婴室的中央，怀里抱着很多东西。她一直在唱摇篮曲。",
-  "hp": 380,
-  "dmg": 24,
+  "hp": 240,
+  "dmg": 20,
   "armor": 12,
   "acc": 72,
   "evade": 10,
@@ -2101,8 +2101,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "白鸦最骄傲的作品。它穿着束缚衣，针管还插在脊椎上。",
-  "hp": 460,
-  "dmg": 28,
+  "hp": 280,
+  "dmg": 24,
   "armor": 18,
   "acc": 74,
   "evade": 12,
@@ -2147,8 +2147,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "废料场深处，它用汽车零件给自己做了一顶王冠。",
-  "hp": 500,
-  "dmg": 30,
+  "hp": 300,
+  "dmg": 25,
   "armor": 24,
   "acc": 62,
   "evade": 2,
@@ -2180,7 +2180,7 @@
    },
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    }
@@ -2193,8 +2193,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "它从港口的水里站起来，身上缠着渔网和铁链。水面上的油光在它背后燃烧。",
-  "hp": 560,
-  "dmg": 32,
+  "hp": 320,
+  "dmg": 26,
   "armor": 20,
   "acc": 70,
   "evade": 8,
@@ -2208,7 +2208,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -2239,8 +2239,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "他张开双臂说：孩子，灰烬之后有新生。你看见他袖口里的针管。",
-  "hp": 400,
-  "dmg": 24,
+  "hp": 240,
+  "dmg": 21,
   "armor": 14,
   "acc": 76,
   "evade": 14,
@@ -2260,7 +2260,7 @@
    },
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -2285,8 +2285,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "两个几乎一样的女人，一左一右。你只能先解决一个。",
-  "hp": 340,
-  "dmg": 26,
+  "hp": 220,
+  "dmg": 22,
   "armor": 10,
   "acc": 82,
   "evade": 24,
@@ -2331,8 +2331,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "他守着一列装满物资的军用列车，钥匙挂在他脖子上。",
-  "hp": 440,
-  "dmg": 27,
+  "hp": 260,
+  "dmg": 23,
   "armor": 18,
   "acc": 66,
   "evade": 6,
@@ -2377,8 +2377,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "地铁枢纽的深处，墙在呼吸。你终于明白那些失踪者去了哪里。",
-  "hp": 600,
-  "dmg": 25,
+  "hp": 340,
+  "dmg": 22,
   "armor": 22,
   "acc": 58,
   "evade": 0,
@@ -2392,7 +2392,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -2423,8 +2423,8 @@
   "tag": "boss",
   "tier": 5,
   "desc": "它的皮肤像烧过的纸，风一吹就落下灰。可它还站着，还朝你走来。",
-  "hp": 380,
-  "dmg": 29,
+  "hp": 240,
+  "dmg": 25,
   "armor": 12,
   "acc": 86,
   "evade": 26,
@@ -2438,7 +2438,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -3236,7 +3236,7 @@
    },
    {
     "item": "light_core",
-    "chance": 8,
+    "chance": 18,
     "min": 1,
     "max": 1
    }
@@ -3247,8 +3247,8 @@
   "name": "巨像",
   "tag": "boss",
   "tier": 5,
-  "hp": 520,
-  "dmg": 32,
+  "hp": 300,
+  "dmg": 27,
   "armor": 26,
   "acc": 60,
   "evade": 0,
@@ -3283,7 +3283,7 @@
    },
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -3300,8 +3300,8 @@
   "name": "摆渡人",
   "tag": "boss",
   "tier": 5,
-  "hp": 430,
-  "dmg": 29,
+  "hp": 260,
+  "dmg": 25,
   "armor": 14,
   "acc": 72,
   "evade": 14,
@@ -3317,7 +3317,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -3352,8 +3352,8 @@
   "name": "合唱团",
   "tag": "boss",
   "tier": 5,
-  "hp": 400,
-  "dmg": 26,
+  "hp": 240,
+  "dmg": 22,
   "armor": 10,
   "acc": 66,
   "evade": 6,
@@ -3370,7 +3370,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },
@@ -3399,8 +3399,8 @@
   "name": "档案员",
   "tag": "boss",
   "tier": 5,
-  "hp": 380,
-  "dmg": 25,
+  "hp": 220,
+  "dmg": 21,
   "armor": 8,
   "acc": 80,
   "evade": 22,
@@ -3429,7 +3429,7 @@
    },
    {
     "item": "light_core",
-    "chance": 100,
+    "chance": 60,
     "min": 1,
     "max": 1
    },

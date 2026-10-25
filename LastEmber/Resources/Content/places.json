@@ -92,6 +92,12 @@
     "chance": 12,
     "min": 2,
     "max": 5
+   },
+   {
+    "item": "radio_part",
+    "chance": 8,
+    "min": 1,
+    "max": 1
    }
   ],
   "enemies": [
@@ -155,6 +161,18 @@
    {
     "item": "backpack_small",
     "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 8,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 10,
     "min": 1,
     "max": 1
    }
@@ -289,6 +307,12 @@
     "chance": 8,
     "min": 1,
     "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 8,
+    "min": 1,
+    "max": 1
    }
   ],
   "enemies": [
@@ -400,7 +424,7 @@
    },
    {
     "item": "light_core",
-    "chance": 8,
+    "chance": 18,
     "min": 1,
     "max": 1
    },
@@ -483,6 +507,18 @@
     "chance": 20,
     "min": 2,
     "max": 6
+   },
+   {
+    "item": "light_core",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 18,
+    "min": 1,
+    "max": 1
    }
   ],
   "enemies": [
@@ -679,6 +715,12 @@
     "chance": 40,
     "min": 1,
     "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 10,
+    "min": 1,
+    "max": 1
    }
   ],
   "enemies": [
@@ -744,6 +786,12 @@
    {
     "item": "cereal",
     "chance": 35,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 8,
     "min": 1,
     "max": 1
    }
@@ -934,6 +982,12 @@
    {
     "item": "oil",
     "chance": 40,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 10,
     "min": 1,
     "max": 1
    }
@@ -1192,7 +1246,7 @@
    },
    {
     "item": "light_core",
-    "chance": 10,
+    "chance": 20,
     "min": 1,
     "max": 1
    }
@@ -1258,6 +1312,12 @@
    {
     "item": "fuel",
     "chance": 30,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 14,
     "min": 1,
     "max": 1
    }
@@ -1436,7 +1496,7 @@
    },
    {
     "item": "light_core",
-    "chance": 12,
+    "chance": 22,
     "min": 1,
     "max": 1
    },
@@ -1897,7 +1957,7 @@
    },
    {
     "item": "light_core",
-    "chance": 8,
+    "chance": 18,
     "min": 1,
     "max": 1
    }
@@ -2224,7 +2284,7 @@
    },
    {
     "item": "light_core",
-    "chance": 12,
+    "chance": 22,
     "min": 1,
     "max": 1
    }
@@ -2300,6 +2360,18 @@
     "chance": 15,
     "min": 1,
     "max": 1
+   },
+   {
+    "item": "light_core",
+    "chance": 10,
+    "min": 1,
+    "max": 1
+   },
+   {
+    "item": "radio_part",
+    "chance": 12,
+    "min": 1,
+    "max": 1
    }
   ],
   "enemies": [
@@ -2358,7 +2430,7 @@
    },
    {
     "item": "light_core",
-    "chance": 15,
+    "chance": 25,
     "min": 1,
     "max": 1
    },
@@ -2437,7 +2509,7 @@
    },
    {
     "item": "light_core",
-    "chance": 20,
+    "chance": 30,
     "min": 1,
     "max": 1
    }
@@ -2500,7 +2572,7 @@
    },
    {
     "item": "light_core",
-    "chance": 18,
+    "chance": 28,
     "min": 1,
     "max": 1
    },
@@ -2567,7 +2639,7 @@
    },
    {
     "item": "light_core",
-    "chance": 15,
+    "chance": 25,
     "min": 1,
     "max": 1
    }
@@ -2628,7 +2700,7 @@
    },
    {
     "item": "light_core",
-    "chance": 15,
+    "chance": 25,
     "min": 1,
     "max": 1
    },
@@ -2689,7 +2761,7 @@
    },
    {
     "item": "light_core",
-    "chance": 18,
+    "chance": 28,
     "min": 1,
     "max": 1
    },
@@ -2816,7 +2888,7 @@
    },
    {
     "item": "light_core",
-    "chance": 10,
+    "chance": 20,
     "min": 1,
     "max": 1
    },
@@ -2876,7 +2948,7 @@
    },
    {
     "item": "light_core",
-    "chance": 15,
+    "chance": 25,
     "min": 1,
     "max": 1
    },
@@ -2937,7 +3009,7 @@
    },
    {
     "item": "light_core",
-    "chance": 20,
+    "chance": 30,
     "min": 1,
     "max": 1
    },
@@ -2997,7 +3069,7 @@
    },
    {
     "item": "light_core",
-    "chance": 18,
+    "chance": 28,
     "min": 1,
     "max": 1
    },
@@ -3064,7 +3136,7 @@
    },
    {
     "item": "light_core",
-    "chance": 20,
+    "chance": 30,
     "min": 1,
     "max": 1
    },
@@ -3121,7 +3193,7 @@
    },
    {
     "item": "light_core",
-    "chance": 22,
+    "chance": 32,
     "min": 1,
     "max": 1
    },
@@ -3196,7 +3268,7 @@
    },
    {
     "item": "light_core",
-    "chance": 18,
+    "chance": 28,
     "min": 1,
     "max": 1
    },
@@ -3246,7 +3318,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 20,
+    "chance": 30,
     "min": 1,
     "max": 1
    },
@@ -3307,7 +3379,7 @@
   "loot": [
    {
     "item": "light_core",
-    "chance": 25,
+    "chance": 35,
     "min": 1,
     "max": 1
    },
@@ -3387,7 +3459,7 @@
    },
    {
     "item": "light_core",
-    "chance": 20,
+    "chance": 30,
     "min": 1,
     "max": 1
    },
