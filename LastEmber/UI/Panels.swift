@@ -71,11 +71,12 @@ struct PanelShell<Content: View>: View {
 }
 
 struct CostLine: View {
+    @EnvironmentObject var store: GameStore
     let cost: [String: Int]
     let inventory: [String: Int]
 
     private var enough: Bool {
-        cost.allSatisfy { inventory[$0.key, default: 0] >= $0.value }
+        cost.allSatisfy { store.hasCost($0.key, $0.value) }
     }
 
     var body: some View {

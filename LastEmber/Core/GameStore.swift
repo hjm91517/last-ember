@@ -313,7 +313,8 @@ final class GameStore: ObservableObject {
                 if let idx = state.armors.firstIndex(where: { $0.item == id }) {
                     let gid = state.armors[idx].id
                     state.armors.remove(at: idx)
-                    for (slot, v) in state.equippedArmor where v == gid { state.equippedArmor.removeValue(forKey: slot) }
+                    let slots = state.equippedArmor.filter { $0.value == gid }.map { $0.key }
+                    for slot in slots { state.equippedArmor.removeValue(forKey: slot) }
                 }
                 return
             }
@@ -610,17 +611,51 @@ final class GameStore: ObservableObject {
         state.buildings[station, default: 0]
     }
 
+    func gearCount(_ id: String) -> Int {
+        state.weapons.filter { $0.item == id }.count + state.armors.filter { $0.item == id }.count
+    }
+
+    func hasCost(_ id: String, _ n: Int) -> Bool {
+        if content.item(id) != nil { return hasItem(id, n) }
+        return gearCount(id) >= n
+    }
+
+    @discardableResult
+    func consumeGear(_ id: String, _ n: Int) -> Bool {
+        var left = n
+        while left > 0, let idx = state.weapons.firstIndex(where: { $0.item == id }) {
+            let gid = state.weapons[idx].id
+            state.weapons.remove(at: idx)
+            if state.equippedWeapon == gid { state.equippedWeapon = state.weapons.first?.id }
+            left -= 1
+        }
+        while left > 0, let idx = state.armors.firstIndex(where: { $0.item == id }) {
+            let gid = state.armors[idx].id
+            state.armors.remove(at: idx)
+            let slots = state.equippedArmor.filter { $0.value == gid }.map { $0.key }
+            for slot in slots { state.equippedArmor.removeValue(forKey: slot) }
+            left -= 1
+        }
+        return left == 0
+    }
+
     func canCraft(_ r: Recipe) -> Bool {
         if stationLevel(r.station) < r.stationLevel { return false }
         if state.ap < r.ap { return false }
-        for (id, n) in r.cost where !hasItem(id, n) { return false }
+        for (id, n) in r.cost where !hasCost(id, n) { return false }
         return true
     }
 
     func craft(_ r: Recipe) {
         guard canCraft(r) else { toast("材料或行动点不足。"); return }
         state.ap -= r.ap
-        for (id, n) in r.cost { addItem(id, -n) }
+        for (id, n) in r.cost {
+            if content.item(id) != nil {
+                addItem(id, -n)
+            } else {
+                consumeGear(id, n)
+            }
+        }
         for (id, n) in r.out { addItem(id, n) }
         if let wid = r.outWeapon, let w = content.weapon(wid) {
             let g = GearInstance(id: UUID().uuidString, item: wid, dur: w.dur)
